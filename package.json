@@ -1,0 +1,23 @@
+{
+  "name": "layout-oweddings",
+  "version": "1.0.0",
+  "description": "Build components for the web page of Oasis Weddings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJMPWizard/layout-oweddings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJMPWizard/layout-oweddings/issues"
+  },
+  "homepage": "https://github.com/JJMPWizard/layout-oweddings#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
