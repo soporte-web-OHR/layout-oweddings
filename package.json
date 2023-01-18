@@ -4,7 +4,8 @@
   "description": "Build components for the web page of Oasis Weddings",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "sass resources/assets/styles/index.sass public/styles/index.css"
   },
   "repository": {
     "type": "git",
