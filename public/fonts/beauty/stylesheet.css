@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Beauty';
+    src: url('Beauty.eot');
+    src: url('Beauty.eot?#iefix') format('embedded-opentype'),
+        url('Beauty.woff2') format('woff2'),
+        url('Beauty.woff') format('woff'),
+        url('Beauty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
