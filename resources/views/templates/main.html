@@ -24,55 +24,80 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="header__title__container">
-                <h1 class="header__title__title">Planea la mejor Boda</h1>
-                <span class="header__title__subtitle">Llega a las parejas de hoy y reserva más bodas.</span>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="navbar__menu" href="javascript:void(0);" onclick="myFunction()">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.example.com" class="navbar__logo">
+                        <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo"
+                            height="26px" width="70px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#login" class="btn__login">
+                        Entrar
+                        <i class="icon icon-exit"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-wrap">
+            <div class="header-wrap__title__container">
+                <h1 class="header-title">Planea la mejor Boda</h1>
+                <span class="header-wrap__subtitle">Llega a las parejas de hoy y reserva más bodas.</span>
             </div>
-            <div class="header__register__container">
-                <label>¡Registrate!</label>
-                <input class="header__register__input" placeholder="yes">
-                <button class="btn__register">
+            <div class="header-wrap__register__container">
+                <label class="header-wrap__register__label">¡Registrate!</label>
+                <button class="btn btn__input">
+                    Nombre*
+                </button>
+                <button class="btn btn__register">
                     REGISTRARME
                 </button>
             </div>
         </div>
         <div>
             <h2>El lugar ideal</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu bibendum at varius vel. Mauris vitae ultricies leo integer malesuada nunc vel risus. Sit amet aliquam id diam maecenas ultricies. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum pulvinar etiam non quam. At tellus at urna condimentum. Morbi tincidunt ornare massa eget egestas purus. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Morbi quis commodo odio aenean sed adipiscing. At lectus urna duis convallis convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient montes nascetur ridiculus mus mauris vitae ultricies.</p>
-        </div>
-        <div class="navbar">
-            <a class="navbar__menu" href="javascript:void(0);" onclick="myFunction()">
-                <i class="icon icon-menu"></i>
-            </a>
-            <a href="https://www.example.com" class="navbar__logo">
-                <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo" height="26px" width="70px">
-            </a>
-            <a href="#login" class="btn__login">
-                Entrar
-                <i class="icon icon-exit"></i>
-            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu bibendum
+                at varius vel. Mauris vitae ultricies leo integer malesuada nunc vel risus. Sit amet aliquam id diam
+                maecenas ultricies. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit.
+                Aliquam ut porttitor leo a diam sollicitudin. Elementum pulvinar etiam non quam. At tellus at urna
+                condimentum. Morbi tincidunt ornare massa eget egestas purus. Erat pellentesque adipiscing commodo elit
+                at imperdiet dui accumsan. Morbi quis commodo odio aenean sed adipiscing. At lectus urna duis convallis
+                convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient montes nascetur ridiculus mus mauris
+                vitae ultricies.</p>
         </div>
     </header>
     <main>
         <section>
-            <div>
-                <div>
-                    <div>
-                        <img src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp">
-                        <span>GRAND OASIS CANCUN</span>
-                        <a>Ver Hotel</a>
+            <div class="card-slider">
+                <div class="card__container">
+                    <div class="card__item">
+                        <div class="card__item__content">
+                            <img
+                                src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp">
+                            <span>GRAND OASIS CANCUN</span>
+                            <a>Ver Hotel</a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp">
-                        <span>GRAND OASIS CANCUN</span>
-                        <a>Ver Hotel</a>
+                    <div class="card__item">
+                        <div class="card__item__content">
+                            <img
+                                src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp">
+                            <span>GRAND OASIS CANCUN</span>
+                            <a>Ver Hotel</a>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <span class="icon icon-chevron-left"></span>
-                    <span class="icon icon-chevron-right"></span>
+                <div class="card__arrow__container">
+                    <span class="card__arrow__item icon icon-chevron-left"></span>
+                    <span class="card__arrow__item icon icon-chevron-right"></span>
                 </div>
             </div>
         </section>
@@ -80,31 +105,44 @@
             <div>
                 <img src="/resources/assets/img/home/seo-home.webp">
                 <h3>O WEDDINGS, LIVE, LOVE & REMEMBER</h3>
-                <p>Un beso al atardecer, el mar turquesa como testigo del momento, el viento cálido en la piel y la promesa de una nueva vida juntos... Déjanos ayudarte a crear ese momento irrepetible que recordarás por siempre. Oasis Hotels & Resorts te presenta O Weddings, para que dejes en nuestras manos todo el estrés de organizar tu boda y puedas saborear cada minuto de ese momento tan especial. Contamos con espectaculares escenarios naturales, en los destinos de bodas más solicitados de México. Ponemos a tu disposición un coordinador de bodas personal, quien se encargará de que todo luzca como siempre has soñado. Conoce nuestros paquetes o configura tu ceremonia perfecta; deja que fluya el romance y comencemos hoy mismo a planear tu boda en Cancún o la Riviera Maya... ¿Aceptas?
+                <p>Un beso al atardecer, el mar turquesa como testigo del momento, el viento cálido en la piel y la
+                    promesa de una nueva vida juntos... Déjanos ayudarte a crear ese momento irrepetible que recordarás
+                    por siempre. Oasis Hotels & Resorts te presenta O Weddings, para que dejes en nuestras manos todo el
+                    estrés de organizar tu boda y puedas saborear cada minuto de ese momento tan especial. Contamos con
+                    espectaculares escenarios naturales, en los destinos de bodas más solicitados de México. Ponemos a
+                    tu disposición un coordinador de bodas personal, quien se encargará de que todo luzca como siempre
+                    has soñado. Conoce nuestros paquetes o configura tu ceremonia perfecta; deja que fluya el romance y
+                    comencemos hoy mismo a planear tu boda en Cancún o la Riviera Maya... ¿Aceptas?
                 </p>
             </div>
         </section>
         <section>
             <div>
                 <h3><span>PAQUETES </span>DE BODA</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu bibendum at va</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
+                    bibendum at va</p>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp">
-                        <span>O CEREMONY</span>
-                        <span>6 invitados</span>
+            <div class="card-slider">
+                <div class="card__container">
+                    <div class="card__item">
+                        <div class="card__item__content">
+                            <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp">
+                            <span>O CEREMONY</span>
+                            <span>6 invitados</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp">
-                        <span>O CEREMONY</span>
-                        <span>6 invitados</span>
+                    <div class="card__item">
+                        <div class="card__item__content">
+                            <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp">
+                            <span>O CEREMONY</span>
+                            <span>6 invitados</span>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <span class="icon icon-chevron-left"></span>
-                    <span class="icon icon-chevron-right"></span>
+                <div class="card__arrow__container">
+                    <span class="card__arrow__item icon icon-chevron-left"></span>
+                    <span class="card__arrow__item icon icon-chevron-right"></span>
                 </div>
             </div>
         </section>
@@ -112,8 +150,11 @@
             <div>
                 <h3>GALERÍA <span>WEDDINGS</span></h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Scelerisque.
-                    In dictum non consectetur. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Eget lorem dolor sed Viverra ipsum 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada.
+                    Scelerisque.
+                    In dictum non consectetur. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Eget lorem
+                    dolor sed Viverra ipsum
                 </p>
             </div>
             <div>
@@ -127,7 +168,8 @@
     </main>
     <footer>
         <div>
-            <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo" height="26px" width="70px">
+            <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo" height="26px"
+                width="70px">
         </div>
         <div>
             <ul>
@@ -154,15 +196,23 @@
             </ul>
         </div>
         <div>
-            <span>
-                <i class="icon icon-facebook"></i>
-            </span>
-            <span>
-                <i class="icon icon-twitter"></i>
-            </span>
-            <span>
-                <i class="icon icon-instagram"></i>
-            </span>
+            <ul>
+                <li>
+                    <a>
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="icon icon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="icon icon-instagram"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
     <!-- your content here... -->
