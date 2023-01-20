@@ -152,48 +152,93 @@ h2 {
   content: "s";
 }
 
-.header {
-  position: relative;
-  background-image: url("/resources/assets/img/home/header-home-estatico.webp");
-  height: 800px;
-}
-.header__container {
-  display: flex;
-}
-.header__title__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.header__title__title {
-  font-family: Roboto;
+.header-title {
+  font-family: "Roboto";
   font-size: 34px;
   letter-spacing: 0;
   line-height: 40px;
   text-align: center;
+  color: #FFFFFF;
 }
-.header__title__subtitle {
-  font-family: Roboto;
+
+.header-subtitle {
+  color: #FFFFFF;
+  font-family: "Beauty";
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: 37px;
+  text-align: center;
+}
+
+.header--home {
+  background-image: url("/resources/assets/img/home/header-home-estatico.webp");
+  height: 800px;
+}
+.header__navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 48px 24px;
+  padding-inline: 16px;
+  color: #FFFFFF;
+}
+.header__navbar__menu {
+  font-size: 32px;
+}
+.header__navbar__logo {
+  align-self: flex-start;
+}
+.header-wrap__title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+.header-wrap__title__subtitle {
+  font-family: "Roboto";
   font-size: 16px;
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
 }
-.header__register__container {
+.header-wrap__register__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  margin-block: 10px 0;
+  margin-inline: 32px;
+  color: #FFFFFF;
+}
+.header-wrap__register__label {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.header-wrap__register__input {
+  width: 363px;
+}
+.header-wrap__subtitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  margin-block: 32px;
+  margin-inline: 32px;
+  color: #FFFFFF;
 }
-.header__register__labels {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
+.header-wrap__paragraph {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
   letter-spacing: 0;
-  line-height: 16px;
+  line-height: 13px;
   text-align: center;
 }
 
@@ -211,16 +256,32 @@ h2 {
   align-self: flex-start;
 }
 
+.btn--block {
+  display: block;
+  width: 100%;
+}
 .btn__login {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   padding-block: 8px 4px;
   padding-inline: 16px;
-  font-size: 16px;
-  line-height: 17px;
-  text-align: center;
   background-color: #FF7E7E;
-  color: white;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.btn__input {
+  padding: 12px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+.btn__register {
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #444444;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

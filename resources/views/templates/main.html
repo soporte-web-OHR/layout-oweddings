@@ -24,24 +24,24 @@
 </head>
 
 <body>
-    <header class="header__background--home">
-        <nav class="navbar__header">
-            <ul>
-                <li>
-                    <a class="navbar__header__menu" href="javascript:void(0);" onclick="myFunction()">
+    <header class="header header--home">
+        <nav class="header__navbar">
+            <ul class="header__navbar__container">
+                <li class="header__navbar__menu">
+                    <a href="javascript:void(0);" onclick="myFunction()">
                         <i class="icon icon-menu"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="/" class="navbar__header__logo">
+                <li class="header__navbar__logo">
+                    <a href="/" >
                         <picture>
-                            <source srcset="/resources/assets/img/oweddings/horizontal/color.svg"/>
-                            <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo"
-                                height="26px" width="70px"/>
+                            <source srcset="/resources/assets/img/oweddings/horizontal/color-blanco.svg" />
+                            <img src="/resources/assets/img/oweddings/horizontal/color-blanco.svg" alt="o-weddings-logo"
+                                height="26px" width="70px" />
                         </picture>
                     </a>
                 </li>
-                <li>
+                <li class="header__navbar__login">
                     <a href="#login" class="btn btn__login">
                         Entrar
                         <i class="icon icon-exit"></i>
@@ -50,39 +50,43 @@
             </ul>
         </nav>
         <section class="header-wrap">
-            <section class="header-wrap__title__container">
+            <div class="header-wrap__title__container">
                 <h1 class="header-title">Planea la mejor Boda</h1>
                 <span class="header-wrap__subtitle">Llega a las parejas de hoy y reserva más bodas.</span>
-            </section>
-            <section class="header-wrap__register__container">
+            </div>
+            <div class="header-wrap__register__container">
                 <label class="header-wrap__register__label">¡Registrate!</label>
-                <button class="btn btn__input">
+                <button class="btn btn--block btn__input">
                     Nombre*
                 </button>
-                <button class="btn btn__register">
+                <button class="btn  btn--block btn__register">
                     REGISTRARME
                 </button>
-            </section>
+            </div>
         </section>
         <section>
-            <section>
-                <h2>El lugar ideal</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu bibendum
+            <div class="header-wrap__subtitle">
+                <h2 class="header-subtitle">El lugar ideal</h2>
+                <p class="header-wrap__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
+                    bibendum
                     at varius vel. Mauris vitae ultricies leo integer malesuada nunc vel risus. Sit amet aliquam id diam
                     maecenas ultricies. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit.
                     Aliquam ut porttitor leo a diam sollicitudin. Elementum pulvinar etiam non quam. At tellus at urna
-                    condimentum. Morbi tincidunt ornare massa eget egestas purus. Erat pellentesque adipiscing commodo elit
-                    at imperdiet dui accumsan. Morbi quis commodo odio aenean sed adipiscing. At lectus urna duis convallis
+                    condimentum. Morbi tincidunt ornare massa eget egestas purus. Erat pellentesque adipiscing commodo
+                    elit
+                    at imperdiet dui accumsan. Morbi quis commodo odio aenean sed adipiscing. At lectus urna duis
+                    convallis
                     convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient montes nascetur ridiculus mus mauris
                     vitae ultricies.
                 </p>
-            </section>
+            </div>
         </section>
     </header>
     <main>
         <section>
-            <section class="card-slider">
+            <div class="card-slider">
                 <div class="card__container">
                     <article class="card__item">
                         <!-- 
@@ -94,9 +98,10 @@
                             <section class="card__item__content">
                                 <a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun">
                                     <picture>
-                                        <source srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"/>
+                                        <source
+                                            srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
                                         <img
-                                            src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"/>
+                                            src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
                                     </picture>
                                     <h4>GRAND OASIS CANCUN</h4>
                                     <span>Ver Hotel</span>
@@ -121,8 +126,10 @@
                             <section class="card__item__content">
                                 <a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun">
                                     <picture>
-                                        <source srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"/>
-                                        <img src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"/>
+                                        <source
+                                            srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
+                                        <img
+                                            src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
                                     </picture>
                                     <h4>GRAND OASIS CANCUN</h4>
                                     <span>Ver Hotel</span>
@@ -142,33 +149,33 @@
                     <span class="card__arrow__item icon icon-chevron-left"></span>
                     <span class="card__arrow__item icon icon-chevron-right"></span>
                 </div>
-            </section>
+            </div>
         </section>
         <section>
-            <section>
+            <div>
                 <picture>
-                    <source srcset="/resources/assets/img/home/seo-home.webp"/>
-                    <img src="/resources/assets/img/home/seo-home.webp"/>
+                    <source srcset="/resources/assets/img/home/seo-home.webp" />
+                    <img src="/resources/assets/img/home/seo-home.webp" />
                 </picture>
                 <h3>O WEDDINGS, LIVE, LOVE & REMEMBER</h3>
                 <p>Un beso al atardecer, el mar turquesa como testigo del momento, el viento cálido en la piel y la
-                        promesa de una nueva vida juntos... Déjanos ayudarte a crear ese momento irrepetible que recordarás
-                        por siempre. Oasis Hotels & Resorts te presenta O Weddings, para que dejes en nuestras manos todo el
-                        estrés de organizar tu boda y puedas saborear cada minuto de ese momento tan especial. Contamos con
-                        espectaculares escenarios naturales, en los destinos de bodas más solicitados de México. Ponemos a
-                        tu disposición un coordinador de bodas personal, quien se encargará de que todo luzca como siempre
-                        has soñado. Conoce nuestros paquetes o configura tu ceremonia perfecta; deja que fluya el romance y
-                        comencemos hoy mismo a planear tu boda en Cancún o la Riviera Maya... ¿Aceptas?
+                    promesa de una nueva vida juntos... Déjanos ayudarte a crear ese momento irrepetible que recordarás
+                    por siempre. Oasis Hotels & Resorts te presenta O Weddings, para que dejes en nuestras manos todo el
+                    estrés de organizar tu boda y puedas saborear cada minuto de ese momento tan especial. Contamos con
+                    espectaculares escenarios naturales, en los destinos de bodas más solicitados de México. Ponemos a
+                    tu disposición un coordinador de bodas personal, quien se encargará de que todo luzca como siempre
+                    has soñado. Conoce nuestros paquetes o configura tu ceremonia perfecta; deja que fluya el romance y
+                    comencemos hoy mismo a planear tu boda en Cancún o la Riviera Maya... ¿Aceptas?
                 </p>
-            </section>
+            </div>
         </section>
         <section>
-            <section>
+            <div>
                 <h3><span>PAQUETES </span>DE BODA</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
                     bibendum at va</p>
-            </section>
+            </div>
             <section class="card-slider">
                 <div class="card__container">
                     <article class="card__item">
@@ -181,8 +188,8 @@
                             <section class="card__item__content">
                                 <a href="javascript:void(0);">
                                     <picture>
-                                        <source srcset="/resources/assets/img/galeria-locaciones/7-thumb.webp"/>
-                                        <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp"/>
+                                        <source srcset="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
+                                        <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
                                     </picture>
                                     <span>O CEREMONY</span>
                                     <span>6 invitados</span>
@@ -207,8 +214,8 @@
                             <section class="card__item__content">
                                 <a href="javascript:void(0);">
                                     <picture>
-                                        <source srcset="/resources/assets/img/galeria-locaciones/7-thumb.webp"/>
-                                        <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp"/>
+                                        <source srcset="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
+                                        <img src="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
                                     </picture>
                                     <span>O CEREMONY</span>
                                     <span>6 invitados</span>
@@ -231,7 +238,7 @@
             </section>
         </section>
         <section>
-            <section>
+            <div>
                 <h3>GALERÍA <span>WEDDINGS</span></h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -240,84 +247,80 @@
                     In dictum non consectetur. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Eget lorem
                     dolor sed Viverra ipsum
                 </p>
-            </section>
-            <section>
+            </div>
+            <div>
                 <picture>
-                    <source srcset="/resources/assets/img/home/galeria/1-thumb.webp"/>
-                    <img src="/resources/assets/img/home/galeria/1-thumb.webp"/>
+                    <source srcset="/resources/assets/img/home/galeria/1-thumb.webp" />
+                    <img src="/resources/assets/img/home/galeria/1-thumb.webp" />
                 </picture>
                 <picture>
-                    <source srcset="/resources/assets/img/home/galeria/2-thumb.webp"/>
-                    <img src="/resources/assets/img/home/galeria/2-thumb.webp"/>
+                    <source srcset="/resources/assets/img/home/galeria/2-thumb.webp" />
+                    <img src="/resources/assets/img/home/galeria/2-thumb.webp" />
                 </picture>
                 <picture>
-                    <source srcset="/resources/assets/img/home/galeria/3-thumb.webp"/>
-                    <img src="/resources/assets/img/home/galeria/3-thumb.webp"/>
+                    <source srcset="/resources/assets/img/home/galeria/3-thumb.webp" />
+                    <img src="/resources/assets/img/home/galeria/3-thumb.webp" />
                 </picture>
                 <picture>
-                    <source srcset="/resources/assets/img/home/galeria/3.webp"/>
-                    <img src="/resources/assets/img/home/galeria/3.webp"/>
+                    <source srcset="/resources/assets/img/home/galeria/3.webp" />
+                    <img src="/resources/assets/img/home/galeria/3.webp" />
                 </picture>
                 <picture>
-                    <source srcset="/resources/assets/img/home/galeria/cover-video.webp"/>
-                    <img src="/resources/assets/img/home/galeria/cover-video.webp"/>
+                    <source srcset="/resources/assets/img/home/galeria/cover-video.webp" />
+                    <img src="/resources/assets/img/home/galeria/cover-video.webp" />
                 </picture>
-            </section>
+            </div>
         </section>
     </main>
     <footer>
         <picture>
-            <source srcset="/resources/assets/img/oweddings/horizontal/color.svg"/>
+            <source srcset="/resources/assets/img/oweddings/horizontal/color.svg" />
             <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo" height="26px"
-            width="70px"/>
+                width="70px" />
         </picture>
-        <section>
-            <nav class="navbar__footer">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);">
-                            ¿Cómo funciona?
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            Paquetes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            Preguntas frecuentes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            Terminos y condiciones
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <nav class="navbar__social-media">
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);">
-                            <i class="icon icon-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            <i class="icon icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            <i class="icon icon-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="navbar__footer">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        ¿Cómo funciona?
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        Paquetes
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        Preguntas frecuentes
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        Terminos y condiciones
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar__social-media">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon icon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon icon-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </footer>
     <!-- your content here... -->
     <!-- <script src="js/scripts.js"></script> -->
