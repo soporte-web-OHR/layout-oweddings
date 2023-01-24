@@ -1,0 +1,30 @@
+@import './../base/_variables'
+
+.info-section
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-auto-flow: row
+    margin-block: 16px 0px
+    column-gap: 8px
+    &__image
+        justify-content: center
+        align-items: center
+        grid-column: 1 / 2
+        grid-row: 1 / 4
+        img
+            object-fit: cover
+            height: 348px
+            width: 116px
+    &__title
+        grid-column: 2 / 4
+        grid-row: 1 / 2
+    &__description
+        padding-block: 8px 0
+        color: $outer-space
+        font-family: $font-roboto
+        font-size: 12px
+        font-weight: 100
+        letter-spacing: 0
+        line-height: 16px
+        grid-column: 2 / 4
+        grid-row: 2 / 4

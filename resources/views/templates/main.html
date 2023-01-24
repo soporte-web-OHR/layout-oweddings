@@ -28,12 +28,12 @@
         <nav class="header__navbar">
             <ul class="header__navbar__container">
                 <li class="header__navbar__menu">
-                    <a href="javascript:void(0);" onclick="myFunction()">
+                    <button href="javascript:void(0);" onclick="myFunction()">
                         <i class="icon icon-menu"></i>
-                    </a>
+                    </button>
                 </li>
                 <li class="header__navbar__logo">
-                    <a href="/" >
+                    <a href="/">
                         <picture>
                             <source srcset="/resources/assets/img/oweddings/horizontal/color-blanco.svg" />
                             <img src="/resources/assets/img/oweddings/horizontal/color-blanco.svg" alt="o-weddings-logo"
@@ -42,10 +42,10 @@
                     </a>
                 </li>
                 <li class="header__navbar__login">
-                    <a href="#login" class="btn btn__login">
+                    <button href="#login" class="btn btn__login">
                         Entrar
                         <i class="icon icon-exit"></i>
-                    </a>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -67,7 +67,8 @@
         <section>
             <div class="header-wrap__subtitle">
                 <h2 class="header-subtitle">El lugar ideal</h2>
-                <p class="header-wrap__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="header-wrap__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
                     bibendum
@@ -84,9 +85,9 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="content-wrap">
         <section>
-            <div class="card-slider">
+            <div class="card__slider">
                 <div class="card__container">
                     <article class="card__item">
                         <!-- 
@@ -96,7 +97,8 @@
                         -->
                         <main>
                             <section class="card__item__content">
-                                <a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun">
+                                <a class="card__item__image"
+                                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun">
                                     <picture>
                                         <source
                                             srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
@@ -124,7 +126,8 @@
                         -->
                         <main>
                             <section class="card__item__content">
-                                <a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun">
+                                <a class="card__item__image"
+                                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun">
                                     <picture>
                                         <source
                                             srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
@@ -152,13 +155,14 @@
             </div>
         </section>
         <section>
-            <div>
-                <picture>
+            <div class="info-section">
+                <picture class="info-section__image">
                     <source srcset="/resources/assets/img/home/seo-home.webp" />
                     <img src="/resources/assets/img/home/seo-home.webp" />
                 </picture>
-                <h3>O WEDDINGS, LIVE, LOVE & REMEMBER</h3>
-                <p>Un beso al atardecer, el mar turquesa como testigo del momento, el viento cálido en la piel y la
+                <h3 class="info-section__title section-title">O WEDDINGS, LIVE, LOVE & REMEMBER</h3>
+                <p class="info-section__description">Un beso al atardecer, el mar turquesa como testigo del momento, el
+                    viento cálido en la piel y la
                     promesa de una nueva vida juntos... Déjanos ayudarte a crear ese momento irrepetible que recordarás
                     por siempre. Oasis Hotels & Resorts te presenta O Weddings, para que dejes en nuestras manos todo el
                     estrés de organizar tu boda y puedas saborear cada minuto de ese momento tan especial. Contamos con
@@ -171,7 +175,7 @@
         </section>
         <section>
             <div>
-                <h3><span>PAQUETES </span>DE BODA</h3>
+                <h3 class="section-title"><span>PAQUETES </span>DE BODA</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
                     bibendum at va</p>
@@ -238,84 +242,98 @@
             </section>
         </section>
         <section>
-            <div>
-                <h3>GALERÍA <span>WEDDINGS</span></h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada.
-                    Scelerisque.
-                    In dictum non consectetur. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Eget lorem
-                    dolor sed Viverra ipsum
-                </p>
-            </div>
-            <div>
-                <picture>
-                    <source srcset="/resources/assets/img/home/galeria/1-thumb.webp" />
-                    <img src="/resources/assets/img/home/galeria/1-thumb.webp" />
-                </picture>
-                <picture>
-                    <source srcset="/resources/assets/img/home/galeria/2-thumb.webp" />
-                    <img src="/resources/assets/img/home/galeria/2-thumb.webp" />
-                </picture>
-                <picture>
-                    <source srcset="/resources/assets/img/home/galeria/3-thumb.webp" />
-                    <img src="/resources/assets/img/home/galeria/3-thumb.webp" />
-                </picture>
-                <picture>
-                    <source srcset="/resources/assets/img/home/galeria/3.webp" />
-                    <img src="/resources/assets/img/home/galeria/3.webp" />
-                </picture>
-                <picture>
-                    <source srcset="/resources/assets/img/home/galeria/cover-video.webp" />
-                    <img src="/resources/assets/img/home/galeria/cover-video.webp" />
-                </picture>
+            <div class="gallery__wrap">
+                <div class="gallery__section">
+                    <h3 class="gallery__title section-title">GALERÍA <span>WEDDINGS</span></h3>
+                    <p class="gallery__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada.
+                        Scelerisque.
+                        In dictum non consectetur. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Eget
+                        lorem
+                        dolor sed Viverra ipsum
+                    </p>
+                </div>
+                <div class="gallery__container">
+                    <picture class="img1">
+                        <source srcset="/resources/assets/img/home/galeria/1-thumb.webp" />
+                        <img class="gallery__container__image" src="/resources/assets/img/home/galeria/1-thumb.webp"
+                            width="96px" height="166px" />
+                    </picture>
+                    <picture class="img2">
+                        <source srcset="/resources/assets/img/home/galeria/2-thumb.webp" />
+                        <img class="gallery__container__image" src="/resources/assets/img/home/galeria/2-thumb.webp"
+                            width="56px" height="80px" />
+                    </picture>
+                    <picture class="img3">
+                        <source srcset="/resources/assets/img/home/galeria/3-thumb.webp" />
+                        <img class="gallery__container__image" src="/resources/assets/img/home/galeria/3-thumb.webp"
+                            width="56px" height="80px" />
+                    </picture>
+                    <picture class="img4">
+                        <source srcset="/resources/assets/img/home/galeria/3.webp" />
+                        <img class="gallery__container__image" src="/resources/assets/img/home/galeria/3.webp"
+                            width="116px" height="80px" />
+                    </picture>
+                    <picture class="img5">
+                        <source srcset="/resources/assets/img/home/galeria/cover-video.webp" />
+                        <img class="gallery__container__image" src="/resources/assets/img/home/galeria/cover-video.webp"
+                            width="216px" height="144px" />
+                    </picture>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer__container">
         <picture>
             <source srcset="/resources/assets/img/oweddings/horizontal/color.svg" />
-            <img src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo" height="26px"
-                width="70px" />
+            <img class="footer__logo" src="/resources/assets/img/oweddings/horizontal/color.svg" alt="o-weddings-logo"
+                height="26px" width="70px" />
         </picture>
-        <nav class="navbar__footer">
-            <ul>
-                <li>
+        <nav>
+            <ul class="footer__navbar__pages">
+                <li class="right-link">
                     <a href="javascript:void(0);">
                         ¿Cómo funciona?
                     </a>
                 </li>
-                <li>
+                <li class="left-link">
                     <a href="javascript:void(0);">
                         Paquetes
                     </a>
                 </li>
-                <li>
+                <li class="right-link">
                     <a href="javascript:void(0);">
                         Preguntas frecuentes
                     </a>
                 </li>
-                <li>
+                <li class="left-link">
                     <a href="javascript:void(0);">
                         Terminos y condiciones
                     </a>
                 </li>
+                <li class="oasishoteles-link">
+                    <a href="javascript:void(0);">
+                        oasishoteles.com
+                    </a>
+                </li>
             </ul>
         </nav>
-        <nav class="navbar__social-media">
-            <ul>
+        <nav>
+            <ul class="footer__navbar__social-media">
                 <li>
-                    <a href="javascript:void(0);">
+                    <a class="footer__navbar__social-media__item" href="javascript:void(0);">
                         <i class="icon icon-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);">
+                    <a class="footer__navbar__social-media__item" href="javascript:void(0);">
                         <i class="icon icon-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);">
+                    <a class="footer__navbar__social-media__item" href="javascript:void(0);">
                         <i class="icon icon-instagram"></i>
                     </a>
                 </li>
