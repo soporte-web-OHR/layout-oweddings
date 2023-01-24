@@ -154,6 +154,7 @@ h2 {
 
 .header-title {
   font-family: "Roboto";
+  font-weight: 600;
   font-size: 34px;
   letter-spacing: 0;
   line-height: 40px;
@@ -238,6 +239,7 @@ h2 {
 }
 .header-wrap__register__label {
   font-family: "Roboto";
+  font-weight: 600;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
@@ -252,7 +254,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-block: 32px;
+  margin-block: 16px;
   margin-inline: 32px;
   color: #FFFFFF;
 }
@@ -411,22 +413,85 @@ h2 {
   text-align: center;
 }
 
-.card__slider {
+.slider {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.card__container {
+.slider__card__container {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
-.card__item {
+.slider__card__item {
   display: flex;
-  height: 120px;
   width: 180px;
 }
-.card__item__image img {
+.slider__card__item__cover {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.slider__card__item__cover__gradient {
+  position: relative;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: 1;
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  background: -o-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.slider__card__item__cover__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #FFFFFF;
+  transform: translateY(106px);
+}
+.slider__card__item__title {
+  position: relative;
+  font-family: "Jost";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+}
+.slider__card__item__view-more {
+  position: relative;
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 13px;
+  text-align: center;
+}
+.slider__card__item__image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.slider__arrow__container {
+  display: flex;
+  gap: 8px;
+  color: rgba(68, 68, 68, 0.4);
+}
+.slider__arrow__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(68, 68, 68, 0.4);
 }
 
 .info-section {

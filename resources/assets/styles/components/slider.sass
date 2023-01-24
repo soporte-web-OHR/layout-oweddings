@@ -1,18 +1,100 @@
 @import './../base/_variables'
 
-.card
-    &__slider
-        display: flex
-    &__container
-        display: flex
-        gap: 8px
-    &__item
-        display: flex
-        height: 120px
-        width: 180px
-        &__image
-            //position: relative
-            img
+.slider
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__card
+        &__container
+            display: flex
+            gap: 10px
+        &__item
+            display: flex
+            width: 180px
+            &__cover
+                display: flex
+                flex-wrap: wrap-reverse
+                justify-content: center
+                align-items: center
+                &__gradient
+                    position: relative
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+                    z-index: 1
+                    //background: -webkit-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+                    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+                    background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+                    background: -o-linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+                    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+                &__text
+                    position: relative
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    gap: 4px
+                    color: $white
+                    transform: translateY(106px)
+            &__title
+                position: relative
+                font-family: $font-jost
+                font-size: 12px
+                letter-spacing: 0
+                line-height: 14px
+                text-align: center
+            &__view-more
+                position: relative
+                font-family: $font-jost
+                font-size: 12px
+                font-weight: 500
+                letter-spacing: 0
+                line-height: 13px
+                text-align: center
+            &__image
+                position: relative
                 height: 100%
                 width: 100%
                 object-fit: cover
+                border-radius: 4px
+                background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+                //background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+    &__arrow
+        &__container
+            display: flex
+            gap: 8px
+            color: rgba(68, 68, 68, .4)
+        &__item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            border: 1px solid rgba(68, 68, 68, .4)
+
+    // &__slider
+    //     display: flex
+    //     flex-direction: column
+    //     justify-content: center
+    //     align-items: center
+    // &__container
+    //     display: flex
+    //     gap: 8px
+    // &__item
+    //     display: flex
+    //     &__image
+    //         //position: relative
+    //         img
+    //             height: 100%
+    //             width: 100%
+    //             object-fit: cover
+    // &__arrow
+    //     &__item
+    //         display: flex
+    //         justify-content: center
+    //         align-items: center
+    //         width: 30px
+    //         height: 30px
+    //         background: #000000
