@@ -200,6 +200,10 @@ h2 {
   background-size: cover;
   height: 800px;
 }
+.header__navbar {
+  position: fixed;
+  width: 100%;
+}
 .header__navbar__container {
   display: flex;
   justify-content: space-between;
@@ -209,13 +213,14 @@ h2 {
   color: #FFFFFF;
 }
 .header__navbar__menu {
-  font-size: 32px;
+  font-size: 40px;
 }
 .header__navbar__logo {
-  align-self: flex-start;
+  flex: 1;
+  margin-inline: 24px 0px;
 }
 .header-wrap {
-  padding-top: 210px;
+  padding-top: 550px;
 }
 .header-wrap__title__container {
   display: flex;
@@ -313,6 +318,7 @@ h2 {
   display: flex;
   gap: 4px;
   font-size: 14px;
+  margin-block: 12px 0px;
 }
 .footer__navbar__social-media__item {
   display: flex;
@@ -401,6 +407,7 @@ h2 {
   padding-inline: 16px;
   background-color: #FF7E7E;
   color: #FFFFFF;
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -509,6 +516,9 @@ h2 {
   border: 1px solid rgba(68, 68, 68, 0.4);
 }
 
+.section__header {
+  background: rgba(255, 126, 126, 0.3);
+}
 .section__wrap {
   margin-bottom: 36px;
 }
