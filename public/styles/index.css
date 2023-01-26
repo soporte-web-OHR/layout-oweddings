@@ -209,6 +209,8 @@ h2 {
   padding-block: 0px 24px;
   background-image: url("/resources/assets/img/home/header-home-estatico.webp");
   background-size: cover;
+  background-position: 30% center;
+  background-repeat: no-repeat;
   height: 872px;
 }
 .header__navbar {
@@ -220,7 +222,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 40px 24px;
+  margin-block: 40px 0px;
   padding-inline: 16px;
   color: #FFFFFF;
 }
@@ -255,6 +257,7 @@ h2 {
   align-items: center;
   margin-block: 10px 0;
   margin-inline: 32px;
+  padding-block-end: 56px;
   color: #FFFFFF;
 }
 .header__register__label {
@@ -265,9 +268,6 @@ h2 {
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
-}
-.header__register__input {
-  width: 363px;
 }
 .header__subtitle {
   display: flex;
@@ -341,18 +341,10 @@ h2 {
   background: rgba(68, 68, 68, 0.2666666667);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-block: 60px 20px;
-  padding-inline: 12px;
-}
-.navbar__menu {
-  font-size: 32px;
-}
-.navbar__logo {
-  align-self: flex-start;
+.navbar--fixed {
+  margin-block: unset;
+  color: #444444;
+  background: #FFFFFF;
 }
 
 .gallery__wrap {
@@ -432,6 +424,7 @@ h2 {
   line-height: 18px;
 }
 .btn__register {
+  position: fixed;
   padding: 12px;
   border-radius: 4px;
   background-color: #444444;
@@ -440,7 +433,10 @@ h2 {
   font-size: 12px;
   letter-spacing: 0;
   line-height: 18px;
+  width: 366px;
   text-align: center;
+  bottom: 76px;
+  z-index: 1;
 }
 
 .slider {
@@ -455,7 +451,6 @@ h2 {
   padding-block: 12px 0px;
   border-radius: 2px;
   background: #FFFFFF;
-  box-shadow: 0 -64px 34px 0 rgba(0, 0, 0, 0.2);
 }
 .slider__card__container {
   display: flex;
