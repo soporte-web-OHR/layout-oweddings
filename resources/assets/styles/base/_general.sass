@@ -18,7 +18,7 @@
     text-align: center
 
 .section-title
-    font-family: "Times New Roman"
+    font-family: $font-times
     font-size: 20px
     font-weight: bold
     letter-spacing: 0
@@ -32,9 +32,16 @@
         letter-spacing: 0
         line-height: 16px
 
-.content-wrap
-    display: flex
-    flex-direction: column
-    padding-block: 16px
-    padding-inline: 25px
-    box-shadow: 0 -23px 34px 0 rgba(0,0,0,0.2)
+.wrapper
+    &__section
+        margin-bottom: 36px
+        padding: 0px 24px
+        &__first
+            position: relative
+            padding: 0px 16px
+            transform: translateY(-32px)
+    &__content
+        display: flex
+        flex-direction: column
+        box-shadow: 0 -23px 34px 0 rgba(0,0,0,0.2)
+

@@ -2,69 +2,72 @@
 
 .header
     &--home
-        //position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        padding-block: 0px 24px
         background-image: url("/resources/assets/img/home/header-home-estatico.webp")
-        //width: 1620px
         background-size: cover
-        height: 800px
+        height: 872px
     &__navbar
         position: fixed
         width: 100%
+        z-index: 2
         &__container
             display: flex
             justify-content: space-between
             align-items: center
-            padding-block: 48px 24px
+            padding-block: 40px 24px
             padding-inline: 16px
             color: $white
         &__menu
             font-size: 40px
+            padding-top: 6px
         &__logo
             flex: 1
             margin-inline: 24px 0px
-    &-wrap
-        padding-top: 550px
-        &__title
-            &__container
-                display: flex
-                flex-direction: column
-                justify-content: center
-                align-items: center
-                color: $white
-            &__subtitle
-                font-family: $font-roboto
-                font-size: 16px
-                letter-spacing: 0
-                line-height: 17px
-                text-align: center
-        &__register
-            &__container
-                display: flex
-                flex-direction: column
-                justify-content: center
-                gap: 16px
-                align-items: center
-                margin-block: 10px 0
-                margin-inline: 32px
-                color: $white
-            &__label
-                font-family: $font-roboto
-                font-weight: 600
-                font-size: 16px
-                font-weight: 500
-                letter-spacing: 0
-                line-height: 17px
-                text-align: center
-            &__input
-                width: 363px
-        &__subtitle
+    &__title
+        &__container
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            margin-block: 16px
+            color: $white
+            gap: 4px
+        &__content
+            font-family: $font-roboto
+            font-size: 16px
+            letter-spacing: 0
+            line-height: 17px
+            text-align: center
+    &__register
+        &__container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 16px
+            align-items: center
+            margin-block: 10px 0
             margin-inline: 32px
             color: $white
+        &__label
+            font-family: $font-roboto
+            font-weight: 600
+            font-size: 16px
+            font-weight: 500
+            letter-spacing: 0
+            line-height: 17px
+            text-align: center
+        &__input
+            width: 363px
+    &__subtitle
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-block: 16px 48px
+        margin-inline: 32px
+        color: $white
         &__paragraph
             color: $white
             font-family: $font-roboto

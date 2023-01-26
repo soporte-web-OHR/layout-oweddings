@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <header class="header header--home">
+    <header>
         <nav class="header__navbar">
             <ul class="header__navbar__container">
                 <li class="header__navbar__menu">
@@ -49,13 +49,13 @@
                 </li>
             </ul>
         </nav>
-        <section class="header-wrap">
-            <div class="header-wrap__title__container">
+        <section class="header--home">
+            <div class="header__title__container">
                 <h1 class="header-title">Planea la mejor Boda</h1>
-                <span class="header-wrap__subtitle">Llega a las parejas de hoy y reserva más bodas.</span>
+                <p class="header__title__content">Llega a las parejas de hoy y reserva más bodas.</p>
             </div>
-            <div class="header-wrap__register__container">
-                <label class="header-wrap__register__label">¡Registrate!</label>
+            <div class="header__register__container">
+                <label class="header__register__label">¡Registrate!</label>
                 <button class="btn btn--block btn__input">
                     Nombre*
                 </button>
@@ -65,29 +65,18 @@
             </div>
         </section>
         <section class="section__header">
-            <div class="header-wrap__subtitle">
+            <div class="header__subtitle">
                 <h2 class="header-subtitle">El lugar ideal</h2>
-                <p class="header-wrap__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-                    bibendum
-                    at varius vel. Mauris vitae ultricies leo integer malesuada nunc vel risus. Sit amet aliquam id diam
-                    maecenas ultricies. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit.
-                    Aliquam ut porttitor leo a diam sollicitudin. Elementum pulvinar etiam non quam. At tellus at urna
-                    condimentum. Morbi tincidunt ornare massa eget egestas purus. Erat pellentesque adipiscing commodo
-                    elit
-                    at imperdiet dui accumsan. Morbi quis commodo odio aenean sed adipiscing. At lectus urna duis
-                    convallis
-                    convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient montes nascetur ridiculus mus mauris
-                    vitae ultricies.
-                </p>
+                <p class="header__subtitle__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Netus et malesuada fames ac turpis egestas integer. Augue ut lectus arcu
+                    bibendum at varius vel.Mauris vitae ultricies leo integer malesuada nunc vel risus.
             </div>
         </section>
     </header>
-    <main class="content-wrap">
-        <section class="section__wrap">
-            <div class="slider">
+    <main class="wrapper__content">
+        <section class="wrapper__section__first">
+            <div class="slider slider--shadow">
                 <div class="slider__card__container">
                     <article class="slider__card__item">
                         <!-- 
@@ -99,21 +88,19 @@
                             <section class="slider__card__item__content">
                                 <a class="slider__card__item__link"
                                     href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">
-
                                     <div class="slider__card__item__cover">
+                                        <picture class="slider__card__item__image__container">
+                                            <source
+                                                srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
+                                            <img class="slider__card__item__image__background"
+                                                src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
+                                        </picture>
                                         <div class="slider__card__item__gradient"></div>
                                         <div class="slider__card__item__text-container">
                                             <h4 class="slider__card__item__title">GRAND OASIS CANCUN</h4>
                                             <span class="slider__card__item__view-more">Ver Hotel</span>
                                         </div>
                                     </div>
-                                    <!-- <picture>
-                                        <source
-                                            srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                        <img class="slider__card__item__image"
-                                            src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                    </picture> -->
-
                                 </a>
                             </section>
                         </main>
@@ -136,18 +123,18 @@
                                 <a class="slider__card__item__link"
                                     href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">
                                     <div class="slider__card__item__cover">
+                                        <picture class="slider__card__item__image__container">
+                                            <source
+                                                srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
+                                            <img class="slider__card__item__image__background"
+                                                src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
+                                        </picture>
                                         <div class="slider__card__item__gradient"></div>
                                         <div class="slider__card__item__text-container">
                                             <h4 class="slider__card__item__title">GRAND OASIS CANCUN</h4>
                                             <span class="slider__card__item__view-more">Ver Hotel</span>
                                         </div>
                                     </div>
-                                    <!-- <picture>
-                                        <source
-                                            srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                        <img class="slider__card__item__image"
-                                            src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                    </picture> -->
                                 </a>
                             </section>
                         </main>
@@ -166,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section class="section__wrap">
+        <section class="wrapper__section">
             <div class="section__information">
                 <picture class="section__information__image">
                     <source srcset="/resources/assets/img/home/seo-home.webp" />
@@ -185,7 +172,7 @@
                 </p>
             </div>
         </section>
-        <section class="section__wrap">
+        <section class="wrapper__section">
             <div class="section__packages">
                 <h3 class="section__title gallery__title section-title"><span>PAQUETES </span>DE BODA</h3>
                 <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -203,20 +190,20 @@
                         -->
                         <main>
                             <section class="slider__card__item__content">
-                                <a class="slider__card__item__link" href="javascript:void(0);" target="_blank">
-                                    <div class="slider__card__item__cover2">
+                                <a class="slider__card__item__link"
+                                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">
+                                    <div class="slider__card__item__cover">
+                                        <picture class="slider__card__item__image__container">
+                                            <source srcset="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
+                                            <img class="slider__card__item__image__background"
+                                                src="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
+                                        </picture>
                                         <div class="slider__card__item__gradient"></div>
                                         <div class="slider__card__item__text-container">
-                                            <span class="slider__card__item__title">O CEREMONY</span>
+                                            <h4 class="slider__card__item__title">O CEREMONY</h4>
                                             <span class="slider__card__item__view-more">6 invitados</span>
                                         </div>
                                     </div>
-                                    <!-- <picture>
-                                    <source
-                                        srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                    <img class="slider__card__item__image"
-                                        src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                </picture> -->
                                 </a>
                             </section>
                         </main>
@@ -236,20 +223,20 @@
                         -->
                         <main>
                             <section class="slider__card__item__content">
-                                <a class="slider__card__item__link" href="javascript:void(0);" target="_blank">
-                                    <div class="slider__card__item__cover2">
+                                <a class="slider__card__item__link"
+                                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">
+                                    <div class="slider__card__item__cover">
+                                        <picture class="slider__card__item__image__container">
+                                            <source srcset="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
+                                            <img class="slider__card__item__image__background"
+                                                src="/resources/assets/img/galeria-locaciones/7-thumb.webp" />
+                                        </picture>
                                         <div class="slider__card__item__gradient"></div>
                                         <div class="slider__card__item__text-container">
-                                            <span class="slider__card__item__title">O CEREMONY</span>
+                                            <h4 class="slider__card__item__title">O CEREMONY</h4>
                                             <span class="slider__card__item__view-more">6 invitados</span>
                                         </div>
                                     </div>
-                                    <!-- <picture>
-                                    <source
-                                        srcset="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                    <img class="slider__card__item__image"
-                                        src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp" />
-                                </picture> -->
                                 </a>
                             </section>
                         </main>
@@ -268,13 +255,14 @@
                 </div>
             </div>
         </section>
-        <section class="section__wrap">
+        <section class="wrapper__section">
             <div class="gallery__wrap">
                 <div class="gallery__section">
                     <h3 class="gallery__title section-title">GALERÍA <span>WEDDINGS</span></h3>
                     <p class="gallery__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada.
+                        labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et
+                        malesuada.
                         Scelerisque.
                         <br><br>
                         In dictum non consectetur. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Eget
