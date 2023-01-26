@@ -347,6 +347,25 @@ h2 {
   background: #FFFFFF;
 }
 
+.menu__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FF7E7E;
+}
+.menu__window {
+  display: flex;
+  flex-direction: column;
+  margin-block: 64px 0px;
+  margin-inline: 16px;
+  gap: 8px;
+}
+.menu__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .gallery__wrap {
   display: flex;
   margin-block: 16px 0px;
@@ -437,6 +456,11 @@ h2 {
   text-align: center;
   bottom: 76px;
   z-index: 1;
+}
+.btn__close {
+  color: #FFFFFF;
+  font-size: 34px;
+  font-weight: 600;
 }
 
 .slider {
