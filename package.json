@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node-sass": "sass --watch resources/assets/styles/index.sass public/styles/index.css"
+    "node-sass": "sass --watch --load-path=node_modules resources/assets/styles/index.sass public/styles/index.css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JJMPWizard/layout-oweddings#readme",
   "dependencies": {
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "sass-flexbox-grid-oasis": "^1.0.0"
   }
 }
