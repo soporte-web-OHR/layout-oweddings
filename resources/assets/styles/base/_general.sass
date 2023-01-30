@@ -1,4 +1,5 @@
 @import './../base/_variables'
+@import 'sass-flexbox-grid-oasis/main.sass'
 
 .header-title
     font-family: $font-roboto
@@ -31,6 +32,15 @@
         //font-weight: 300
         letter-spacing: 0
         line-height: 16px
+
+.hidden
+    display: none
+    &--mobile
+        @include media("<md")
+            display: none
+    &--desktop
+        @include media(">md")
+            display: none
 
 .wrapper
     &__section

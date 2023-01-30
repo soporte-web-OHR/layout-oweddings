@@ -1,4 +1,5 @@
 @import './../base/_variables'
+@import 'sass-flexbox-grid-oasis/main.sass'
 
 .header
     &--home
@@ -12,68 +13,143 @@
         background-repeat: no-repeat
         height: 872px
     &__navbar
-        position: fixed
-        width: 100%
-        z-index: 2
+        // position: fixed
+        // width: 100%
+        // z-index: 2
         &__container
-            display: flex
-            justify-content: space-between
-            align-items: center
-            margin-block: 40px 0px
+            // display: flex
+            // align-items: center
+            margin-block-start: 32px
             padding-inline: 16px
             color: $white
+            //width: 100%
+            @include media('>md')
+                padding-inline: 64px
+        //         margin-block-start: 16px
+        //     &--fixed
+        //         position: fixed
+        //         color: $outer-space
+        //         background: $white
+        //         width: 100% !important
         &__menu
-            font-size: 40px
-            padding-top: 6px
-        &__logo
-            flex: 1
-            margin-inline: 24px 0px
-    &__title
-        &__container
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            color: $white
-            gap: 4px
-        &__content
-            font-family: $font-roboto
-            font-size: 16px
-            letter-spacing: 0
-            line-height: 17px
-            text-align: center
-    &__register
-        &__container
-            display: flex
-            flex-direction: column
-            justify-content: center
-            gap: 16px
-            align-items: center
-            margin-block: 10px 0
-            margin-inline: 32px
-            padding-block-end: 56px
-            color: $white
-        &__label
-            font-family: $font-roboto
-            font-weight: 600
-            font-size: 16px
-            font-weight: 500
-            letter-spacing: 0
-            line-height: 17px
-            text-align: center
-    &__subtitle
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        padding-block: 16px 48px
-        margin-inline: 32px
-        color: $white
-        &__paragraph
-            color: $white
-            font-family: $font-roboto
-            font-size: 12px
-            font-weight: 300
-            letter-spacing: 0
-            line-height: 13px
-            text-align: center
+            &__container
+                display: flex
+                align-items: center
+                //gap: 64px
+                //justify-content: flex-end
+            &__item
+                margin-inline-end: 8px
+                font-family: $font-roboto
+                font-size: 12px
+                font-weight: bold
+                letter-spacing: 0
+                line-height: 14px
+                text-align: center
+
+        //     // &__head
+        //     //     display: none
+        // &__login
+        //     &__container
+        //         display: flex
+        //         justify-content: flex-end
+        //         align-items: center
+        //         @include media('>md')
+        //             justify-content: flex-start
+        //             align-items: center
+
+        &__link
+            display: none
+            @include media('>md')
+                    display: block
+            &__container
+                display: none
+                @include media('>md')
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    gap: 64px
+            &__head
+                display: flex
+                @include media('>md')
+                    display: none
+            &__item
+                font-family: $font-roboto
+                font-size: 12px
+                font-weight: bold
+                letter-spacing: 0
+                line-height: 14px
+                text-align: center
+                // &:after
+                //     content: ''
+                //     display: block
+                //     border-bottom: 1px solid #444
+                //     min-width: 60px
+                //     height: 1px
+                //     position: absolute
+                //     left: 50%
+                //     bottom: -10px
+                //     -webkit-transform: translateX(-50%)
+                //     -moz-transform: translateX(-50%)
+                //     -ms-transform: translateX(-50%)
+                //     -o-transform: translateX(-50%)
+                //     transform: translateX(-50%)
+    /////////////////////////
+    //     position: fixed
+    //     width: 100%
+    //     z-index: 2
+
+    //     &__menu
+    //         font-size: 40px
+    //         padding-top: 6px
+    //     &__logo
+    //         flex: 1
+    //         margin-inline: 24px 0px
+    // &__title
+    //     &__container
+    //         display: flex
+    //         flex-direction: column
+    //         justify-content: center
+    //         align-items: center
+    //         color: $white
+    //         gap: 4px
+    //     &__content
+    //         font-family: $font-roboto
+    //         font-size: 16px
+    //         letter-spacing: 0
+    //         line-height: 17px
+    //         text-align: center
+    // &__register
+    //     &__container
+    //         display: flex
+    //         flex-direction: column
+    //         justify-content: center
+    //         gap: 16px
+    //         align-items: center
+    //         margin-block: 10px 0
+    //         margin-inline: 32px
+    //         padding-block-end: 56px
+    //         color: $white
+    //     &__label
+    //         font-family: $font-roboto
+    //         font-weight: 600
+    //         font-size: 16px
+    //         font-weight: 500
+    //         letter-spacing: 0
+    //         line-height: 17px
+    //         text-align: center
+    // &__subtitle
+    //     display: flex
+    //     flex-direction: column
+    //     justify-content: center
+    //     align-items: center
+    //     padding-block: 16px 48px
+    //     margin-inline: 32px
+    //     color: $white
+    //     &__paragraph
+    //         color: $white
+    //         font-family: $font-roboto
+    //         font-size: 12px
+    //         font-weight: 300
+    //         letter-spacing: 0
+    //         line-height: 13px
+    //         text-align: center

@@ -25,6 +25,7 @@
 
 <body style="background:lightblue;">
     <header>
+        <!-- 
         <nav class="header__navbar">
             <ul class="header__navbar__container navbar--fixed">
                 <li class="header__navbar__menu">
@@ -41,6 +42,11 @@
                         </picture>
                     </a>
                 </li>
+                <li>
+                    <ul>
+                        
+                    </ul>
+                </li>
                 <li class="header__navbar__login">
                     <button href="#login" class="btn btn__login">
                         Entrar
@@ -48,7 +54,92 @@
                     </button>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+        <div class="header__navbar__container">
+            <div class="row middle-xs">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="row start-xs">
+                        <div class="header__navbar__menu__container">
+                            <div class="header__navbar__menu__item hidden--desktop">
+                                <button class="btn btn__open" href="javascript:void(0);" onclick="myFunction()">
+                                    <i class="icon icon-menu"></i>
+                                </button>
+                            </div>
+                            <div class="header__navbar__menu__item">
+                                <a href="/">
+                                    <picture>
+                                        <source srcset="/resources/assets/img/oweddings/horizontal/color.svg" />
+                                        <img src="/resources/assets/img/oweddings/horizontal/color-blanco.svg"
+                                            alt="o-weddings-logo" height="26px" width="70px" />
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="row end-xs">
+                        <div class="header__navbar__link__container">
+                            <div class="header__navbar__link__head">
+                                <picture>
+                                    <source srcset="/resources/assets/img/oweddings/horizontal/color-blanco.svg">
+                                    <img src="/resources/assets/img/oweddings/horizontal/color-blanco.svg" width="88px"
+                                        height="32px">
+                                </picture>
+                                <button class="btn btn__close icon icon-cross"></button>
+                            </div>
+                            <nav class="header__navbar__link">
+                                <ul class="header__navbar__link__container">
+                                    <li class="header__navbar__link__item hidden--desktop">
+                                        MENÚ
+                                    </li>
+                                    <li class="header__navbar__link__item">
+                                        <a>
+                                            LUGARES
+                                        </a>
+                                    </li>
+                                    <li class="header__navbar__link__item">
+                                        <a>
+                                            PAQUETES
+                                        </a>
+                                    </li>
+                                    <li class="header__navbar__link__item">
+                                        <a>
+                                            GALERÍA
+                                        </a>
+                                    </li>
+                                    <li class="header__navbar__link__item">
+                                        <a>
+                                            ¿CÓMO FUNCIONA?
+                                        </a>
+                                    </li>
+                                    <li class="header__navbar__link__item">
+                                        <a>
+                                            FAQS
+                                        </a>
+                                    </li>
+                                    <li class="header__navbar__link__item">
+                                        <a>
+                                            IDIOMA<span class="icon icon-chevron-down"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <div class="row end-xs">
+                        <div class="header__navbar__login__container">
+                            <button class="btn btn__login" href="#login">
+                                Entrar
+                                <i class="icon icon-exit"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- your content here... -->
     <!-- <script src="js/scripts.js"></script> -->
