@@ -1,0 +1,65 @@
+@import './../base/_variables'
+@import 'sass-flexbox-grid-oasis/main.sass'
+.hero
+    &--background
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        padding-block: 0px 24px
+        background-image: url("/resources/assets/img/home/header-home-estatico.webp")
+        background-size: cover
+        background-position: 30%center
+        background-repeat: no-repeat
+        height: 872px
+    &__main
+        &__container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            color: $white
+        &__title
+            font-family: $font-roboto
+            font-weight: 600
+            font-size: 34px
+            letter-spacing: 0
+            line-height: 40px
+            color: $white
+            text-align: center
+        &__subtitle
+    &__secondary
+        &__container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-block: 16px
+            margin-inline: 32px
+        &__title
+            font-family: $font-beauty
+            font-size: 34px
+            letter-spacing: 0
+            line-height: 36px
+            color: inherit
+            text-align: center
+            color: $white
+        &__paragraph
+            font-family: $font-roboto
+            font-size: 12px
+            font-weight: 300
+            letter-spacing: 0
+            line-height: 13px
+            text-align: center
+            color: $white
+    &__form
+        &__window
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+        &__container
+            display: flex
+    //     &__item
+        &__input
+            box-sizing: border-box
+            border: 1px solid $white
+            border-radius: 4px

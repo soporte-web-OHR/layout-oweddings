@@ -1,22 +1,22 @@
 @import './../base/_variables'
 @import 'sass-flexbox-grid-oasis/main.sass'
 
-.header-title
-    font-family: $font-roboto
-    font-weight: 600
-    font-size: 34px
-    letter-spacing: 0
-    line-height: 40px
-    text-align: center
-    color: $white
+// .header-title
+//     font-family: $font-roboto
+//     font-weight: 600
+//     font-size: 34px
+//     letter-spacing: 0
+//     line-height: 40px
+//     text-align: center
+//     color: $white
 
-.header-subtitle
-    color: $white
-    font-family: $font-beauty
-    font-size: 34px
-    letter-spacing: 0
-    line-height: 37px
-    text-align: center
+// .header-subtitle
+//     color: $white
+//     font-family: $font-beauty
+//     font-size: 34px
+//     letter-spacing: 0
+//     line-height: 37px
+//     text-align: center
 
 .section-title
     font-family: $font-times
@@ -36,7 +36,7 @@
 .hidden
     display: none
     &--mobile
-        @include media("<md")
+        @include media("<=md")
             display: none
     &--desktop
         @include media(">md")

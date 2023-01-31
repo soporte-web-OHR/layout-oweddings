@@ -1,8 +1,122 @@
 @import './../base/variables'
+@import 'sass-flexbox-grid-oasis/main.sass'
 
 .navbar
-    &--fixed
-        margin-block: unset
-        color: $outer-space
-        background: $white 
-        //border-block-end: 1px solid $outer-space
+    &__container
+        margin-block-start: 32px
+        padding-inline: 16px
+        color: $white
+        +media('>md')
+            margin-block-start: 8px
+            padding-inline: 64px
+            &--fixed
+                position: fixed
+                width: 100%
+                padding: 0px 16px
+                color: $outer-space
+                background: $white
+                +media('>md')
+                    padding: 0px 64px
+    &__menu
+        &__container
+            display: flex
+            align-items: center
+        &__item
+            margin-inline-end: 8px
+            font-family: $font-roboto
+            font-size: 12px
+            font-weight: bold
+            letter-spacing: 0
+            line-height: 14px
+            text-align: center
+    &__login
+        &__container
+            margin-left: 0px
+            +media('>md')
+                margin-left: 16px
+    &__link
+        &__window
+            display: none
+            +media('>md')
+                display: block
+            &--open
+                position: absolute
+                background: $very-light-red
+                padding: 64px 0px 0px
+                width: 100%
+                height: 100%
+                top: 0
+                right: 0
+                +media('>md')
+                    display: none
+        &__container
+            +media('>md')
+                display: flex
+                align-items: center
+                justify-content: center
+                border-right: 1px solid $white
+                padding: 8px 18px 8px 0px
+        &__list
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+                //gap: 6px
+            margin-block-start: 32px
+            +media('>md')
+                flex-direction: row
+                align-items: center
+                justify-content: flex-end
+                margin-block-start: unset
+                padding-block-start: 8px
+                gap: 64px
+        &__head
+            display: flex
+            justify-content: space-between
+            align-items: center
+            color: $white
+            padding-inline: 16px 16px
+            +media('>md')
+                display: none
+        &__item
+            padding: 4px 0px 4px 24px
+            &__title
+                font-family: $font-roboto
+                font-size: 14px
+                letter-spacing: 0
+                line-height: 14px
+                text-align: center
+                font-weight: bold
+                margin-bottom: 16px
+                padding-left: 24px
+                +media('>md')
+                    display: none
+            &--selected
+                padding: 10px 8px 10px 24px
+                width: 100%
+                background-color: rgba(255,255,255,0.2)
+                a
+                    font-family: $font-roboto
+                    font-size: 14px
+                    letter-spacing: 0
+                    line-height: 14px
+                    text-align: center
+                a
+                    font-family: $font-roboto
+                    font-size: 14px
+                    letter-spacing: 0
+                    line-height: 14px
+                    text-align: center
+                    +media('>md')
+                        font-weight: bold
+                        &::after
+                            content: ''
+                            display: block
+                            border-bottom: 4px solid rgba(255,255,255,0.5)
+                            padding-top: 6px
+                            height: 1px
+            &__has-submenu
+                &::after
+                    content: "\64"
+                    font-family: $font-weaddings
+            &__submenu
+                display: none
