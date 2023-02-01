@@ -10518,7 +10518,7 @@ hr {
 
 .navbar__container {
   margin-block-start: 32px;
-  padding-inline: 16px;
+  padding-inline: 32px;
   color: #FFFFFF;
 }
 @media (min-width: 1025px) {
@@ -10539,37 +10539,24 @@ hr {
     padding: 0px 64px;
   }
 }
-.navbar__menu__container {
-  display: flex;
-  align-items: center;
-}
-.navbar__menu__item {
-  margin-inline-end: 8px;
-  font-family: "Roboto";
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 14px;
-  text-align: center;
-}
-.navbar__login__container {
+.navbar__login {
   margin-left: 0px;
 }
 @media (min-width: 1025px) {
-  .navbar__login__container {
+  .navbar__login {
     margin-left: 16px;
   }
 }
-.navbar__link__window {
+.navbar__window {
   display: none;
 }
 @media (min-width: 1025px) {
-  .navbar__link__window {
+  .navbar__window {
     display: block;
   }
 }
-.navbar__link__window--open {
-  position: absolute;
+.navbar__window--open {
+  position: fixed;
   background: #FF7E7E;
   padding: 64px 0px 0px;
   width: 100%;
@@ -10578,36 +10565,11 @@ hr {
   right: 0;
 }
 @media (min-width: 1025px) {
-  .navbar__link__window--open {
+  .navbar__window--open {
     display: none;
   }
 }
-@media (min-width: 1025px) {
-  .navbar__link__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #FFFFFF;
-    padding: 8px 18px 8px 0px;
-  }
-}
-.navbar__link__list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-block-start: 32px;
-}
-@media (min-width: 1025px) {
-  .navbar__link__list {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    margin-block-start: unset;
-    padding-block-start: 8px;
-    gap: 64px;
-  }
-}
-.navbar__link__head {
+.navbar__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10615,14 +10577,39 @@ hr {
   padding-inline: 16px 16px;
 }
 @media (min-width: 1025px) {
-  .navbar__link__head {
+  .navbar__head {
     display: none;
   }
 }
-.navbar__link__item {
+@media (min-width: 1025px) {
+  .navbar__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #FFFFFF;
+    padding: 8px 18px 8px 0px;
+  }
+}
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-block-start: 32px;
+}
+@media (min-width: 1025px) {
+  .navbar__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-block-start: unset;
+    padding-block-start: 8px;
+    gap: 8px;
+  }
+}
+.navbar__item {
   padding: 4px 0px 4px 24px;
 }
-.navbar__link__item__title {
+.navbar__item__title {
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
@@ -10633,16 +10620,23 @@ hr {
   padding-left: 24px;
 }
 @media (min-width: 1025px) {
-  .navbar__link__item__title {
+  .navbar__item__title {
     display: none;
   }
 }
-.navbar__link__item--selected {
+.navbar__item__has-submenu::after {
+  content: "d";
+  font-family: "bodas-2023";
+}
+.navbar__item__submenu {
+  display: none;
+}
+.navbar__item--selected {
   padding: 10px 8px 10px 24px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.navbar__link__item--selected a {
+.navbar__item--selected a {
   font-family: "Roboto";
   font-size: 14px;
   letter-spacing: 0;
@@ -10650,23 +10644,16 @@ hr {
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .navbar__link__item--selected a {
+  .navbar__item--selected a {
     font-weight: bold;
   }
-  .navbar__link__item--selected a::after {
+  .navbar__item--selected a::after {
     content: "";
     display: block;
     border-bottom: 4px solid rgba(255, 255, 255, 0.5);
     padding-top: 6px;
     height: 1px;
   }
-}
-.navbar__link__item__has-submenu::after {
-  content: "d";
-  font-family: "bodas-2023";
-}
-.navbar__link__item__submenu {
-  display: none;
 }
 
 .menu__container {
