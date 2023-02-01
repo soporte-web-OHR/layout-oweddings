@@ -1,7 +1,8 @@
 @import './../base/_variables'
 @import 'sass-flexbox-grid-oasis/main.sass'
+
 .hero
-    &--background
+    &--home
         display: flex
         flex-direction: column
         justify-content: flex-end
@@ -12,21 +13,22 @@
         background-repeat: no-repeat
         height: 872px
     &__main
-        &__container
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            color: $white
-        &__title
-            font-family: $font-roboto
-            font-weight: 600
-            font-size: 34px
-            letter-spacing: 0
-            line-height: 40px
-            color: $white
-            text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: $white
+    &__title
+        font-family: $font-roboto
+        font-weight: 600
+        font-size: 34px
+        letter-spacing: 0
+        line-height: 40px
+        color: $white
+        //text-align: center
         //&__subtitle
+    &__label
+        color: $white
     &__secondary
         &__container
             display: flex
@@ -51,15 +53,15 @@
             line-height: 13px
             text-align: center
             color: $white
-    &__form
-        &__window
-            display: flex
-            flex-direction: column
-            align-items: flex-end
-        &__container
-            display: flex
+    //&__form
+    &__window
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__container
+        display: flex
     //     &__item
-        &__input
-            box-sizing: border-box
-            border: 1px solid $white
-            border-radius: 4px
+    &__input
+        box-sizing: border-box
+        border: 1px solid $white
+        border-radius: 4px

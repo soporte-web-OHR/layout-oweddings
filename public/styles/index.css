@@ -14097,7 +14097,7 @@ hr {
   width: auto !important;
 }
 
-.hero--background {
+.hero--home {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -14108,21 +14108,23 @@ hr {
   background-repeat: no-repeat;
   height: 872px;
 }
-.hero__main__container {
+.hero__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
 }
-.hero__main__title {
+.hero__title {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 34px;
   letter-spacing: 0;
   line-height: 40px;
   color: #FFFFFF;
-  text-align: center;
+}
+.hero__label {
+  color: #FFFFFF;
 }
 .hero__secondary__container {
   display: flex;
@@ -14150,13 +14152,18 @@ hr {
   text-align: center;
   color: #FFFFFF;
 }
-.hero__form__window {
+.hero__window {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.hero__form__container {
+.hero__container {
   display: flex;
+}
+.hero__input {
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
 }
 
 .gallery__wrap {
