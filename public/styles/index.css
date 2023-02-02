@@ -14108,13 +14108,6 @@ hr {
   background-repeat: no-repeat;
   height: 872px;
 }
-.hero__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #FFFFFF;
-}
 .hero__title {
   font-family: "Roboto";
   font-weight: 600;
@@ -14152,11 +14145,6 @@ hr {
   text-align: center;
   color: #FFFFFF;
 }
-.hero__window {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 .hero__container {
   display: flex;
 }
@@ -14164,6 +14152,26 @@ hr {
   box-sizing: border-box;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
+}
+
+.register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 12px;
+  column-gap: 8px;
+}
+.register__input {
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background: transparent;
+  padding: 12px 0 12px 10px;
+}
+.register__input::placeholder {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
 }
 
 .gallery__wrap {
