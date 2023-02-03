@@ -7323,37 +7323,25 @@ hr {
   text-align: center;
   padding: 0px 24px 24px;
 }
-.hero__secondary__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-block: 16px;
-  margin-inline: 32px;
-}
-.hero__secondary__title {
-  font-family: "Beauty";
-  font-size: 34px;
-  letter-spacing: 0;
-  line-height: 36px;
-  color: inherit;
-  text-align: center;
-  color: #FFFFFF;
-}
-.hero__secondary__paragraph {
-  font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: 13px;
-  text-align: center;
-  color: #FFFFFF;
-}
 @media (min-width: 1025px) {
   .hero__window {
     display: flex;
     justify-content: flex-end;
     margin-inline-end: 128px;
+  }
+}
+.hero__window--open {
+  position: fixed;
+  background: #FF7E7E;
+  padding: 64px 0px 0px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 1025px) {
+  .hero__window--open {
+    display: none;
   }
 }
 .hero__container {
