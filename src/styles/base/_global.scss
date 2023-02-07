@@ -1,0 +1,78 @@
+
+//  1. Posicionamiento --> static, absolute, relative, fixed
+//  2. Modelo de caja (Box model) --> margin, border, padding, content
+//  3. Tipografía --> tipos, tamaños de fuente, etc
+//  4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+//  5. Otros --> reglas CSS y más
+
+// // Restart styles
+// *
+//   box-sizing: border-box
+//   margin: 0
+//   padding: 0
+
+// html
+//   font-size: 62.5
+//   min-height: 100%
+//   position: relative
+
+// body
+//   //font-family: $font-name
+//   font-size: 14px
+//   font-weight: 300
+//     //color: $font-color-44
+//   width: 100%
+
+// ul, li
+//   list-style: none
+
+// a, input, button
+//   all: unset
+
+// h1, h2, h3, h4
+//   all: unset
+
+// h2 
+//   font-family: 'beauty'
+//   font-size: 34px
+@import 'sass-flexbox-grid-oasis/main.sass';
+
+.section-title {
+  font-family: $font-times;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  @include media('>md'){
+    font-size: 40px;
+  }
+  span {
+    color: $outer-space;
+    font-family: $font-jost;
+    font-size: 12px;
+    font-weight: lighter;
+        //font-weight: 300
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+}
+
+.wrapper {
+  &__section {
+    margin-bottom: 36px;
+    padding: 0px 24px;
+    @include media(">md") {
+      padding: 0px 48px;
+    }
+    &--first {
+      position: relative;
+      padding: 0px 16px;
+      transform: translateY(-32px);
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -23px 34px 0 rgba(0,0,0,0.2);
+  }
+}
