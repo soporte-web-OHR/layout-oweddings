@@ -35,7 +35,7 @@
               <div class="row start-xs middle-xs">
                 <div class="col-xs-offset-0 hide-md">
                   <button
-                    class="btn btn__open"
+                    class="btn btn__menu"
                     href="javascript:void(0);"
                     onclick="myFunction()"
                   >
@@ -128,7 +128,7 @@
             <div class="col-xs">
               <div class="hero__window">
                 <div class="hero__main">
-                  <h1 class="hero__title">Planea la mejor Boda</h1>
+                  <h1 class="heading__main">Planea la mejor Boda</h1>
                   <p class="hero__text">
                     Llega a las parejas de hoy y reserva más bodas.
                   </p>
@@ -233,7 +233,7 @@
           <div class="row">
             <div class="col hide-xs show-md">
               <div class="hero__secondary">
-                <h2 class="hero__subtitle">El lugar ideal</h2>
+                <h2 class="heading__secondary">El lugar ideal</h2>
                 <p class="hero__paragraph">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -250,7 +250,7 @@
         <div class="row">
           <div class="col-xs hide-md">
             <div class="hero__secondary hero__background--gradient">
-              <h2 class="hero__subtitle">El lugar ideal</h2>
+              <h2 class="heading__secondary">El lugar ideal</h2>
               <p class="hero__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -264,247 +264,558 @@
       </section>
     </header>
     <main class="wrapper__content">
-      <section class="wrapper__section__first">
-        <div class="slider slider--shadow">
-          <div class="slider__card__container">
-            <article class="slider__card__item">
-              <!-- 
-                        <header>
-                            <h3 class="card-title">Card title</h3>
-                        </header>
-                        -->
-              <main>
-                <section class="slider__card__item__content">
-                  <a
-                    class="slider__card__item__link"
-                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
-                    target="_blank"
-                  >
-                    <div class="slider__card__item__cover">
-                      <picture class="slider__card__item__image__container">
-                        <source
-                          srcset="
-                            https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
-                          "
-                        />
-                        <img
-                          class="slider__card__item__image__background"
-                          src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
-                        />
-                      </picture>
-                      <div class="slider__card__item__gradient"></div>
-                      <div class="slider__card__item__text-container">
-                        <h4 class="slider__card__item__title">
-                          GRAND OASIS CANCUN
-                        </h4>
-                        <span class="slider__card__item__view-more"
-                          >Ver Hotel</span
-                        >
-                      </div>
-                    </div>
-                  </a>
-                </section>
-              </main>
-              <!--
-                        <footer>
-                            <section class="card-action">
-                                <a href="#">Learn more</a>
-                            </section>
-                        </footer>
-                        -->
-            </article>
-            <article class="slider__card__item">
-              <!-- 
-                        <header>
-                            <h3 class="card-title">Card title</h3>
-                        </header>
-                        -->
-              <main>
-                <section class="slider__card__item__content">
-                  <a
-                    class="slider__card__item__link"
-                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
-                    target="_blank"
-                  >
-                    <div class="slider__card__item__cover">
-                      <picture class="slider__card__item__image__container">
-                        <source
-                          srcset="
-                            https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
-                          "
-                        />
-                        <img
-                          class="slider__card__item__image__background"
-                          src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
-                        />
-                      </picture>
-                      <div class="slider__card__item__gradient"></div>
-                      <div class="slider__card__item__text-container">
-                        <h4 class="slider__card__item__title">
-                          GRAND OASIS CANCUN
-                        </h4>
-                        <span class="slider__card__item__view-more"
-                          >Ver Hotel</span
-                        >
-                      </div>
-                    </div>
-                  </a>
-                </section>
-              </main>
-              <!--
-                        <footer>
-                            <section class="card-action">
-                                <a href="#">Learn more</a>
-                            </section>
-                        </footer>
-                        -->
-            </article>
-          </div>
-          <div class="slider__arrow__container">
-            <span class="slider__arrow__item icon icon-chevron-left"></span>
-            <span class="slider__arrow__item icon icon-chevron-right"></span>
+      <section class="wrapper__section--first">
+        <div class="row">
+          <div class="col">
+            <div class="slider slider--shadow">
+              <div class="slider__container--cards">
+                <article class="card__item">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                                https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              GRAND OASIS CANCUN
+                            </h4>
+                            <span class="card__text"
+                              >Ver Hotel</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+                <article class="card__item">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                              https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              GRAND OASIS CANCUN
+                            </h4>
+                            <span class="card__text"
+                              >Ver Hotel</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+                <article class="card__item card--hidden">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                              https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              GRAND OASIS CANCUN
+                            </h4>
+                            <span class="card__text"
+                              >Ver Hotel</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+                <article class="card__item card--hidden">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                              https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              GRAND OASIS CANCUN
+                            </h4>
+                            <span class="card__text"
+                              >Ver Hotel</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+              </div>
+              <div class="slider__container--arrows">
+                <button class="btn btn__arrow">
+                  <span class="icon icon-chevron-left"></span>
+                </button>
+                <button class="btn btn__arrow">
+                  <span class="icon icon-chevron-right"></span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- <div class="slider slider--shadow">
+          <div class="slider__card__container">
+            <article class="slider__card__item">
+              -- 
+                        <header>
+                            <h3 class="card-title">Card title</h3>
+                        </header>
+                        --
+              <main>
+                <section class="slider__card__item__content">
+                  <a
+                    class="slider__card__item__link"
+                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                    target="_blank"
+                  >
+                    <div class="slider__card__item__cover">
+                      <picture class="slider__card__item__image__container">
+                        <source
+                          srcset="
+                            https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
+                          "
+                        />
+                        <img
+                          class="slider__card__item__image__background"
+                          src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
+                        />
+                      </picture>
+                      <div class="slider__card__item__gradient"></div>
+                      <div class="slider__card__item__text-container">
+                        <h4 class="slider__card__item__title">
+                          GRAND OASIS CANCUN
+                        </h4>
+                        <span class="slider__card__item__text"
+                          >Ver Hotel</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </section>
+              </main>
+              --
+                        <footer>
+                            <section class="card-action">
+                                <a href="#">Learn more</a>
+                            </section>
+                        </footer>
+                        --
+            </article>
+            <article class="slider__card__item">
+              -- 
+                        <header>
+                            <h3 class="card-title">Card title</h3>
+                        </header>
+                        --
+              <main>
+                <section class="slider__card__item__content">
+                  <a
+                    class="slider__card__item__link"
+                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                    target="_blank"
+                  >
+                    <div class="slider__card__item__cover">
+                      <picture class="slider__card__item__image__container">
+                        <source
+                          srcset="
+                            https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp
+                          "
+                        />
+                        <img
+                          class="slider__card__item__image__background"
+                          src="https://spaceohrtest.sfo2.digitaloceanspaces.com/assets/img/home/portada-hoteles/goc_thumb.webp"
+                        />
+                      </picture>
+                      <div class="slider__card__item__gradient"></div>
+                      <div class="slider__card__item__text-container">
+                        <h4 class="slider__card__item__title">
+                          GRAND OASIS CANCUN
+                        </h4>
+                        <span class="slider__card__item__text"
+                          >Ver Hotel</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </section>
+              </main>
+              --
+                        <footer>
+                            <section class="card-action">
+                                <a href="#">Learn more</a>
+                            </section>
+                        </footer>
+                        --
+            </article>
+          </div>
+          <div class="slider__container--arrows">
+            <button class="btn btn__arrow">
+              <span class="icon icon-chevron-left"></span>
+            </button>
+            <button class="btn btn__arrow">
+              <span class="icon icon-chevron-right"></span>
+            </button>
+          </div>
+          
+        </div> -->
       </section>
       <section class="wrapper__section">
-        <div class="row start-xs center-md middle-sm">
-          <div class="col-xs-4 col-md-6">
-            <div class="row end-md">
-              <div class="col">
-                <picture class="section__image">
+        <div class="row">
+          <div class="col">
+            <div class="section__information">
+              <div>
+                <picture class="section__info-image">
                   <source srcset="/src/assets/img/home/seo-home.webp" />
                   <img src="/src/assets/img/home/seo-home.webp" />
                 </picture>
               </div>
+              <div class="section__text-container">
+                <h3 class="heading__title">O WEDDINGS, LIVE, LOVE & REMEMBER</h3>
+                <p class="section__info-description">
+                  Un beso al atardecer, el mar turquesa como testigo del
+                  momento, el viento cálido en la piel y la promesa de una nueva
+                  vida juntos... Déjanos ayudarte a crear ese momento
+                  irrepetible que recordarás por siempre. Oasis Hotels & Resorts
+                  te presenta O Weddings, para que dejes en nuestras manos todo
+                  el estrés de organizar tu boda y puedas saborear cada minuto
+                  de ese momento tan especial. Contamos con espectaculares
+                  escenarios naturales, en los destinos de bodas más solicitados
+                  de México. Ponemos a tu disposición un coordinador de bodas
+                  personal, quien se encargará de que todo luzca como siempre
+                  has soñado. Conoce nuestros paquetes o configura tu ceremonia
+                  perfecta; deja que fluya el romance y comencemos hoy mismo a
+                  planear tu boda en Cancún o la Riviera Maya... ¿Aceptas?
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-8 col-md-6">
-            <h3 class="section__title section-title">
-              O WEDDINGS, LIVE, LOVE & REMEMBER
-            </h3>
-            <p class="section__description">
-              Un beso al atardecer, el mar turquesa como testigo del momento, el
-              viento cálido en la piel y la promesa de una nueva vida juntos...
-              Déjanos ayudarte a crear ese momento irrepetible que recordarás
-              por siempre. Oasis Hotels & Resorts te presenta O Weddings, para
-              que dejes en nuestras manos todo el estrés de organizar tu boda y
-              puedas saborear cada minuto de ese momento tan especial. Contamos
-              con espectaculares escenarios naturales, en los destinos de bodas
-              más solicitados de México. Ponemos a tu disposición un coordinador
-              de bodas personal, quien se encargará de que todo luzca como
-              siempre has soñado. Conoce nuestros paquetes o configura tu
-              ceremonia perfecta; deja que fluya el romance y comencemos hoy
-              mismo a planear tu boda en Cancún o la Riviera Maya... ¿Aceptas?
-            </p>
           </div>
         </div>
       </section>
       <section class="wrapper__section">
-        <div class="section__packages">
-          <h3 class="section__title gallery__title section-title">
-            <span>PAQUETES </span>DE BODA
-          </h3>
-          <p class="section__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
-            malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-            bibendum at va
-          </p>
-        </div>
-        <div class="slider">
-          <div class="slider__card__container">
-            <article class="slider__card__item">
-              <!-- 
-                        <header>
-                            <h3 class="card-title">Card title</h3>
-                        </header>
-                        -->
-              <main>
-                <section class="slider__card__item__content">
-                  <a
-                    class="slider__card__item__link"
-                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
-                    target="_blank"
-                  >
-                    <div class="slider__card__item__cover">
-                      <picture class="slider__card__item__image__container">
-                        <source
-                          srcset="
-                            /src/assets/img/galeria-locaciones/7-thumb.webp
-                          "
-                        />
-                        <img
-                          class="slider__card__item__image__background"
-                          src="/src/assets/img/galeria-locaciones/7-thumb.webp"
-                        />
-                      </picture>
-                      <div class="slider__card__item__gradient"></div>
-                      <div class="slider__card__item__text-container">
-                        <h4 class="slider__card__item__title">O CEREMONY</h4>
-                        <span class="slider__card__item__view-more"
-                          >6 invitados</span
-                        >
-                      </div>
-                    </div>
-                  </a>
-                </section>
-              </main>
-              <!--
-                        <footer>
-                            <section class="card-action">
-                                <a href="#">Learn more</a>
-                            </section>
-                        </footer>
-                        -->
-            </article>
-            <article class="slider__card__item">
-              <!-- 
-                        <header>
-                            <h3 class="card-title">Card title</h3>
-                        </header>
-                        -->
-              <main>
-                <section class="slider__card__item__content">
-                  <a
-                    class="slider__card__item__link"
-                    href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
-                    target="_blank"
-                  >
-                    <div class="slider__card__item__cover">
-                      <picture class="slider__card__item__image__container">
-                        <source
-                          srcset="
-                            /src/assets/img/galeria-locaciones/7-thumb.webp
-                          "
-                        />
-                        <img
-                          class="slider__card__item__image__background"
-                          src="/src/assets/img/galeria-locaciones/7-thumb.webp"
-                        />
-                      </picture>
-                      <div class="slider__card__item__gradient"></div>
-                      <div class="slider__card__item__text-container">
-                        <h4 class="slider__card__item__title">O CEREMONY</h4>
-                        <span class="slider__card__item__view-more"
-                          >6 invitados</span
-                        >
-                      </div>
-                    </div>
-                  </a>
-                </section>
-              </main>
-              <!--
-                        <footer>
-                            <section class="card-action">
-                                <a href="#">Learn more</a>
-                            </section>
-                        </footer>
-                        -->
-            </article>
+        <div class="row">
+          <div class="col">
+            <div class="section__packages">
+              <span class="heading__subtitle">PAQUETES</span>
+              <h3 class="heading__title">DE BODA</h3>
+              <p class="section__info-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Netus et malesuada fames ac turpis egestas integer. Augue ut
+                lectus arcu bibendum at va
+              </p>
+            </div>
           </div>
-          <div class="slider__arrow__container">
-            <span class="slider__arrow__item icon icon-chevron-left"></span>
-            <span class="slider__arrow__item icon icon-chevron-right"></span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="slider">
+              <div class="slider__container--cards">
+                <article class="card__item">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                                /src/assets/img/galeria-locaciones/7-thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="/src/assets/img/galeria-locaciones/7-thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              O CEREMONY
+                            </h4>
+                            <span class="card__text"
+                              >6 invitados</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+                <article class="card__item">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                                /src/assets/img/galeria-locaciones/7-thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="/src/assets/img/galeria-locaciones/7-thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              O CEREMONY
+                            </h4>
+                            <span class="card__text"
+                              >6 invitados</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+                <article class="card__item card--hidden">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                                /src/assets/img/galeria-locaciones/7-thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="/src/assets/img/galeria-locaciones/7-thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              O CEREMONY
+                            </h4>
+                            <span class="card__text"
+                              >6 invitados</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+                <article class="card__item card--hidden">
+                  <!-- 
+                            <header>
+                                <h3 class="card-title">Card title</h3>
+                            </header>
+                            -->
+                  <main>
+                    <section class="card__content">
+                      <a
+                        class="card__link"
+                        href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun"
+                        target="_blank"
+                      >
+                        <div class="card__cover">
+                          <picture class="card__background">
+                            <source
+                              srcset="
+                                /src/assets/img/galeria-locaciones/7-thumb.webp
+                              "
+                            />
+                            <img
+                              class="card__image"
+                              src="/src/assets/img/galeria-locaciones/7-thumb.webp"
+                            />
+                          </picture>
+                          <div class="card__gradient"></div>
+                          <div class="card__text-container">
+                            <h4 class="card__title">
+                              O CEREMONY
+                            </h4>
+                            <span class="card__text"
+                              >6 invitados</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </section>
+                  </main>
+                  <!--
+                            <footer>
+                                <section class="card-action">
+                                    <a href="#">Learn more</a>
+                                </section>
+                            </footer>
+                            -->
+                </article>
+              </div>
+              <div class="slider__container--arrows">
+                <button class="btn btn__arrow">
+                  <span class="icon icon-chevron-left"></span>
+                </button>
+                <button class="btn btn__arrow">
+                  <span class="icon icon-chevron-right"></span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -513,9 +824,11 @@
           <div class="col">
             <div class="gallery">
               <div class="gallery__section">
-                <h3 class="gallery__title section-title">
-                  GALERÍA <span>WEDDINGS</span>
-                </h3>
+                <div class="gallery__title">
+                  <h3 class="heading__title">GALERÍA</h3>
+                  <span class="heading__subtitle">WEDDINGS</span>
+                </div>
+                <br />
                 <p class="gallery__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -526,55 +839,43 @@
                   enim facilisis gravida. Eget lorem dolor sed Viverra ipsum
                 </p>
               </div>
-              <div class="gallery__container">
-                <picture class="img1">
-                  <source srcset="/src/assets/img/home/galeria/1-thumb.webp" />
-                  <img
-                    class="gallery__image"
-                    src="/src/assets/img/home/galeria/1-thumb.webp"
-                    width="96px"
-                    height="166px"
-                  />
-                </picture>
-                <picture class="img2">
-                  <source srcset="/src/assets/img/home/galeria/2-thumb.webp" />
-                  <img
-                    class="gallery__image"
-                    src="/src/assets/img/home/galeria/2-thumb.webp"
-                    width="56px"
-                    height="80px"
-                  />
-                </picture>
-                <picture class="img3">
-                  <source srcset="/src/assets/img/home/galeria/3-thumb.webp" />
-                  <img
-                    class="gallery__image"
-                    src="/src/assets/img/home/galeria/3-thumb.webp"
-                    width="56px"
-                    height="80px"
-                  />
-                </picture>
-                <picture class="img4">
-                  <source srcset="/src/assets/img/home/galeria/3.webp" />
-                  <img
-                    class="gallery__image"
-                    src="/src/assets/img/home/galeria/3.webp"
-                    width="116px"
-                    height="80px"
-                  />
-                </picture>
-                <picture class="img5">
-                  <source
-                    srcset="/src/assets/img/home/galeria/cover-video.webp"
-                  />
-                  <img
-                    class="gallery__image"
-                    src="/src/assets/img/home/galeria/cover-video.webp"
-                    width="216px"
-                    height="144px"
-                  />
-                </picture>
-              </div>
+              <picture class="img1">
+                <source srcset="/src/assets/img/home/galeria/1-thumb.webp" />
+                <img
+                  class="gallery__image"
+                  src="/src/assets/img/home/galeria/1-thumb.webp"
+                />
+              </picture>
+              <picture class="img2">
+                <source srcset="/src/assets/img/home/galeria/2-thumb.webp" />
+                <img
+                  class="gallery__image"
+                  src="/src/assets/img/home/galeria/2-thumb.webp"
+                />
+              </picture>
+              <picture class="img3">
+                <source srcset="/src/assets/img/home/galeria/3-thumb.webp" />
+                <img
+                  class="gallery__image"
+                  src="/src/assets/img/home/galeria/3-thumb.webp"
+                />
+              </picture>
+              <picture class="img4">
+                <source srcset="/src/assets/img/home/galeria/3.webp" />
+                <img
+                  class="gallery__image"
+                  src="/src/assets/img/home/galeria/3.webp"
+                />
+              </picture>
+              <picture class="cover-video">
+                <source
+                  srcset="/src/assets/img/home/galeria/cover-video.webp"
+                />
+                <img
+                  class="gallery__image"
+                  src="/src/assets/img/home/galeria/cover-video.webp"
+                />
+              </picture>
             </div>
           </div>
         </div>

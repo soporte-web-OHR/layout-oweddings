@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "home": "sass --watch --load-path=node_modules src/styles/pages/home.scss public/styles/home.css",
+    "home": "sass --load-path=node_modules src/styles/pages/home.scss public/styles/home.css",
     "dev": "sass --watch --load-path=node_modules src/styles/index.sass public/styles/index.css"
   },
   "repository": {

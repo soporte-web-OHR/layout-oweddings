@@ -42,7 +42,11 @@
     }
   }
   &--mobile {
-    padding: 0px 64px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    margin-block-start: 8px;
+    gap: 12px;
     @include media(">md") {
       display: none;
     }

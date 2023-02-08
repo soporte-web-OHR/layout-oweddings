@@ -40,14 +40,25 @@
         bottom: 76px;
         //z-index: 1
     }
-    &__open {
+    &__menu {
         font-size: 40px;
         padding-top: 6px;
-        color: inherit;
+        color: $white;
     }
     &__close {
         font-size: 34px;
         font-weight: 600;
         color: inherit;
+    }
+    &__arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(68, 68, 68, .4);
+        color: rgba(68, 68, 68, .4);
+        line-height: 1px;
     }
 }

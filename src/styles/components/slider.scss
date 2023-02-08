@@ -1,0 +1,90 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  &__container {
+    &--cards{
+      display: flex;
+      gap: 10px;
+    }
+    &--arrows {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+    }
+  }
+}
+// display: flex
+// flex-direction: column
+// justify-content: center
+// align-items: center
+// gap: 8px
+// &--shadow
+//     padding-inline: 12px
+//     padding-block: 12px 0px
+//     border-radius: 2px
+//     background: $white
+// &__card
+//     &__container
+//         display: flex
+//         gap: 10px
+//     &__item
+//         display: flex
+//         font-family: $font-jost
+//         &__cover
+//             display: flex
+//             flex-wrap: wrap-reverse
+//             justify-content: center
+//             align-items: center
+//             height: 120px
+//             width: 180px
+//             border-radius: 4px
+//         &__gradient
+//             position: absolute
+//             width: inherit
+//             height: inherit
+//             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%)
+//         &__text-container
+//             display: flex
+//             flex-direction: column
+//             text-align: center
+//             gap: 4px
+//             position: relative
+//             transform: translateY(100px)
+//             color: $white
+//             font-family: $font-jost
+//         &__title
+//             font-size: 12px
+//             letter-spacing: 0
+//             line-height: 14px
+//             text-align: center
+//         &__view-more
+//             font-size: 12px
+//             font-weight: 500
+//             letter-spacing: 0
+//             line-height: 12px
+//             text-align: center
+//         &__image
+//             &__container
+//                 width: inherit
+//                 height: inherit
+//             &__background
+//                 position: relative
+//                 width: 100%
+//                 height: 100%
+//                 object-fit: cover
+//                 border-radius: 4px
+// &__arrow
+//     &__container
+//         display: flex
+//         gap: 8px
+//         color: rgba(68, 68, 68, .4)
+//     &__item
+//         display: flex
+//         justify-content: center
+//         align-items: center
+//         width: 30px
+//         height: 30px
+//         border-radius: 50%
+//         border: 1px solid rgba(68, 68, 68, .4)

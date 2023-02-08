@@ -32,9 +32,7 @@
     row-gap: 10px;
     column-gap: 12px;
     .right-link {
-      @include media(">md") {
-        text-align: right;
-      }
+      text-align: right;
     }
     .left-link {
       text-align: left;
