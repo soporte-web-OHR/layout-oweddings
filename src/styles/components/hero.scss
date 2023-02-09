@@ -58,6 +58,9 @@
         line-height: 19px;
         padding-bottom: 16px;
         //text-align: center
+        @include media('>md'){
+            padding: 8px 0 16px;
+        }
     }
     &__label {
         color: $white;

@@ -31,22 +31,70 @@
     transform: translateY(100px);
     color: $white;
     font-family: $font-jost;
-    @include media('>sm'){
+    @include media(">sm") {
+      gap: 12px;
       transform: translateY(166px);
     }
   }
+  &__packages{
+    display: flex;
+    align-items: center;
+  }
+  &__O {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: $font-times;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 38px;
+    text-align: center;
+    position: relative;
+    transform: translateX(12px);
+    @include media('>md'){
+      font-size: 84px;
+      transform: translateX(36px);
+    }
+  }
   &__title {
+    font-family: $font-jost;
     font-size: 12px;
+    font-weight: 200;
     letter-spacing: 0;
     line-height: 14px;
     text-align: center;
+    @include media(">md") {
+      font-size: 18px;
+    }
+    &--packages {
+      font-family: $font-times;
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-align: center;
+      @include media(">md") {
+        font-size: 24px;
+      }
+    }
   }
   &__text {
+    font-family: $font-jost;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 12px;
     text-align: center;
+    @include media(">md") {
+      font-size: 18px;
+    }
+    &--packages{
+      font-family: $font-jost;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-align: center;
+    }
   }
   &__image {
     width: inherit;
@@ -59,7 +107,7 @@
     object-fit: cover;
     border-radius: 4px;
   }
-  &--hidden{
+  &--hidden {
     display: none;
     @include media(">lg") {
       display: block;

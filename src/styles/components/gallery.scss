@@ -4,7 +4,7 @@
   grid-template-rows: repeat(4, 66px);
   column-gap: 1px;
   row-gap: 1px;
-  @include media('>sm'){
+  @include media('>md'){
     grid-template-rows: repeat(12, 42px);
     column-gap: 4px;
     row-gap: 4px;
