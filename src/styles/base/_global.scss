@@ -54,6 +54,9 @@
     line-height: 36px;
     text-align: center;
     color: $white;
+    @include media('>md'){
+      font-size: 44px;
+    }
   }
   &__title{
     font-family: $font-times;
@@ -63,6 +66,7 @@
     line-height: 24px;
     @include media('>md'){
       font-size: 40px;
+      line-height: unset;
     }
   }
   &__subtitle{

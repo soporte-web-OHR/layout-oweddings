@@ -38,6 +38,7 @@
     //     color: $white;
     // }
     &__paragraph {
+        margin-top: 8px;
         font-family: $font-roboto;
         font-size: 12px;
         font-weight: 300;
@@ -45,6 +46,9 @@
         line-height: 13px;
         text-align: center;
         color: $white;
+        @include media('>md'){
+            font-size: $font-size-base;
+        }
     }
     &__text {
         font-family: $font-roboto;
@@ -61,6 +65,9 @@
     &__secondary {
         text-align: center;
         padding: 0px 24px 36px;
+        @include media('>md'){
+            padding: 0px 448px 36px;
+        }
         // &__container
         //     display: flex
         //     flex-direction: column

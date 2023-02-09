@@ -29,10 +29,11 @@
   }
   &__input {
     color: $white;
+    padding: 12px 0 12px 10px;
+    background: transparent;
     border: 1px solid $white;
     border-radius: 4px;
-    background: transparent;
-    padding: 12px 0 12px 10px;
+    width: 100%;
     &::placeholder {
       color: $white;
       font-family: $font-roboto;

@@ -12,7 +12,8 @@
     align-items: center;
     gap: 8px;
     @include media('>md'){
-      padding-inline: 136px;
+      gap: 20px;
+      padding-inline: 20% 24%;
     }
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -52,12 +53,15 @@
   &__packages {
     text-align: center;
     margin: 8px 0 16px;
-  }
-  &__text-container{
-    @include media('>lg'){
-      padding-right: 156px;
+    @include media('>md'){
+      padding: 0 24%;
     }
   }
+  // &__text-container{
+  //   @include media('>lg'){
+  //     padding-right: 156px;
+  //   }
+  // }
   // &__title {
   //   @include media('>md'){
   //     line-height: 1;
