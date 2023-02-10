@@ -9,7 +9,18 @@
       background-size: cover;
       background-position: 30%center;
       background-repeat: no-repeat;
-      height: 872px;
+      height: 54em;//872px;
+    }
+    &--packages{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-block: 0px 24px;
+      background-image: url("/src/assets/img/interna.webp");
+      background-size: cover;
+      background-position: 25%center;
+      background-repeat: no-repeat;
+      height: 19.75em;//872px;
     }
     &--gradient {
       background: linear-gradient(
@@ -73,6 +84,7 @@
   &__secondary {
     text-align: center;
     padding: 0px 24px 36px;
+  }
     // @include media('>md'){
     //     padding: 0px 448px 36px;
     // }
@@ -100,6 +112,13 @@
     //     text-align: center
     //     color: $white
     //&__form
+  &__title{
+    color:$white;
+    font-family: $font-times;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
   }
   &__window {
     @include media(">md") {

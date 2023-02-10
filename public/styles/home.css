@@ -7308,7 +7308,6 @@ hr {
   letter-spacing: 0;
   line-height: 18px;
   text-align: center;
-  bottom: 76px;
 }
 .btn__menu {
   font-size: 40px;
@@ -7341,7 +7340,7 @@ hr {
   background-size: cover;
   background-position: 30% center;
   background-repeat: no-repeat;
-  height: 872px;
+  height: 54em;
 }
 .hero__background--gradient {
   background: linear-gradient(180deg, rgba(25, 106, 186, 0) 0.06%, #196785 100%), linear-gradient(0deg, #459dbf 0%, rgba(48, 163, 216, 0) 100%);

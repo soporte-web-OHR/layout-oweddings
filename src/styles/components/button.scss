@@ -18,7 +18,7 @@
     &__input {
         padding: 12px;
         border: 1px solid $white;
-        border-radius: 4px;
+        border-radius: $border-radius-base;
         font-family: $font-roboto;
         font-size: 12px;
         color: $white;
@@ -28,7 +28,7 @@
     &__register {
         //position: fixed
         padding: 12px 36px;
-        border-radius: 4px;
+        border-radius: $border-radius-base;
         background-color: $outer-space;
         color: $white;
         font-family: $font-jost;
@@ -37,7 +37,6 @@
         line-height: 18px;
         //width: 366px
         text-align: center;
-        bottom: 76px;
         //z-index: 1
     }
     &__menu {
@@ -60,5 +59,9 @@
         border: 1px solid rgba(68, 68, 68, .4);
         color: rgba(68, 68, 68, .4);
         line-height: 1px;
+        &--packages-tab{
+            border: 1px solid $black;
+            color: $black;
+        }
     }
 }

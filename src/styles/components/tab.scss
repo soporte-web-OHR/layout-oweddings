@@ -1,0 +1,32 @@
+.tab {
+  &__list {
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+  }
+  &__item {
+    color: $outer-space;
+    font-family: $font-jost;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 12px;
+    &--selected {
+      color: $very-light-red;
+      font-family: $font-jost;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 12px;
+      &::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid $very-light-red;
+        padding-top: 6px;
+        //height: 1px;
+      }
+    }
+  }
+  &__arrow{
+    display: flex;
+    justify-content: space-between;
+  }
+}
