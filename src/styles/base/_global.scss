@@ -5,38 +5,7 @@
 //  4. Estilos visuales --> box-shadow, border-radius, gradient, etc
 //  5. Otros --> reglas CSS y más
 
-// // Restart styles
-// *
-//   box-sizing: border-box
-//   margin: 0
-//   padding: 0
-
-// html
-//   font-size: 62.5
-//   min-height: 100%
-//   position: relative
-
-// body
-//   //font-family: $font-name
-//   font-size: 14px
-//   font-weight: 300
-//     //color: $font-color-44
-//   width: 100%
-
-// ul, li
-//   list-style: none
-
-// a, input, button
-//   all: unset
-
-// h1, h2, h3, h4
-//   all: unset
-
-// h2 
-//   font-family: 'beauty'
-//   font-size: 34px
 @import 'sass-flexbox-grid-oasis/main.sass';
-
 
 .heading {
   &__main{
@@ -87,39 +56,34 @@
   }
 }
 
-// .heading-title {
-//   font-family: $font-times;
-//   font-size: 20px;
-//   font-weight: bold;
-//   letter-spacing: 0;
-//   line-height: 24px;
-//   @include media('>md'){
-//     font-size: 40px;
-//   }
-// }
-
-// .heading-subtitle {
-//   color: $outer-space;
-//   font-family: $font-jost;
-//   font-size: 12px;
-//   font-weight: lighter;
-//   //font-weight: 300
-//   letter-spacing: 0;
-//   line-height: 16px;
-// }
-
+// xs: 640px, sm: 768px, md: 1024px, lg: 1280px, xl:1400px
 .wrapper {
   &__section {
-    margin-bottom: 24px;
-    padding: 0px 24px;
+    max-width: 540px;
+    margin: 0 auto 24px;
+    padding: 0 1.25em;
+    //margin-bottom: 24px;
+    //padding: 0px 24px;
+    @include media(">sm") {
+      max-width: 654px;
+    }
     @include media(">md") {
-      padding: 0px 96px;
+      max-width: 854px;
+    }
+    @include media(">lg") {
+      max-width: 1078px;
+    }
+    @include media(">xl") {
+      max-width: 1278px;
     }
     &--first {
       position: relative;
-      padding: 0px 16px;
+      padding: 0 1em;
       transform: translateY(-32px);
     }
+  }
+  &__header{
+    margin: 0 auto !important;
   }
   &__content {
     display: flex;

@@ -3594,18 +3594,37 @@ hr {
 }
 
 .wrapper__section {
-  margin-bottom: 24px;
-  padding: 0px 24px;
+  max-width: 540px;
+  margin: 0 auto 24px;
+  padding: 0 1.25em;
+}
+@media (min-width: 769px) {
+  .wrapper__section {
+    max-width: 654px;
+  }
 }
 @media (min-width: 1025px) {
   .wrapper__section {
-    padding: 0px 96px;
+    max-width: 854px;
+  }
+}
+@media (min-width: 1281px) {
+  .wrapper__section {
+    max-width: 1078px;
+  }
+}
+@media (min-width: 1401px) {
+  .wrapper__section {
+    max-width: 1278px;
   }
 }
 .wrapper__section--first {
   position: relative;
-  padding: 0px 16px;
+  padding: 0 1em;
   transform: translateY(-32px);
+}
+.wrapper__header {
+  margin: 0 auto !important;
 }
 .wrapper__content {
   display: flex;
@@ -7325,7 +7344,7 @@ hr {
   height: 872px;
 }
 .hero__background--gradient {
-  background: linear-gradient(180deg, rgba(25, 106, 186, 0) 0.06%, #196785 100%), linear-gradient(0deg, #459DBF 0%, rgba(48, 163, 216, 0) 100%);
+  background: linear-gradient(180deg, rgba(25, 106, 186, 0) 0.06%, #196785 100%), linear-gradient(0deg, #459dbf 0%, rgba(48, 163, 216, 0) 100%);
 }
 .hero__main {
   text-align: center;
@@ -7371,15 +7390,12 @@ hr {
   padding: 0px 24px 36px;
 }
 @media (min-width: 1025px) {
-  .hero__secondary {
-    padding: 0px 448px 36px;
-  }
-}
-@media (min-width: 1025px) {
   .hero__window {
     display: flex;
     justify-content: flex-end;
     margin-inline-end: 128px;
+    position: relative;
+    transform: translate(5em, -6em);
   }
 }
 .hero__window--open {
@@ -7475,7 +7491,6 @@ hr {
 @media (min-width: 1025px) {
   .section__information {
     gap: 20px;
-    padding-inline: 20% 24%;
   }
 }
 .section__info-image {
@@ -7489,7 +7504,7 @@ hr {
   height: 348px;
   width: 116px;
 }
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .section__info-image img {
     height: 405px;
     width: 514px;
@@ -7513,6 +7528,11 @@ hr {
     padding: 0 24%;
   }
 }
+@media (min-width: 1281px) {
+  .section__text-container {
+    max-width: 456px;
+  }
+}
 
 .gallery {
   display: grid;
@@ -7526,7 +7546,6 @@ hr {
     grid-template-rows: repeat(12, 42px);
     column-gap: 4px;
     row-gap: 4px;
-    margin-inline: 16%;
   }
 }
 .gallery__section {

@@ -11,9 +11,9 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    @include media('>md'){
+    @include media(">md") {
       gap: 20px;
-      padding-inline: 20% 24%;
+      //padding-inline: 20% 24%;
     }
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -24,7 +24,7 @@
     //   margin: 0px 0px 0px 24px
     // }
   }
-  &__info{
+  &__info {
     &-image {
       justify-content: center;
       align-items: center;
@@ -34,7 +34,7 @@
         object-fit: cover;
         height: 348px;
         width: 116px;
-        @include media(">sm") {
+        @include media(">md") {
           height: 405px;
           width: 514px;
         }
@@ -53,15 +53,15 @@
   &__packages {
     text-align: center;
     margin: 8px 0 16px;
-    @include media('>md'){
+    @include media(">md") {
       padding: 0 24%;
     }
   }
-  // &__text-container{
-  //   @include media('>lg'){
-  //     padding-right: 156px;
-  //   }
-  // }
+  &__text-container {
+    @include media(">lg") {
+      max-width: 456px;
+    }
+  }
   // &__title {
   //   @include media('>md'){
   //     line-height: 1;
