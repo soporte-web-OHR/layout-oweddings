@@ -173,15 +173,23 @@
         <section class="wrapper">
           <div class="row">
             <div class="col">
-              <div class="heading__packages">
-                <span>O</span>
-                <h1>O CEREMONY</h1>
+              <div class="heading__container">
+                <span class="heading__O">O</span>
+                <h1 class="heading__main--packages">O CEREMONY</h1>
               </div>
-              <div>
-                <h2>PAQUETE DE BODA O CEREMONY</h2>
-                <span>00 Invitados</span>
-                <div>
-                  <p>
+            </div>
+          </div>
+          <div class="hero">
+            <div class="row">
+              <div class="col">
+                <h2 class="heading__secondary--packages">
+                  PAQUETE DE BODA O CEREMONY
+                </h2>
+                <div class="heading__secondary--packages">
+                  <span>00 Invitados</span>
+                </div>
+                <div class="hero__packages-content">
+                  <p class="hero__packages-paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Netus et malesuada fames ac turpis egestas integer.
@@ -191,10 +199,10 @@
                     malesuada proin libero nunc consequat interdum varius sit.
                   </p>
                   <button class="btn btn__register">REGISTRARME</button>
+                  <button class="btn footer__icon">
+                    <i class="icon icon-download"></i>
+                  </button>
                   <div>
-                    <button class="footer__icon">
-                      <i class="icon icon-download"></i>
-                    </button>
                     <span>Descargar Factsheet</span>
                   </div>
                 </div>
@@ -203,7 +211,7 @@
           </div>
         </section>
       </section>
-      <section class="wrapper">
+      <!-- <section class="wrapper">
         <div class="row">
           <div class="col">
             <div>
@@ -227,29 +235,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </header>
     <main class="wrapper__content">
       <section class="wrapper__section">
         <div class="row">
           <div class="col">
             <div class="box">
-              <h3 class="box__title">Beneficios <span>VIP</span></h3>
               <div class="box__container">
-                <ul class="box__list">
-                  <li class="box__item">Registro en zona VIP para pareja.</li>
-                  <li class="box__item">Brazalete VIP especial para pareja.</li>
-                  <li class="box__item">
-                    Amenidades VIP en la habitación de la pareja.
-                  </li>
-                  <li class="box__item">Registro en zona VIP para pareja.</li>
-                </ul>
-              </div>
-            </div>
-            <span class="horizontal-line">-</span>
-            <div class="box">
-              <h3 class="box__title--main">Tu boda incluye</h3>
-              <div class="box__container">
+                <h3 class="box__title--main">Tu boda incluye</h3>
                 <ul class="box__list">
                   <li class="box__item">
                     Botella de vino espumoso nacional en habitación de novios
@@ -274,21 +268,35 @@
                     (disponibilidad de acuerdo a hotel sede).
                   </li>
                 </ul>
+                <div class="box__item">
+                  <span class="icon icon-chevron-down">
+                  </span>
+                </div>
+              </div>
+              <span class="box__horizontal-line">-</span>
+              <div class="box__container">
+                <h3 class="box__title--benefits">Beneficios <span>VIP</span></h3>
+                <ul class="box__list">
+                  <li class="box__item">Registro en zona VIP para pareja.</li>
+                  <li class="box__item">Brazalete VIP especial para pareja.</li>
+                  <li class="box__item">
+                    Amenidades VIP en la habitación de la pareja.
+                  </li>
+                  <li class="box__item">Registro en zona VIP para pareja.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="row center-xs">
             <button class="btn btn__register">QUIERO ESTE PAQUETE</button>
-          </div>
         </div>
       </section>
       <section class="wrapper__section">
         <div class="row">
           <div class="col">
-            <div class="gallery--packages">
-              <div class="gallery__container-pack-1">
+            <div class="gallery__packages">
+              <div class="gallery__packages-container-1">
                 <picture class="gallery__cover">
                   <source srcset="/src/assets/img/home/galeria/1-thumb.webp" />
                   <img
@@ -297,7 +305,7 @@
                   />
                 </picture>
               </div>
-              <div class="gallery__container-pack-2">
+              <div class="gallery__packages-container-2">
                 <picture class="gallery__cover">
                   <source srcset="/src/assets/img/home/galeria/2-thumb.webp" />
                   <img
@@ -306,7 +314,7 @@
                   />
                 </picture>
               </div>
-              <div class="gallery__container-pack-3">
+              <div class="gallery__packages-container-3">
                 <picture class="gallery__cover">
                   <source srcset="/src/assets/img/home/galeria/3-thumb.webp" />
                   <img
@@ -315,7 +323,7 @@
                   />
                 </picture>
               </div>
-              <div class="gallery__container-pack-4">
+              <div class="gallery__packages-container-4">
                 <picture class="gallery__cover">
                   <source srcset="/src/assets/img/home/galeria/3.webp" />
                   <img

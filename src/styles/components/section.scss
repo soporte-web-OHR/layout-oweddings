@@ -7,61 +7,65 @@
   //     ),
   //     linear-gradient(0deg, #459dbf 0%, rgba(48, 163, 216, 0) 100%);
   // }
-  &__information {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    @include media(">md") {
-      gap: 20px;
-      //padding-inline: 20% 24%;
-    }
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-auto-flow: row;
-    // margin-block: 16px 0px;
-    // column-gap: 8px;
-    // @include media('>md'){
-    //   margin: 0px 0px 0px 24px
-    // }
-  }
-  &__info {
-    &-image {
-      justify-content: center;
+  &__home{
+    &-information {
+      display: flex;
       align-items: center;
-      grid-column: 1 / 2;
-      grid-row: 1 / 4;
-      img {
-        object-fit: cover;
-        height: 348px;
-        width: 116px;
-        @include media(">md") {
-          height: 405px;
-          width: 514px;
+      gap: 8px;
+      @include media(">md") {
+        gap: 20px;
+        //padding-inline: 20% 24%;
+      }
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      // grid-auto-flow: row;
+      // margin-block: 16px 0px;
+      // column-gap: 8px;
+      // @include media('>md'){
+      //   margin: 0px 0px 0px 24px
+      // }
+    }
+    &-info {
+      &-image {
+        justify-content: center;
+        align-items: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        img {
+          object-fit: cover;
+          height: 348px;
+          width: 116px;
+          @include media(">md") {
+            height: 405px;
+            width: 514px;
+          }
         }
       }
+      &-description {
+        padding: 8px 0 0;
+        color: $outer-space;
+        font-family: $font-roboto;
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: 0;
+        line-height: 16px;
+      }
     }
-    &-description {
-      padding: 8px 0 0;
-      color: $outer-space;
-      font-family: $font-roboto;
-      font-size: 12px;
-      font-weight: 100;
-      letter-spacing: 0;
-      line-height: 16px;
+    &-packages {
+      text-align: center;
+      margin: 8px 0 16px;
+      @include media(">md") {
+        padding: 0 24%;
+      }
+    }
+    &-text-container {
+      @include media(">lg") {
+        max-width: 456px;
+      }
     }
   }
-  &__packages {
-    text-align: center;
-    margin: 8px 0 16px;
-    @include media(">md") {
-      padding: 0 24%;
-    }
-  }
-  &__text-container {
-    @include media(">lg") {
-      max-width: 456px;
-    }
-  }
+}
+
   // &__title {
   //   @include media('>md'){
   //     line-height: 1;
@@ -81,4 +85,4 @@
   //     width:400px
   //   }
   // }
-}
+

@@ -1,62 +1,118 @@
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 66px);
-  column-gap: 1px;
-  row-gap: 1px;
-  @include media('>md'){
-    grid-template-rows: repeat(12, 42px);
-    column-gap: 4px;
-    row-gap: 4px;
-    //margin-inline: 16%;
-  }
-  &__section {
-    align-self: center;
-    grid-column: 1 / 6;
-    grid-row: 1 / 5;
+  &__home{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 66px);
+    column-gap: 1px;
+    row-gap: 1px;
     @include media('>md'){
-      justify-self: center;
-      grid-column: 1 / 5;
-      grid-row: 1 / 8;
-      padding-inline-start: 20px;
+      grid-template-rows: repeat(12, 42px);
+      column-gap: 4px;
+      row-gap: 4px;
+      //margin-inline: 16%;
+    }
+    &-section {
+      align-self: center;
+      grid-column: 1 / 6;
+      grid-row: 1 / 5;
+      @include media('>md'){
+        justify-self: center;
+        grid-column: 1 / 5;
+        grid-row: 1 / 8;
+        padding-inline-start: 20px;
+      }
+    }
+    &-container {
+      &-1 {
+        grid-column: 6 / 9;
+        grid-row: 1 / 3;
+        @include media('>md'){
+          grid-column: 5 / 9;
+          grid-row: 1 / 13;
+        }
+      }
+      &-2 {
+        grid-column: 9 / 11;
+        grid-row: 1 / 2;
+        @include media('>md'){
+          grid-row: 1 / 6;
+        }
+      }
+      &-3 {
+        grid-column: 11 / 13;
+        grid-row: 1 / 2;
+        @include media('>md'){
+          grid-row: 1 / 6;
+        }
+      }
+      &-4 {
+        grid-column: 9 / 13;
+        grid-row: 2 / 3;
+        @include media('>md'){
+          grid-row: 6 / 13;
+        }
+      }
+      &-video {
+        grid-column: 6 / 13;
+        grid-row: 3 / 5;
+        @include media('>md'){
+          grid-column: 1 / 5;
+          grid-row: 7 / 13;
+        }
+      }
+    }
+    &-description {
+      color: $outer-space;
+      font-family: $font-roboto;
+      font-size: 12px;
+      font-weight: 100;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+  
+    &-btn{
+      display: none;
+      @include media('>md'){
+        display: block;
+        margin-top: 8px;
+      }
     }
   }
-  &__container {
-    &-1 {
-      grid-column: 6 / 9;
-      grid-row: 1 / 3;
-      @include media('>md'){
-        grid-column: 5 / 9;
-        grid-row: 1 / 13;
+  &__packages{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    column-gap: 1px;
+    row-gap: 1px;
+    &-container {
+      &-1 {
+        grid-column: 1 / 13;
+        grid-row: 1 / 3;
+        // @include media('>md'){
+        //   grid-column: 5 / 9;
+        //   grid-row: 1 / 13;
+        // }
       }
-    }
-    &-2 {
-      grid-column: 9 / 11;
-      grid-row: 1 / 2;
-      @include media('>md'){
-        grid-row: 1 / 6;
+      &-2 {
+        grid-column: 1 / 13;
+        grid-row: 3 / 4;
+        // @include media('>md'){
+        //   grid-row: 1 / 6;
+        // }
       }
-    }
-    &-3 {
-      grid-column: 11 / 13;
-      grid-row: 1 / 2;
-      @include media('>md'){
-        grid-row: 1 / 6;
+      &-3 {
+        grid-column: 1 / 7;
+        grid-row: 4 / 5;
+        // @include media('>md'){
+        //   grid-row: 1 / 6;
+        // }
       }
-    }
-    &-4 {
-      grid-column: 9 / 13;
-      grid-row: 2 / 3;
-      @include media('>md'){
-        grid-row: 6 / 13;
-      }
-    }
-    &-video {
-      grid-column: 6 / 13;
-      grid-row: 3 / 5;
-      @include media('>md'){
-        grid-column: 1 / 5;
-        grid-row: 7 / 13;
+      &-4 {
+        grid-column: 7 / 13;
+        grid-row: 4 / 5;
+        // @include media('>md'){
+        //   grid-row: 6 / 13;
+        // }
       }
     }
   }
@@ -69,22 +125,7 @@
     width: inherit;
     height: inherit;
   }
-  &__description {
-    color: $outer-space;
-    font-family: $font-roboto;
-    font-size: 12px;
-    font-weight: 100;
-    letter-spacing: 0;
-    line-height: 14px;
-  }
 
-  &__btn{
-    display: none;
-    @include media('>md'){
-      display: block;
-      margin-top: 8px;
-    }
-  }
 }
   //   @include media('>sm'){
   //     grid-row: 1 / 3;
