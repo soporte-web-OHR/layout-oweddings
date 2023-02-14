@@ -7317,15 +7317,13 @@ hr {
 .btn--block {
   width: 100%;
 }
-.btn__login {
+.btn__primary {
   display: flex;
   gap: 4px;
   padding-block: 4px;
   padding-inline: 16px;
-  background-color: #FF7E7E;
-  color: #FFFFFF;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 30px;
   line-height: 16px;
   text-align: center;
 }
@@ -7375,6 +7373,10 @@ hr {
   border: 1px solid #000000;
   color: #000000;
 }
+.btn--rose {
+  background-color: #FF7E7E;
+  color: #FFFFFF;
+}
 
 .hero__background--home {
   display: flex;
@@ -7421,7 +7423,7 @@ hr {
 }
 @media (min-width: 1025px) {
   .hero__home-paragraph {
-    font-size: 14px;
+    font-size: 28px;
   }
 }
 .hero__home-text {
@@ -7511,14 +7513,14 @@ hr {
 .breadcrumb__init {
   color: #444444;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 28px;
   letter-spacing: 0;
   line-height: 16px;
 }
 .breadcrumb__item {
   color: #444444;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 28px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 16px;

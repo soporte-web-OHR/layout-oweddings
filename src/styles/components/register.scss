@@ -45,7 +45,7 @@
   &--mobile {
     display: flex;
     flex-direction: column;
-    padding-inline: 40px;
+    //padding-inline: 40px;
     margin-block-start: 8px;
     gap: 12px;
     @include media(">md") {

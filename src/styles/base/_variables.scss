@@ -6,20 +6,25 @@
 /// ///////////
 /// Rose - Very Light red
 $primary-color-1: #FF7E7E;
+$primary-color-1-hover: #E36969;
+$primary-color-1-selected: #FBAAAA;
+
 /// Moonstone 
 $primary-color-2: #459DBF;
 ///////////////////////////////////
 /// Neutral
 /// ///////////
 $outer-space: #444444;
+$outer-space-hover: #333232;
+$outer-space-selected: #6C6C6C;
 $black: #000000;
 $white: #FFFFFF;
 
 ///////////////////////////////////
 /// Others
 /// ///////////
-$charleston-green: '#2e2c2a';
-$nevada: '#646E73';
+$charleston-green: #2e2c2a;
+$nevada: #646E73;
 ///////////////////////////////////
 /// Alpha
 /// ///////////
@@ -27,6 +32,7 @@ $alpha-5p: 0.05; //5%
 $alpha-10p: 0.1; //10%
 $alpha-20p: 0.2; //20%
 $alpha-30p: 0.3; //30%
+$alpha-40p: 0.4; //40%
 ///////////////////////////////////	
 ///////////////////////////////////	
 ///////////////////////////////////	
@@ -62,12 +68,25 @@ $heading-h2-size-l: 40px;
 /// h3
 $heading-h3-size-sm: 12px;
 $heading-h3-size-l: 16px;
+///////////////////////////////////	
+/// Line Height
+/// ///////////
+//$line-height-sm: 16px;
 //$line-height-base: 1.5715;
-//$heading-color: $outer-space;
+///////////////////////////////////	
 // Borders
-$border-radius-base: 4px;
+/// ///////////
 $border-radius-sm: 2px;
+$border-radius-base: 4px;
+$border-radius-circular: 50%;
+///////////////////////////////////	
 // Z-Indexes
+/// ///////////
 $index-front: 900;
 $index-middle: 700;
-$index-back: 100
+$index-back: 100;
+///////////////////////////////////	
+// Constants
+/// ///////////
+$base-sm: 4px;
+$base-lg: 8px;

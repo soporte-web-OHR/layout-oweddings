@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap");
 @font-face {
   font-family: "bodas-2023";
   src: url("/public/fonts/bodas-2023/fonts/bodas-2023.eot");
@@ -7314,58 +7314,52 @@ hr {
   }
 }
 
-.btn--block {
-  width: 100%;
-}
-.btn__login {
+.btn__primary-small {
   display: flex;
+  justify-content: center;
   gap: 4px;
   padding-block: 4px;
   padding-inline: 16px;
-  background-color: #FF7E7E;
-  color: #FFFFFF;
-  font-family: "Roboto";
-  font-size: 16px;
+  border-radius: 2px;
+  font: 16px "Roboto";
   line-height: 16px;
   text-align: center;
 }
-.btn__input {
-  padding: 12px;
+.btn__primary-large {
+  display: flex;
+  justify-content: center;
+  padding-block: 12px;
+  padding-inline: 32px;
+  border-radius: 4px;
+  font: 12px "Jost";
+  line-height: 12px;
+  text-align: center;
+}
+.btn__secondary-outline {
+  padding: 12px 0 12px 8px;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
-  font-family: "Roboto";
-  font-size: 12px;
-  color: #FFFFFF;
+  font: 12px "Roboto";
+  line-height: 16px;
   letter-spacing: 0;
-  line-height: 18px;
-}
-.btn__register {
-  padding: 12px 36px;
-  border-radius: 4px;
-  background-color: #444444;
-  color: #FFFFFF;
-  font-family: "Jost";
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 18px;
-  text-align: center;
+  text-align: left;
 }
 .btn__menu {
   font-size: 40px;
-  padding-top: 6px;
+  padding-top: 4px;
   color: #FFFFFF;
 }
 .btn__close {
-  font-size: 34px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: bold;
   color: inherit;
 }
 .btn__arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  min-width: 32px;
+  min-height: 32px;
   border-radius: 50%;
   border: 1px solid rgba(68, 68, 68, 0.4);
   color: rgba(68, 68, 68, 0.4);
@@ -7374,6 +7368,26 @@ hr {
 .btn__arrow--packages-tab {
   border: 1px solid #000000;
   color: #000000;
+}
+.btn--block {
+  width: 100%;
+}
+.btn--rose {
+  background-color: #FF7E7E;
+  color: #FFFFFF;
+}
+.btn--rose:hover {
+  background-color: #E36969;
+}
+.btn--black {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+.btn--black:hover {
+  background-color: #333232;
+}
+.btn--transparent {
+  color: #FFFFFF;
 }
 
 .hero__background--home {
@@ -7552,7 +7566,6 @@ hr {
 .register--mobile {
   display: flex;
   flex-direction: column;
-  padding-inline: 40px;
   margin-block-start: 8px;
   gap: 12px;
 }
