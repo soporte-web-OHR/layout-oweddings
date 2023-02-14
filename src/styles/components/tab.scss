@@ -1,25 +1,25 @@
 .tab {
   &__list {
     display: flex;
+    justify-content: center;
     gap: 12px;
-    overflow: hidden;
   }
   &__item {
     color: $outer-space;
-    font-family: $font-jost;
+    font-family: $font-secondary-2;
     font-size: 12px;
     letter-spacing: 0;
     line-height: 12px;
     &--selected {
-      color: $very-light-red;
-      font-family: $font-jost;
+      color: $primary-color-1;
+      font-family: $font-secondary-2;
       font-size: 12px;
       letter-spacing: 0;
       line-height: 12px;
       &::after {
         content: "";
         display: block;
-        border-bottom: 2px solid $very-light-red;
+        border-bottom: 2px solid $primary-color-1;
         padding-top: 6px;
         //height: 1px;
       }

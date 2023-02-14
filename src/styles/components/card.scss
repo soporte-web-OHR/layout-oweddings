@@ -1,7 +1,7 @@
 .card {
   &__item {
     display: flex;
-    font-family: $font-jost;
+    font-family: $font-secondary-2;
   }
   &__cover {
     display: flex;
@@ -30,7 +30,7 @@
     position: relative;
     transform: translateY(100px);
     color: $white;
-    font-family: $font-jost;
+    font-family: $font-secondary-2;
     @include media(">sm") {
       gap: 12px;
       transform: translateY(166px);
@@ -42,7 +42,7 @@
   }
   &__O {
     color: rgba(255, 255, 255, 0.4);
-    font-family: $font-times;
+    font-family: $font-secondary-3;
     font-size: 34px;
     font-weight: bold;
     letter-spacing: 0;
@@ -56,7 +56,7 @@
     }
   }
   &__title {
-    font-family: $font-jost;
+    font-family: $font-secondary-2;
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 0;
@@ -66,7 +66,7 @@
       font-size: 18px;
     }
     &--packages {
-      font-family: $font-times;
+      font-family: $font-secondary-3;
       font-size: 16px;
       font-weight: 200;
       letter-spacing: 0;
@@ -78,7 +78,7 @@
     }
   }
   &__text {
-    font-family: $font-jost;
+    font-family: $font-secondary-2;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
@@ -88,7 +88,7 @@
       font-size: 18px;
     }
     &--packages{
-      font-family: $font-jost;
+      font-family: $font-secondary-2;
       font-size: 12px;
       font-weight: 500;
       letter-spacing: 0;

@@ -15,7 +15,7 @@
     width: 464px;
   }
   &__label {
-    font-family: $font-roboto;
+    font-family: $font-primary;
     color: $white;
     font-size: 16px;
     font-weight: 500;
@@ -36,7 +36,7 @@
     width: 100%;
     &::placeholder {
       color: $white;
-      font-family: $font-roboto;
+      font-family: $font-primary;
       font-size: 12px;
       letter-spacing: 0;
       line-height: 18px;

@@ -8,7 +8,7 @@
 
 .heading {
   &__main {
-    font-family: $font-roboto;
+    font-family: $font-primary;
     color: $white;
     font-weight: 600;
     font-size: 34px;
@@ -19,7 +19,7 @@
     }
     &--packages {
       color: $outer-space;
-      font-family: $font-times;
+      font-family: $font-secondary-3;
       font-size: 24px;
       letter-spacing: 0;
       line-height: 24px;
@@ -28,7 +28,7 @@
   }
   &__O {
     color: rgba(68, 68, 68, 0.6);
-    font-family: $font-times;
+    font-family: $font-secondary-3;
     font-size: 84px;
     font-weight: bold;
     letter-spacing: 0;
@@ -43,7 +43,7 @@
   }
   &__secondary {
     display: block;
-    font-family: $font-beauty;
+    font-family: $font-secondary-1;
     font-size: 34px;
     letter-spacing: 0;
     line-height: 36px;
@@ -54,7 +54,7 @@
     }
     &--packages{
       color: $nevada;
-      font-family: $font-jost;
+      font-family: $font-secondary-2;
       font-size: 18px;
       letter-spacing: 0;
       line-height: 24px;
@@ -62,7 +62,7 @@
     }
   }
   &__title {
-    font-family: $font-times;
+    font-family: $font-secondary-3;
     font-size: 20px;
     font-weight: bold;
     color: $outer-space;
@@ -75,7 +75,7 @@
   }
   &__subtitle {
     color: $outer-space;
-    font-family: $font-jost;
+    font-family: $font-secondary-2;
     font-size: 12px;
     //font-weight: lighter;
     font-weight: 300;

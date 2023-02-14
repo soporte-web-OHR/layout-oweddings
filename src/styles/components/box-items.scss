@@ -10,13 +10,13 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid $very-light-red;
+    border: 1px solid $primary-color-1;
     border-radius: 16px;
   }
   &__title {
     &--main {
-      color: $very-light-red;
-      font-family: $font-beauty;
+      color: $primary-color-1;
+      font-family: $font-secondary-1;
       font-size: 40px;
       letter-spacing: 0;
       line-height: 40px;
@@ -28,7 +28,7 @@
     }
     &--benefits {
       color: $outer-space;
-      font-family: $font-roboto;
+      font-family: $font-primary;
       font-weight: 200;
       font-size: 16px;
       letter-spacing: 0;
@@ -39,7 +39,7 @@
       padding: 0 4px;
       span {
         font-weight: bold;
-        color: $very-light-red;
+        color: $primary-color-1;
       }
     }
   }
@@ -50,7 +50,7 @@
   &__item {
     padding-bottom: 12px;
     color: $outer-space;
-    font-family: $font-roboto;
+    font-family: $font-primary;
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 0;

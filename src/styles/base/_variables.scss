@@ -1,36 +1,73 @@
 //:root
-	// $bitcoin-orange: #f7931a
-	// $soft-orange: #ffe9d5
-	// $secondary-blue: #1a9af7
-	// $soft-blue: #e7f5ff
-	// $warm-black: #282623
-	// $black: #201e1c
-	// $grey: #bababa
-	// $off-white: #faf8f7
-	// $just-white: #fff
+///////////////////////////////////	
 // Colors
-$very-light-red: #FF7E7E;
-$charleston-green: #2e2c2a;
+///////////////////////////////////
+/// Primary
+/// ///////////
+/// Rose - Very Light red
+$primary-color-1: #FF7E7E;
+/// Moonstone 
+$primary-color-2: #459DBF;
+///////////////////////////////////
+/// Neutral
+/// ///////////
 $outer-space: #444444;
 $black: #000000;
 $white: #FFFFFF;
-$nevada: #646E73;
+
+///////////////////////////////////
+/// Others
+/// ///////////
+$charleston-green: '#2e2c2a';
+$nevada: '#646E73';
+///////////////////////////////////
+/// Alpha
+/// ///////////
+$alpha-5p: 0.05; //5%
+$alpha-10p: 0.1; //10%
+$alpha-20p: 0.2; //20%
+$alpha-30p: 0.3; //30%
+///////////////////////////////////	
+///////////////////////////////////	
+///////////////////////////////////	
 // Fonts
+///////////////////////////////////	
+/// Primary
+/// ///////////
+$font-primary: "Roboto";
+///////////////////////////////////	
+/// Secondary
+/// ///////////
 $font-icons: "bodas-2023";
-$font-beauty: "Beauty";
-$font-roboto: "Roboto";
-$font-jost: "Jost";
-$font-times: "Times New Roman";
-//// Font sizes
+$font-secondary-1: "Beauty";
+$font-secondary-2: "Jost";
+$font-secondary-3: "Times New Roman";
+///////////////////////////////////	
+/// Font size Body
+/// ///////////
+$font-size-xs: 10px;
+$font-size-sm: 12px;
 $font-size-base: 14px;
 $font-size-lg: $font-size-base +  2px;
-$font-size-sm: 12px;
-$line-height-base: 1.5715;
-$heading-color: $outer-space;
+///////////////////////////////////	
+/// Font size Heading
+/// ///////////
+/// h1
+$heading-h1-size-sm: 24px;
+$heading-h1-size-l: 44px;
+/// h2
+$heading-h2-size-xs: 18px;
+$heading-h2-size-sm: 20px;
+$heading-h2-size-l: 40px;
+/// h3
+$heading-h3-size-sm: 12px;
+$heading-h3-size-l: 16px;
+//$line-height-base: 1.5715;
+//$heading-color: $outer-space;
 // Borders
 $border-radius-base: 4px;
-$border-radius-sm: 4px;
-// Indexes
+$border-radius-sm: 2px;
+// Z-Indexes
 $index-front: 900;
 $index-middle: 700;
 $index-back: 100
