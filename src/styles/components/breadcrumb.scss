@@ -4,19 +4,16 @@
         display: block;
     }
     &__init{
+        font: $font-size-base $font-primary;
         color: $outer-space;
-        font-family: $font-primary;
-        font-size: $font-size-base;
         letter-spacing: 0;
-        line-height: 16px;
+        line-height: $base-lg*2; // 16px
         //text-align: center;
     }&__item{
+        font: bold $font-size-base $font-primary;
         color: $outer-space;
-        font-family: $font-primary;
-        font-size: $font-size-base;
-        font-weight: bold;
         letter-spacing: 0;
-        line-height: 16px;
+        line-height: $base-lg*2; // 16px
         text-align: center;
     }
 }
