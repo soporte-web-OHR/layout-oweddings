@@ -1,9 +1,9 @@
 .box {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-block: 40px 16px;
-  padding-inline: 48px;
+  gap: $base-lg * 3;
+  margin-block: ($base-lg * 5) $base-lg * 2; // 40px 16px
+  padding-inline: $base-lg * 6; // 48px
   &__container {
     display: flex;
     flex-direction: column;
@@ -11,32 +11,29 @@
     justify-content: center;
     box-sizing: border-box;
     border: 1px solid $primary-color-1;
-    border-radius: 16px;
+    border-radius: $base-lg * 2; // 16px
   }
   &__title {
     &--main {
-      color: $primary-color-1;
-      font-family: $font-secondary-1;
-      font-size: 40px;
-      letter-spacing: 0;
-      line-height: 40px;
-      text-align: center;
-      background: $white;
       position: relative;
-      transform: translateY(-16px);
-      padding: 0 64px 0 20px;
+      transform: translateY(-1 * ($base-lg * 2)); // -16px
+      padding: 0 ($base-lg * 8) 0 ($base-lg * 3); // 0 64px 0 20px
+      background: $white;
+      font: $heading-h2-size-l $font-secondary-1;
+      color: $primary-color-1;
+      letter-spacing: 0;
+      line-height: $base-lg * 5; // 40px
+      text-align: center;
     }
     &--benefits {
-      color: $outer-space;
-      font-family: $font-primary;
-      font-weight: 200;
-      font-size: 16px;
-      letter-spacing: 0;
-      line-height: 16px;
-      background: $white;
       position: relative;
-      transform: translateY(-10px);
-      padding: 0 4px;
+      transform: translateY(-1 * $base-lg); // -8px
+      padding: 0 $base-sm;
+      background: $white;
+      font: 200 $font-size-lg $font-primary;
+      color: $outer-space;
+      letter-spacing: 0;
+      line-height: $base-lg * 2;
       span {
         font-weight: bold;
         color: $primary-color-1;
@@ -44,20 +41,17 @@
     }
   }
   &__list {
-    padding: 0 26px;
+    padding: 0 ($base-lg * 3); // 0 24px
     overflow-y: auto;
   }
   &__item {
-    padding-bottom: 12px;
-    color: $outer-space;
-    font-family: $font-primary;
-    font-size: 12px;
-    font-weight: 300;
+    padding-bottom: $base-sm * 3; // 12px
+    font: 300 $font-size-sm $font-primary;
     letter-spacing: 0;
-    line-height: 12px;
+    line-height: $base-sm * 3; // 12px
     text-align: center;
   }
-  &__horizontal-line{
+  &__horizontal-line {
     display: none;
   }
 }

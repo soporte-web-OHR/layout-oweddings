@@ -8,32 +8,32 @@
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    height: 120px;
-    width: 180px;
+    border-radius: $border-radius-base;
+    width: $base-lg*22; // 176px
+    height: $base-lg*15;// 120px
     @include media(">sm") {
-      height: 204px;
-      width: 302px;
+      width: $base-lg * 38; // 304px
+      height: $base-lg * 25; // 200px
     }
   }
   &__gradient {
     position: absolute;
     width: inherit;
     height: inherit;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    background: linear-gradient(180deg, rgba($black, 0) 0%, $black 100%);
   }
   &__text-container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 4px;
+    gap: $base-sm;
     position: relative;
-    transform: translateY(100px);
-    color: $white;
+    transform: translateY($base-lg*12); // 100px
     font-family: $font-secondary-2;
+    color: $white;
     @include media(">sm") {
-      gap: 12px;
-      transform: translateY(166px);
+      gap: $base-sm*3;// 12px
+      transform: translateY($base-lg*20); // 160px 
     }
   }
   &__packages{
@@ -41,71 +41,64 @@
     align-items: center;
   }
   &__O {
-    color: rgba(255, 255, 255, 0.4);
-    font-family: $font-secondary-3;
-    font-size: 34px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 38px;
-    text-align: center;
     position: relative;
     transform: translateX(12px);
+    color: rgba($white, $alpha-40p);
+    font: bold $heading-h1-size-sm $font-secondary-3;
+    letter-spacing: 0;
+    line-height: $base-sm*9;// 36px
+    text-align: center;
     @include media('>md'){
-      font-size: 84px;
-      transform: translateX(36px);
+      font-size: $O_size-l;
+      transform: translateX($base-sm*9); // 36px
     }
   }
   &__title {
-    font-family: $font-secondary-2;
-    font-size: 12px;
-    font-weight: 200;
+    font: $font-size-sm $font-secondary-2;
     letter-spacing: 0;
-    line-height: 14px;
+    line-height: $base-sm*3; // 12px
     text-align: center;
     @include media(">md") {
-      font-size: 18px;
+      font-size: $font-size-xl;
     }
     &--packages {
-      font-family: $font-secondary-3;
-      font-size: 16px;
-      font-weight: 200;
+      font: $font-size-lg $font-secondary-3;
+      //font-weight: 200;
       letter-spacing: 0;
-      line-height: 18px;
+      line-height: $base-lg*2;// 16px
       text-align: center;
       @include media(">md") {
-        font-size: 24px;
+        font-size: $heading-h1-size-xs;
       }
     }
   }
   &__text {
-    font-family: $font-secondary-2;
-    font-size: 12px;
-    font-weight: 500;
+    font: bold $font-size-sm $font-secondary-2;
+    //font-weight: 500;
     letter-spacing: 0;
-    line-height: 12px;
+    line-height: $base-sm*3; //12px
     text-align: center;
     @include media(">md") {
-      font-size: 18px;
+      font-size: $font-size-xl;
     }
     &--packages{
-      font-family: $font-secondary-2;
-      font-size: 12px;
-      font-weight: 500;
+      font: bold $font-size-sm $font-secondary-2;
+      //font-weight: 500;
       letter-spacing: 0;
-      line-height: 18px;
+      line-height: $base-lg*2; // 16px
       text-align: center;
     }
   }
   &__image {
-    width: inherit;
     height: inherit;
+    width: inherit;
   }
   &__background {
     position: relative;
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: $border-radius-base;
   }
   &--hidden {
     display: none;
