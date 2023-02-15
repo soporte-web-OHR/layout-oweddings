@@ -2,25 +2,23 @@
   &__list {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: $base-sm*3; // 12px
   }
   &__item {
+    font: $font-size-sm $font-secondary-2;
     color: $outer-space;
-    font-family: $font-secondary-2;
-    font-size: 12px;
     letter-spacing: 0;
-    line-height: 12px;
+    line-height: $base-sm*3;
     &--selected {
+      font-family: $font-size-sm $font-secondary-2;
       color: $primary-color-1;
-      font-family: $font-secondary-2;
-      font-size: 12px;
       letter-spacing: 0;
-      line-height: 12px;
+      line-height: $base-sm*3; // 12px
       &::after {
         content: "";
         display: block;
         border-bottom: 2px solid $primary-color-1;
-        padding-top: 6px;
+        padding-top: $base-sm;
         //height: 1px;
       }
     }
