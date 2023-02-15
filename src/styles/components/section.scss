@@ -7,13 +7,13 @@
   //     ),
   //     linear-gradient(0deg, #459dbf 0%, rgba(48, 163, 216, 0) 100%);
   // }
-  &__home{
+  &__home {
     &-information {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: $base-lg;
       @include media(">md") {
-        gap: 20px;
+        gap: $base-lg * 3; // 24px
         //padding-inline: 20% 24%;
       }
       // display: grid;
@@ -33,56 +33,53 @@
         grid-row: 1 / 4;
         img {
           object-fit: cover;
-          height: 348px;
-          width: 116px;
+          height: $base-lg * 43; // 344px
+          width: $base-lg * 14; // 112px
           @include media(">md") {
-            height: 405px;
-            width: 514px;
+            height: $base-lg * 50; // 400px
+            width: $base-lg * 64; // 512px
           }
         }
       }
       &-description {
-        padding: 8px 0 0;
+        padding: $base-lg 0 0;
+        font: 100 $font-size-sm $font-primary;
         color: $outer-space;
-        font-family: $font-primary;
-        font-size: 12px;
-        font-weight: 100;
         letter-spacing: 0;
-        line-height: 16px;
+        line-height: $base-lg * 2; // 16px
       }
     }
     &-packages {
+      margin: $base-lg 0 ($base-lg * 2); // 8px 0 16px
       text-align: center;
-      margin: 8px 0 16px;
       @include media(">md") {
-        padding: 0 24%;
+        padding: 0 ($base-lg * 37); // 0 296px
       }
     }
     &-text-container {
       @include media(">lg") {
-        max-width: 456px;
+        max-width: $base-lg * 57; // 456px
       }
     }
   }
 }
 
-  // &__title {
-  //   @include media('>md'){
-  //     line-height: 1;
-  //     width:424px
-  //   }
-  // }
-  // &__description {
-  //   padding-block: 8px 0;
-  //   color: $outer-space;
-  //   font-family: $font-primary;
-  //   font-size: 12px;
-  //   font-weight: 100;
-  //   letter-spacing: 0;
-  //   line-height: 16px;
+// &__title {
+//   @include media('>md'){
+//     line-height: 1;
+//     width:424px
+//   }
+// }
+// &__description {
+//   padding-block: 8px 0;
+//   color: $outer-space;
+//   font-family: $font-primary;
+//   font-size: 12px;
+//   font-weight: 100;
+//   letter-spacing: 0;
+//   line-height: 16px;
 
-  //   @include media('>md'){
-  //     width:400px
-  //   }
-  // }
-
+//   @include media('>md'){
+//     width:400px
+//   }
+// }

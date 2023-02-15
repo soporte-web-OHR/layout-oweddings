@@ -2,18 +2,18 @@
   &__list {
     display: flex;
     justify-content: center;
-    gap: $base-sm*3; // 12px
+    gap: $base-sm * 3; // 12px
   }
   &__item {
     font: $font-size-sm $font-secondary-2;
     color: $outer-space;
     letter-spacing: 0;
-    line-height: $base-sm*3;
+    line-height: $base-sm * 3;
     &--selected {
       font-family: $font-size-sm $font-secondary-2;
       color: $primary-color-1;
       letter-spacing: 0;
-      line-height: $base-sm*3; // 12px
+      line-height: $base-sm * 3; // 12px
       &::after {
         content: "";
         display: block;
@@ -23,7 +23,7 @@
       }
     }
   }
-  &__arrow{
+  &__arrow {
     display: flex;
     justify-content: space-between;
   }
