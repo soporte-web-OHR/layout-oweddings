@@ -1,36 +1,35 @@
 //@import './../base/_variables'
 
 .footer {
-    // display: flex
-    // flex-direction: column
-    // justify-content: center
-    // align-items: center
-    // gap: 16px
-    padding: 24px 0px;
-    border-top: 2px solid $charleston-green;
-    border-bottom: 24px solid $charleston-green;
-    background: $white;
-    font-family: $font-primary;
-    font-size: 10px;
-    letter-spacing: 0;
-    line-height: 12px;
-    text-align: center;
-    @include media(">md") {
-      padding: 48px 0px;
-      font-size: 12px;
-      line-height: 14px;
-    }
-  
+  // display: flex
+  // flex-direction: column
+  // justify-content: center
+  // align-items: center
+  // gap: 16px
+  padding: ($base-lg * 3) 0;
+  border-top: 2px solid $charleston-green;
+  border-bottom: ($base-lg * 3) solid $charleston-green;
+  background: $white;
+  font: $font-size-xs $font-primary;
+  letter-spacing: 0;
+  line-height: $base-sm * 3;
+  text-align: center;
+  @include media(">md") {
+    padding: $base-lg * 6 0;
+    font-size: $font-size-sm;
+    line-height: $base-sm * 3;
+  }
+
   &__brand {
-    height: 48px;
-    width: 120px;
+    min-height: $base-lg * 6; // 48px
+    min-width: $base-lg * 15; // 120px
   }
   &__pages-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
-    row-gap: 10px;
-    column-gap: 12px;
+    row-gap: $base-sm * 3; // 12px
+    column-gap: $base-sm * 3; // 12px
     .right-link {
       text-align: right;
     }
@@ -45,32 +44,32 @@
     @include media(">md") {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: $base-lg * 4; // 32px
     }
   }
   &__social-media {
     display: flex;
     justify-content: center;
-    gap: 4px;
-    font-size: 14px;
-    margin-block: 12px 0px;
+    gap: $base-sm;
+    font-size: $font-size-base;
+    margin-block: ($base-sm * 3) 0;
     @include media(">md") {
-      margin-block: 0px;
-      font-size: 18px;
-      gap: 8px;
+      margin-block: 0;
+      font-size: $font-size-xl;
+      gap: $base-lg;
     }
   }
   &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background: #4444;
+    min-width: $base-lg * 3;
+    min-height: $base-lg * 3;
+    border-radius: $border-radius-circular;
+    background: rgba($outer-space, $alpha-30p);
     @include media(">md") {
-      height: 35px;
-      width: 35px;
+      min-width: $base-sm * 9;
+      min-height: $base-sm * 9;
     }
   }
 }

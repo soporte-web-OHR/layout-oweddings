@@ -1,19 +1,19 @@
 .navbar {
-  margin-block-start: 32px;
-  padding-inline: 32px;
+  margin-block-start: $base-lg * 4; // 32px
+  padding-inline: $base-lg * 4;
   color: $white;
   @include media(">md") {
-    margin-block-start: 8px;
-    padding-inline: 64px;
+    margin-block-start: $base-lg;
+    padding-inline: $base-lg * 8;
   }
   &--fixed {
     position: fixed;
-    width: 100%;
-    padding: 0px 16px;
-    color: $outer-space;
+    min-width: 100%;
+    padding: 0 ($base-lg * 2); // 0 16px
     background: $white;
+    color: $outer-space;
     @include media(">md") {
-      padding: 0px 64px;
+      padding: 0 ($base-lg * 8); // 0 64px
     } // &__brand
     // &__menu
     //     &__container
@@ -29,9 +29,9 @@
     //         text-align: center
   }
   &__login {
-    margin-left: 0px;
+    margin-left: 0;
     @include media(">md") {
-      margin-left: 16px;
+      margin-left: $base-lg * 2; // 16px
     } //&__link
   }
   &__window {
@@ -41,11 +41,11 @@
     }
     &--open {
       position: fixed;
+      padding: ($base-lg * 8) 0 0; // 64px 0 0
       background: $primary-color-1;
-      padding: 64px 0px 0px;
-      width: 100%;
-      height: 100%;
-      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      top: 0; // this is because flex-box sass added this values, we need to restart both
       right: 0;
       @include media(">md") {
         display: none;
@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     color: $white;
-    padding-inline: 16px 16px;
+    padding-inline: $base-lg * 2; // 16px
     @include media(">md") {
       display: none;
     }
@@ -68,7 +68,8 @@
       align-items: center;
       justify-content: center;
       border-right: 1px solid $white;
-      padding: 8px 18px 8px 0px;
+      padding: $base-lg ($base-lg * 2) $base-lg 0 // 8px 16px 8px 0px
+;
     }
   }
   &__list {
@@ -76,29 +77,26 @@
     flex-direction: column;
     align-items: flex-start;
     //gap: 6px
-    margin-block-start: 32px;
+    margin-block-start: $base-lg * 4; // 32px
     @include media(">md") {
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
       margin-block-start: unset;
-      padding-block-start: 8px;
-      gap: 8px;
+      padding-block-start: $base-lg;
+      gap: $base-lg;
     }
   }
   &__item {
-    font-family: $font-primary;
-    padding: 4px 0px 4px 48px;
-    font-size: 12px;
+    font: $font-size-sm $font-primary;
+    padding: $base-sm 0 $base-sm ($base-lg * 6); //4px 0 4px 48px;
     &__title {
-      font-family: $font-primary;
-      font-size: 14px;
+      margin-bottom: $base-lg * 2;
+      padding-left: $base-lg * 3;
+      font: bold $font-size-base $font-primary;
       letter-spacing: 0;
-      line-height: 14px;
+      line-height: $base-lg * 3; // 12px
       text-align: center;
-      font-weight: bold;
-      margin-bottom: 16px;
-      padding-left: 24px;
       @include media(">md") {
         display: none;
       }
@@ -113,23 +111,22 @@
       display: none;
     }
     &--selected {
-      padding: 10px 8px 10px 24px;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.2);
+      padding: $base-lg $base-lg $base-lg ($base-lg*3);// 8px 8px 8px 24px;
+      min-width: 100%;
+      background-color: rgba($white, $alpha-20p);
       a {
-        font-family: $font-primary;
-        font-size: 14px;
+        font: $font-size-base $font-primary;
         letter-spacing: 0;
-        line-height: 14px;
+        line-height: $base-sm*3;// 12px
         text-align: center;
         @include media(">md") {
           font-weight: bold;
           &::after {
             content: "";
             display: block;
-            border-bottom: 4px solid rgba(255, 255, 255, 0.5);
-            padding-top: 6px;
-            height: 1px;
+            border-bottom: $base-sm solid rgba($white, $alpha-40p);
+            padding-top: $base-sm;
+            min-height: 1px;
           }
         }
       }

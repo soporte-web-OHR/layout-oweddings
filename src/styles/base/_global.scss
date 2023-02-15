@@ -8,116 +8,111 @@
 
 .heading {
   &__main {
-    font-family: $font-primary;
-    color: $white;
-    font-weight: 600;
-    font-size: 34px;
-    letter-spacing: 0;
-    line-height: 40px;
-    @include media(">md") {
-      font-size: 44px;
+    // font-family: $font-primary;
+    // font-weight: 600;
+    // font-size: 34px;
+    &--home {
+      font: bold $heading-h1-size-sm $font-primary;
+      color: $white;
+      letter-spacing: 0;
+      line-height: $base-lg * 5; // 40px
+      @include media(">md") {
+        font-size: $heading-h1-size-l;
+      }
     }
     &--packages {
       color: $outer-space;
-      font-family: $font-secondary-3;
-      font-size: 24px;
+      font: $heading-h1-size-xs $font-secondary-3;
       letter-spacing: 0;
-      line-height: 24px;
+      line-height: $base-lg * 3; // 24px
       text-align: center;
     }
   }
   &__O {
-    color: rgba(68, 68, 68, 0.6);
-    font-family: $font-secondary-3;
-    font-size: 84px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 38px;
-    text-align: center;
     position: relative;
-    transform: translateX(40px);
+    transform: translateX($base-lg * 5); // 40px
+    color: rgba($outer-space, $alpha-40p);
+    font: bold $O_size-l $font-secondary-3;
+    letter-spacing: 0;
+    line-height: $base-lg * 5; // 40px
+    text-align: center;
     @include media(">md") {
-      font-size: 84px;
-      transform: translateX(36px);
+      transform: translateX($base-sm * 9); // 36px
     }
   }
   &__secondary {
-    display: block;
-    font-family: $font-secondary-1;
-    font-size: 34px;
-    letter-spacing: 0;
-    line-height: 36px;
-    text-align: center;
-    color: $white;
-    @include media(">md") {
-      font-size: 44px;
-    }
-    &--packages{
-      color: $nevada;
-      font-family: $font-secondary-2;
-      font-size: 18px;
+    &--home {
+      font: $heading-h1-size-sm $font-secondary-1;
+      color: $white;
       letter-spacing: 0;
-      line-height: 24px;
+      line-height: $base-sm * 9; // 36px
+      text-align: center;
+      @include media(">md") {
+        font-size: $heading-h1-size-l;
+      }
+    }
+    &--packages {
+      font: $heading-h2-size-xs $font-secondary-2;
+      color: $nevada;
+      letter-spacing: 0;
+      line-height: $base-lg * 3; // 24px
       text-align: center;
     }
   }
-  &__title {
-    font-family: $font-secondary-3;
-    font-size: 20px;
-    font-weight: bold;
-    color: $outer-space;
-    letter-spacing: 0;
-    line-height: 24px;
-    @include media(">md") {
-      font-size: 40px;
-      line-height: unset;
+  &__section {
+    &-title {
+      font: bold $heading-h2-size-sm $font-secondary-3;
+      color: $outer-space;
+      letter-spacing: 0;
+      line-height: $base-lg * 3; // 24px
+      @include media(">md") {
+        font-size: $heading-h2-size-l;
+        line-height: $base-lg * 6; //48px
+      }
     }
-  }
-  &__subtitle {
-    color: $outer-space;
-    font-family: $font-secondary-2;
-    font-size: 12px;
-    //font-weight: lighter;
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: 16px;
-    @include media(">md") {
-      font-size: 18px;
+    &-subtitle {
+      font: $font-size-sm $font-secondary-2;
+      color: $outer-space;
+      letter-spacing: 0;
+      line-height: $base-lg * 2;
+      @include media(">md") {
+        font-size: $heading-h2-size-xs;
+      }
     }
-  }
-  &__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translateX(-24px);
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform: translateX(-1 * ($base-lg * 3)); // -24px
+    }
   }
 }
 
 // xs: 640px, sm: 768px, md: 1024px, lg: 1280px, xl:1400px
 .wrapper {
   &__section {
-    max-width: 540px;
+    max-width: $bk-xs;
     margin: 0 auto 24px;
     padding: 0 1.25em;
     //margin-bottom: 24px;
     //padding: 0px 24px;
     @include media(">sm") {
-      max-width: 654px;
+      max-width: $bk-sm;
     }
     @include media(">md") {
-      max-width: 854px;
+      max-width: $bk-md;
     }
     @include media(">lg") {
-      max-width: 1078px;
+      max-width: $bk-lg;
     }
     @include media(">xl") {
-      max-width: 1278px;
+      max-width: $bk-xl;
     }
     &--first {
       position: relative;
       padding: 0 1em;
-      transform: translateY(-32px);
+      transform: translateY(-1 * ($base-lg * 4)); // -32px
     }
   }
   &__header {

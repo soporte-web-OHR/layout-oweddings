@@ -55,11 +55,13 @@ $font-size-xs: 10px;
 $font-size-sm: 12px;
 $font-size-base: 14px;
 $font-size-lg: $font-size-base +  2px;
+$font-size-xl: $font-size-base +  4px;
 ///////////////////////////////////	
 /// Font size Heading
 /// ///////////
 /// h1
-$heading-h1-size-sm: 24px;
+$heading-h1-size-xs: 24px;
+$heading-h1-size-sm: 34px;
 $heading-h1-size-l: 44px;
 /// h2
 $heading-h2-size-xs: 18px;
@@ -68,6 +70,8 @@ $heading-h2-size-l: 40px;
 /// h3
 $heading-h3-size-sm: 12px;
 $heading-h3-size-l: 16px;
+/// O icon in titles
+$O_size-l: 84px; 
 ///////////////////////////////////	
 /// Line Height
 /// ///////////
@@ -85,6 +89,15 @@ $border-radius-circular: 50%;
 $index-front: 900;
 $index-middle: 700;
 $index-back: 100;
+///////////////////////////////////	
+// Breakpoints Containers
+/// ///////////
+// xs: 640px, sm: 768px, md: 1024px, lg: 1280px, xl:1400px
+$bk-xs: 540px;
+$bk-sm: 654px;
+$bk-md: 854px;
+$bk-lg: 1078px;
+$bk-xl: 1278px;
 ///////////////////////////////////	
 // Constants
 /// ///////////
