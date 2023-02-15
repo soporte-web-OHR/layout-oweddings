@@ -7501,7 +7501,7 @@ hr {
     grid-template-columns: 1fr 1fr;
     row-gap: 12px;
     column-gap: 8px;
-    width: 464px;
+    min-width: 464px;
   }
 }
 .register--modal {
@@ -7509,16 +7509,14 @@ hr {
   grid-template-columns: 1fr 1fr;
   row-gap: 12px;
   column-gap: 8px;
-  width: 464px;
+  min-width: 464px;
 }
 .register__label {
-  font-family: "Roboto";
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 22px;
   padding-bottom: 4px;
+  font: 500 16px "Roboto";
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 24px;
   text-align: center;
 }
 @media (min-width: 1025px) {
@@ -7527,19 +7525,21 @@ hr {
   }
 }
 .register__input {
-  color: #FFFFFF;
-  padding: 12px 0 12px 10px;
+  padding: 12px 0 12px 12px;
+  min-width: 100%;
   background: transparent;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
-  width: 100%;
+  color: #FFFFFF;
 }
 .register__input::placeholder {
+  font: 12px "Roboto";
   color: #FFFFFF;
-  font-family: "Roboto";
-  font-size: 12px;
   letter-spacing: 0;
-  line-height: 18px;
+  line-height: 16px;
+}
+.register__input:focus {
+  border-color: red;
 }
 .register--mobile {
   display: flex;
@@ -7560,7 +7560,7 @@ hr {
 }
 @media (min-width: 1025px) {
   .section__home-information {
-    gap: 20px;
+    gap: 24px;
   }
 }
 .section__home-info-image {
@@ -7571,31 +7571,29 @@ hr {
 }
 .section__home-info-image img {
   object-fit: cover;
-  height: 348px;
-  width: 116px;
+  height: 344px;
+  width: 112px;
 }
 @media (min-width: 1025px) {
   .section__home-info-image img {
-    height: 405px;
-    width: 514px;
+    height: 400px;
+    width: 512px;
   }
 }
 .section__home-info-description {
   padding: 8px 0 0;
+  font: 100 12px "Roboto";
   color: #444444;
-  font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 100;
   letter-spacing: 0;
   line-height: 16px;
 }
 .section__home-packages {
-  text-align: center;
   margin: 8px 0 16px;
+  text-align: center;
 }
 @media (min-width: 1025px) {
   .section__home-packages {
-    padding: 0 24%;
+    padding: 0 296px;
   }
 }
 @media (min-width: 1281px) {
@@ -7736,12 +7734,12 @@ hr {
 }
 .slider__container--cards {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 .slider__container--arrows {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .card__item {

@@ -7501,17 +7501,14 @@ hr {
   }
 }
 .breadcrumb__init {
+  font: 14px "Roboto";
   color: #444444;
-  font-family: "Roboto";
-  font-size: 14px;
   letter-spacing: 0;
   line-height: 16px;
 }
 .breadcrumb__item {
+  font: bold 14px "Roboto";
   color: #444444;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: bold;
   letter-spacing: 0;
   line-height: 16px;
   text-align: center;
@@ -7523,16 +7520,14 @@ hr {
   gap: 12px;
 }
 .tab__item {
+  font: 12px "Jost";
   color: #444444;
-  font-family: "Jost";
-  font-size: 12px;
   letter-spacing: 0;
   line-height: 12px;
 }
 .tab__item--selected {
+  font-family: 12px "Jost";
   color: #FF7E7E;
-  font-family: "Jost";
-  font-size: 12px;
   letter-spacing: 0;
   line-height: 12px;
 }
@@ -7540,7 +7535,7 @@ hr {
   content: "";
   display: block;
   border-bottom: 2px solid #FF7E7E;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 .tab__arrow {
   display: flex;

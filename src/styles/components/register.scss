@@ -3,51 +3,51 @@
   @include media(">md") {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 12px;
-    column-gap: 8px;
-    width: 464px;
+    row-gap: $base-sm * 3; // 12px
+    column-gap: $base-lg;
+    min-width: $base-lg * 58; // 464px
   }
   &--modal {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 12px;
-    column-gap: 8px;
-    width: 464px;
+    row-gap: $base-sm * 3; // 12px
+    column-gap: $base-lg;
+    min-width: $base-lg * 58; // 464px
   }
   &__label {
-    font-family: $font-primary;
+    padding-bottom: $base-sm;
+    font: 500 $font-size-lg $font-primary;
     color: $white;
-    font-size: 16px;
-    font-weight: 500;
     letter-spacing: 0;
-    line-height: 22px;
-    padding-bottom: 4px;
+    line-height: $base-lg * 3; // 24px
     text-align: center;
     @include media(">md") {
       text-align: left;
     }
   }
   &__input {
-    color: $white;
-    padding: 12px 0 12px 10px;
+    padding: ($base-sm * 3) 0 ($base-sm * 3) ($base-sm * 3); // 12px 0 12px 12px
+    min-width: 100%;
     background: transparent;
     border: 1px solid $white;
-    border-radius: 4px;
-    width: 100%;
+    border-radius: $base-sm;
+    color: $white;
     &::placeholder {
+      font: $font-size-sm $font-primary;
       color: $white;
-      font-family: $font-primary;
-      font-size: 12px;
       letter-spacing: 0;
-      line-height: 18px;
+      line-height: $base-lg * 2; // 16px
+    }
+    &:focus {
+      border-color: red;
     }
   }
   &--mobile {
     display: flex;
     flex-direction: column;
     //padding-inline: 40px;
-    margin-block-start: 8px;
-    gap: 12px;
+    margin-block-start: $base-lg;
+    gap: $base-sm * 3; // 12px
     @include media(">md") {
       display: none;
     }
