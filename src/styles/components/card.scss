@@ -9,18 +9,22 @@
     justify-content: center;
     align-items: center;
     border-radius: $border-radius-base;
-    width: $base-lg*22; // 176px
-    height: $base-lg*15;// 120px
+    width: $base-lg * 22; // 176px
+    height: $base-lg * 15; // 120px
     @include media(">sm") {
       width: $base-lg * 38; // 304px
       height: $base-lg * 25; // 200px
     }
   }
-  &__gradient {
+  &__overlay {
     position: absolute;
     width: inherit;
     height: inherit;
-    background: linear-gradient(180deg, rgba($black, 0) 0%, $black 100%);
+    background: linear-gradient(
+      180deg,
+      rgba($black, 0) 0%,
+      rgba($black, $alpha-20p) 100%
+    );
   }
   &__text-container {
     display: flex;
@@ -28,15 +32,15 @@
     text-align: center;
     gap: $base-sm;
     position: relative;
-    transform: translateY($base-lg*12); // 100px
+    transform: translateY($base-lg * 12); // 100px
     font-family: $font-secondary-2;
     color: $white;
     @include media(">sm") {
-      gap: $base-sm*3;// 12px
-      transform: translateY($base-lg*20); // 160px 
+      gap: $base-sm * 3; // 12px
+      transform: translateY($base-lg * 20); // 160px
     }
   }
-  &__packages{
+  &__packages {
     display: flex;
     align-items: center;
   }
@@ -46,17 +50,17 @@
     color: rgba($white, $alpha-40p);
     font: bold $heading-h1-size-sm $font-secondary-3;
     letter-spacing: 0;
-    line-height: $base-sm*9;// 36px
+    line-height: $base-sm * 9; // 36px
     text-align: center;
-    @include media('>md'){
+    @include media(">md") {
       font-size: $O_size-l;
-      transform: translateX($base-sm*9); // 36px
+      transform: translateX($base-sm * 9); // 36px
     }
   }
   &__title {
     font: $font-size-sm $font-secondary-2;
     letter-spacing: 0;
-    line-height: $base-sm*3; // 12px
+    line-height: $base-sm * 3; // 12px
     text-align: center;
     @include media(">md") {
       font-size: $font-size-xl;
@@ -65,7 +69,7 @@
       font: $font-size-lg $font-secondary-3;
       //font-weight: 200;
       letter-spacing: 0;
-      line-height: $base-lg*2;// 16px
+      line-height: $base-lg * 2; // 16px
       text-align: center;
       @include media(">md") {
         font-size: $heading-h1-size-xs;
@@ -76,16 +80,16 @@
     font: bold $font-size-sm $font-secondary-2;
     //font-weight: 500;
     letter-spacing: 0;
-    line-height: $base-sm*3; //12px
+    line-height: $base-sm * 3; //12px
     text-align: center;
     @include media(">md") {
       font-size: $font-size-xl;
     }
-    &--packages{
+    &--packages {
       font: bold $font-size-sm $font-secondary-2;
       //font-weight: 500;
       letter-spacing: 0;
-      line-height: $base-lg*2; // 16px
+      line-height: $base-lg * 2; // 16px
       text-align: center;
     }
   }

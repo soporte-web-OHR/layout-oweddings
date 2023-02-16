@@ -35,6 +35,12 @@
       letter-spacing: 0;
       text-align: left;
     }
+    &-download {
+      min-width: $base-sm * 9; // 36px
+      min-height: $base-sm * 9; // 36px
+      background-color: rgba($outer-space, $alpha-20p);
+      font-size: $font-size-lg;
+    }
   }
   &__menu {
     font-size: $heading-h2-size-l; //40px
@@ -53,8 +59,8 @@
     min-width: $base-lg * 4; // 32px
     min-height: $base-lg * 4; // 32px
     border-radius: $border-radius-circular;
-    border: 1px solid rgba($outer-space, $alpha-40p);
-    color: rgba($outer-space, $alpha-40p);
+    border: 1px solid $outer-space;
+    color: $outer-space, $alpha-40p;
     line-height: 1px;
     &--packages-tab {
       border: 1px solid $black;
@@ -81,6 +87,9 @@
   &--transparent {
     background-color: transparent;
     color: $white;
+  }
+  &--circular {
+    border-radius: $border-radius-circular;
   }
 }
 

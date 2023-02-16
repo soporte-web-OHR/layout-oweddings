@@ -54,4 +54,7 @@
   &__horizontal-line {
     display: none;
   }
+  &--min-height {
+    min-height: $base-lg * 23;
+  }
 }

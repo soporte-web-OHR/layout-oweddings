@@ -6,6 +6,10 @@
 
 @import "sass-flexbox-grid-oasis/main.sass";
 
+body{
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
 .heading {
   &__main {
     // font-family: $font-primary;
@@ -123,4 +127,8 @@
     flex-direction: column;
     box-shadow: 0 -23px 34px 0 rgba(0, 0, 0, 0.2);
   }
+}
+
+.hidden {
+  display: none !important;
 }

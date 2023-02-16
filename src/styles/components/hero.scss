@@ -20,7 +20,7 @@
       background-size: cover;
       background-position: 25%center;
       background-repeat: no-repeat;
-      height: 30em;
+      height: 34em;
     }
     &--gradient {
       background: linear-gradient(
@@ -91,6 +91,7 @@
         min-height: 100%;
         top: 0;
         right: 0;
+        z-index: $index-front;
         @include media(">md") {
           display: none;
         }
@@ -115,13 +116,20 @@
       //background: white;
       //height: 100%;
       margin-block-start: $base-sm;
-      gap: $base-sm;
+      gap: $base-sm * 3; // 12px
     }
     &-paragraph {
       font: $font-size-sm $font-primary;
       color: $nevada;
       letter-spacing: 0;
-      line-height: $base-sm * 3; // 12 px
+      line-height: $base-sm * 3; // 12px
+      text-align: center;
+    }
+    &-download {
+      font: $font-size-base $font-primary;
+      color: $nevada;
+      letter-spacing: 0;
+      line-height: $base-lg * 2; // 16px
       text-align: center;
     }
   }

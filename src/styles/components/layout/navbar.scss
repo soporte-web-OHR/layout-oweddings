@@ -12,6 +12,7 @@
     padding: 0 ($base-lg * 2); // 0 16px
     background: $white;
     color: $outer-space;
+    z-index: $index-front;
     @include media(">md") {
       padding: 0 ($base-lg * 8); // 0 64px
     } // &__brand

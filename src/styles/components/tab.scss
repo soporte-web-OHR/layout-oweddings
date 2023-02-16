@@ -1,5 +1,9 @@
 .tab {
+  margin-top: $base-lg * 8; // 64px
   padding: 0 $base-lg * 3; // 0 24px
+  @include media('>sm'){
+    margin: ($base-lg * 4) 0; // 32px
+  }
   &__list {
     display: flex;
     justify-content: center;
@@ -24,10 +28,13 @@
       }
     }
   }
-  &__arrow {
+  &__arrows {
     display: flex;
     justify-content: space-between;
     position: relative;
-    transform: translateY(-1 * ($base-lg * 4)); // -32px
+    transform: translateY(-1 * ($base-sm * 7)); // -28px
+    @include media('>sm'){
+      display: none;
+    }
   }
 }
