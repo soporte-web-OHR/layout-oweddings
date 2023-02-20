@@ -81,6 +81,7 @@
           align-items: center;
           font: $heading-h1-size-sm $font-icons;
           color: $white;
+          z-index: $index-front;
           @include media('>md'){
             font-size: $O_size-l;
           }

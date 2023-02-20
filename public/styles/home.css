@@ -7328,13 +7328,15 @@ hr {
   text-align: center;
 }
 .btn__secondary-outline {
-  padding: 12px 0 12px 8px;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   font: 12px "Roboto";
+  color: #FFFFFF;
   line-height: 16px;
   letter-spacing: 0;
-  text-align: left;
+}
+.btn__secondary-outline:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .btn__secondary-download {
   min-width: 36px;
@@ -7370,6 +7372,20 @@ hr {
 .btn--block {
   width: 100%;
 }
+.btn--circular {
+  border-radius: 50%;
+}
+.btn--input {
+  padding: 12px 0 12px 8px;
+  text-align: left;
+}
+.btn--card {
+  padding: 12px 36px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+}
 .btn--rose {
   background-color: #FF7E7E;
   color: #FFFFFF;
@@ -7383,13 +7399,6 @@ hr {
 }
 .btn--black:hover {
   background-color: #333232;
-}
-.btn--transparent {
-  background-color: transparent;
-  color: #FFFFFF;
-}
-.btn--circular {
-  border-radius: 50%;
 }
 
 .hero__background--home {
@@ -7725,6 +7734,7 @@ hr {
   align-items: center;
   font: 34px "bodas-2023";
   color: #FFFFFF;
+  z-index: 900;
 }
 @media (min-width: 1025px) {
   .gallery__home-container-video::after {
@@ -7887,21 +7897,52 @@ hr {
 .card__item {
   display: flex;
   font-family: "Jost";
+  border-radius: 4px;
 }
-.card__cover {
+.card__item:hover .card__image {
+  transform: scale(1.4);
+  z-index: 100;
+}
+.card__item:hover .btn--card {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  animation: up 0.5s forwards;
+}
+.card__item:hover .card__container--package {
+  animation: up 0.5s forwards;
+}
+.card__item:not(:hover) .btn--card {
+  animation: downButton 0.5s;
+}
+.card__item:not(:hover) .card__container--package {
+  animation: down 0.5s;
+}
+.card__wrapper {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
   width: 176px;
   height: 120px;
+  border-radius: 4px;
 }
 @media (min-width: 769px) {
-  .card__cover {
+  .card__wrapper {
     width: 304px;
-    height: 200px;
   }
+}
+.card__cover {
+  height: 100%;
+  width: 100%;
+}
+.card__image {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
 }
 .card__overlay {
   position: absolute;
@@ -7909,8 +7950,10 @@ hr {
   height: inherit;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
-.card__text-container {
+.card__container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   gap: 4px;
@@ -7920,14 +7963,25 @@ hr {
   color: #FFFFFF;
 }
 @media (min-width: 769px) {
-  .card__text-container {
+  .card__container {
     gap: 12px;
-    transform: translateY(160px);
   }
 }
-.card__packages {
+@media (min-width: 769px) {
+  .card__container--hotel {
+    transform: translateY(176px);
+  }
+}
+@media (min-width: 769px) {
+  .card__container--package {
+    transform: translateY(224px);
+  }
+}
+.card__container-title {
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 .card__O {
   position: relative;
@@ -7940,59 +7994,60 @@ hr {
 }
 @media (min-width: 1025px) {
   .card__O {
+    transform: translateX(16px);
     font-size: 84px;
-    transform: translateX(36px);
   }
 }
-.card__title {
+.card__title--hotel {
   font: 12px "Jost";
   letter-spacing: 0;
   line-height: 12px;
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .card__title {
+  .card__title--hotel {
     font-size: 18px;
   }
 }
-.card__title--packages {
+.card__title--package {
   font: 16px "Times New Roman";
   letter-spacing: 0;
   line-height: 16px;
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .card__title--packages {
+  .card__title--package {
+    position: relative;
+    transform: translateX(-24px);
     font-size: 24px;
   }
 }
-.card__text {
+.card__text--hotel {
   font: bold 12px "Jost";
   letter-spacing: 0;
   line-height: 12px;
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .card__text {
+  .card__text--hotel {
     font-size: 18px;
   }
 }
-.card__text--packages {
+.card__text--package {
   font: bold 12px "Jost";
   letter-spacing: 0;
   line-height: 16px;
   text-align: center;
 }
-.card__image {
-  height: inherit;
-  width: inherit;
+@media (min-width: 769px) {
+  .card__height--hotel {
+    height: 200px;
+  }
 }
-.card__background {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+@media (min-width: 769px) {
+  .card__height--package {
+    height: 248px;
+  }
 }
 .card--hidden {
   display: none;
@@ -8000,6 +8055,35 @@ hr {
 @media (min-width: 1281px) {
   .card--hidden {
     display: block;
+  }
+}
+
+@keyframes up {
+  0% {
+    bottom: -60px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes down {
+  0% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes downButton {
+  0% {
+    bottom: -60px;
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    bottom: -90px;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 

@@ -4,7 +4,7 @@
   align-items: center;
   gap: $base-lg; // 8px
   @include media('>md'){
-    gap: $base-lg * 3; 
+    gap: $base-lg * 3;
   }
   &__container {
     &--cards{

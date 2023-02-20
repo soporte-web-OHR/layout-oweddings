@@ -26,14 +26,17 @@
   }
   &__secondary {
     &-outline {
-      padding: ($base-sm * 3) 0 ($base-sm * 3) $base-lg; // 12px 0 12px 8px
+      //padding: ($base-sm * 3) 0 ($base-sm * 3) $base-lg; // 12px 0 12px 8px
       //padding-inline: $base-sm * 3; // 12px
       border: 1px solid $white;
       border-radius: $border-radius-base;
       font: $font-size-sm $font-primary; // 12px Roboto
+      color: $white;
       line-height: $base-lg * 2;
       letter-spacing: 0;
-      text-align: left;
+      &:hover{
+        background-color: rgba($white, $alpha-20p);
+      }
     }
     &-download {
       min-width: $base-sm * 9; // 36px
@@ -67,9 +70,26 @@
       color: $black;
     }
   }
+  // Shape
   &--block {
     width: 100%;
   }
+  &--circular {
+    border-radius: $border-radius-circular;
+  }
+  // Section
+  &--input{
+    padding: ($base-sm * 3) 0 ($base-sm * 3) $base-lg; // 12px 0 12px 8px
+    text-align: left;
+  }
+  &--card{
+    padding: ($base-sm * 3) ($base-sm * 9); // 12px 36px
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    position: absolute;
+  }
+  // Color
   &--rose {
     background-color: $primary-color-1;
     color: $white;
@@ -84,13 +104,11 @@
       background-color: $outer-space-hover;
     }
   }
-  &--transparent {
-    background-color: transparent;
-    color: $white;
-  }
-  &--circular {
-    border-radius: $border-radius-circular;
-  }
+  // &--transparent {
+  //   background-color: transparent;
+  //   color: $white;
+  // }
+
 }
 
 // &__register {
