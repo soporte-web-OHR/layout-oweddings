@@ -108,6 +108,13 @@
     }
   }
   &__packages {
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      @include media('>md'){
+        flex-direction: row;
+      }
+    }
     &-content {
       display: flex;
       flex-direction: column;
@@ -117,6 +124,9 @@
       //height: 100%;
       margin-block-start: $base-sm;
       gap: $base-sm * 3; // 12px
+      @include media(">lg") {
+        max-width: $base-lg * 106; // 560px
+      }
     }
     &-paragraph {
       font: $font-size-sm $font-primary;

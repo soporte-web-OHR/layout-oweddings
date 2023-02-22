@@ -1,9 +1,14 @@
 .box {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: $base-lg * 3;
+  gap: $base-lg * 3; // 24px
   margin-block: ($base-lg * 5) $base-lg * 2; // 40px 16px
   padding-inline: $base-lg * 6; // 48px
+  @include media(">lg") {
+    gap: $base-sm * 3; // 12px
+    flex-direction: row-reverse;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,6 +17,14 @@
     box-sizing: border-box;
     border: 1px solid $primary-color-1;
     border-radius: $base-lg * 2; // 16px
+    @include media(">lg") {
+      justify-content: flex-start;
+    }
+    &--benefits {
+      @include media(">lg") {
+        max-width: $base-lg * 30; // 240px
+      }
+    }
   }
   &__title {
     &--main {
@@ -24,6 +37,12 @@
       letter-spacing: 0;
       line-height: $base-lg * 5; // 40px
       text-align: center;
+      @include media(">lg") {
+        transform: translate(
+          (-1 * $base-lg * 24),
+          (-1 * $base-lg * 2)
+        ); // -192px -16px
+      }
     }
     &--benefits {
       position: relative;
@@ -43,18 +62,41 @@
   &__list {
     padding: 0 ($base-lg * 3); // 0 24px
     overflow-y: auto;
+    text-align: center;
+    max-height: $base-lg * 23;
+    &--includes {
+      @include media(">lg") {
+        text-align: left;
+      }
+    }
+    &--benefits {
+      padding-top: $base-lg * 2; // 16px
+    }
   }
   &__item {
     padding-bottom: $base-sm * 3; // 12px
     font: 300 $font-size-sm $font-primary;
     letter-spacing: 0;
     line-height: $base-sm * 3; // 12px
-    text-align: center;
   }
   &__horizontal-line {
+    position: absolute;
     display: none;
+    box-sizing: border-box;
+    min-height: 1px;
+    min-width: $base-lg * 3;
+    border-bottom: 1px solid #ff7e7e;
+    @include media(">lg") {
+      display: block;
+      transform: translate(
+        -1 * $base-lg * 87,
+        $base-lg * 15
+      ); // translate(-696px, 120px);
+    }
   }
-  &--min-height {
-    min-height: $base-lg * 23;
+  &__icon {
+    @include media(">md") {
+      display: none;
+    }
   }
 }

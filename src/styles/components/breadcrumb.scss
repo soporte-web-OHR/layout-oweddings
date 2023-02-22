@@ -1,5 +1,11 @@
 .breadcrumb{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
     display: none;
+    margin-block-start: $base-sm * 3;// 12px;
+    padding-inline-end: $base-lg * 17; // 136px;
     @include media('>md'){
         display: block;
     }

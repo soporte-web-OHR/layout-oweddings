@@ -50,7 +50,7 @@
       }
     }
     &-packages {
-      margin: $base-lg 0 ($base-lg * 2); // 8px 0 16px
+      margin: 0 0 ($base-lg * 2); // 0 0 16px
       text-align: center;
       @include media(">md") {
         padding: 0 ($base-lg * 37); // 0 296px

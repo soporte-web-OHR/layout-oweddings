@@ -3628,7 +3628,7 @@ body {
 
 .wrapper__section {
   max-width: 540px;
-  margin: 0 auto 24px;
+  margin: 0 auto 56px;
   padding: 0 1.25em;
 }
 @media (min-width: 769px) {
@@ -3655,9 +3655,10 @@ body {
   position: relative;
   padding: 0 1em;
   transform: translateY(-32px);
+  margin: 0 auto;
 }
 .wrapper__header {
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 .wrapper__content {
   display: flex;
@@ -7624,7 +7625,7 @@ hr {
   line-height: 16px;
 }
 .section__home-packages {
-  margin: 8px 0 16px;
+  margin: 0 0 16px;
   text-align: center;
 }
 @media (min-width: 1025px) {
@@ -7715,13 +7716,6 @@ hr {
     grid-column: 1/5;
     grid-row: 7/13;
   }
-}
-.gallery__home-container-video:hover {
-  cursor: pointer;
-}
-.gallery__home-container-video:hover .gallery__image {
-  transform: scale(1.2);
-  z-index: 100;
 }
 .gallery__home-container-video::after {
   content: "s";
@@ -7823,7 +7817,7 @@ hr {
   z-index: 700;
 }
 .gallery__item:hover .gallery__image {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 100;
 }
 .gallery__overlay {
@@ -7870,7 +7864,7 @@ hr {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .slider {
@@ -7900,7 +7894,7 @@ hr {
   border-radius: 4px;
 }
 .card__item:hover .card__image {
-  transform: scale(1.4);
+  transform: scale(1.1);
   z-index: 100;
 }
 .card__item:hover .btn--card {
@@ -7942,7 +7936,7 @@ hr {
   height: inherit;
   width: inherit;
   object-fit: cover;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .card__overlay {
   position: absolute;
@@ -7974,7 +7968,7 @@ hr {
 }
 @media (min-width: 769px) {
   .card__container--package {
-    transform: translateY(224px);
+    transform: translateY(272px);
   }
 }
 .card__container-title {

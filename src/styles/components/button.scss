@@ -43,6 +43,9 @@
       min-height: $base-sm * 9; // 36px
       background-color: rgba($outer-space, $alpha-20p);
       font-size: $font-size-lg;
+      &:hover{
+        background-color: rgba($outer-space, $alpha-40p);
+      }
     }
   }
   &__menu {

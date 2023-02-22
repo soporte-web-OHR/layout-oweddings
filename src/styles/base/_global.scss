@@ -95,9 +95,19 @@ body{
 
 // xs: 640px, sm: 768px, md: 1024px, lg: 1280px, xl:1400px
 .wrapper {
+  &__header {
+    margin: 0 auto ($base-sm * 3) !important;
+    @include media('>md'){
+      margin: 0 auto ($base-lg * 3) !important;
+    }
+  }
+  &__breadcrumbs{
+    position: relative;
+    margin: 0 !important
+  }
   &__section {
     max-width: $bk-xs;
-    margin: 0 auto 24px;
+    margin: 0 auto ($base-lg * 7); // 0 auto 56px
     padding: 0 1.25em;
     //margin-bottom: 24px;
     //padding: 0px 24px;
@@ -117,10 +127,8 @@ body{
       position: relative;
       padding: 0 1em;
       transform: translateY(-1 * ($base-lg * 4)); // -32px
+      margin: 0 auto;
     }
-  }
-  &__header {
-    margin: 0 auto !important;
   }
   &__content {
     display: flex;

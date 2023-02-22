@@ -1,19 +1,24 @@
 .tab {
-  margin-top: $base-lg * 8; // 64px
-  padding: 0 $base-lg * 3; // 0 24px
-  @include media('>sm'){
-    margin: ($base-lg * 4) 0; // 32px
-  }
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  margin-block: 0 ($base-sm * 3);
   &__list {
     display: flex;
     justify-content: center;
     gap: $base-sm * 3; // 12px
+    @include media('>md'){
+      flex-direction: column;
+    }
   }
   &__item {
     font: $font-size-sm $font-secondary-2;
     color: $outer-space;
     letter-spacing: 0;
     line-height: $base-sm * 3;
+    @include media('>md'){
+      font-size: $font-size-base
+    }
     &--selected {
       font-family: $font-size-sm $font-secondary-2;
       color: $primary-color-1;
@@ -24,15 +29,17 @@
         display: block;
         border-bottom: 2px solid $primary-color-1;
         padding-top: $base-sm;
-        //height: 1px;
+        @include media('>md'){
+          display: none;
+        }
       }
     }
   }
   &__arrows {
-    display: flex;
-    justify-content: space-between;
     position: relative;
-    transform: translateY(-1 * ($base-sm * 7)); // -28px
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY($base-lg * 4); // 32px
     @include media('>sm'){
       display: none;
     }
