@@ -1,35 +1,63 @@
 .tab {
+  position: fixed;
+  top: $base-lg * 10; // 80px
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap-reverse;
   margin-block: 0 ($base-sm * 3);
+  z-index: $index-front;
+  @include media(">md") {
+    top: $base-lg * 15; // 120px
+    left: $base-lg * 10; // 80px
+  }
   &__list {
     display: flex;
     justify-content: center;
     gap: $base-sm * 3; // 12px
-    @include media('>md'){
+    @include media(">md") {
       flex-direction: column;
+      gap: $base-sm * 5; // 20px
     }
   }
   &__item {
+    position: relative;
     font: $font-size-sm $font-secondary-2;
     color: $outer-space;
     letter-spacing: 0;
-    line-height: $base-sm * 3;
-    @include media('>md'){
-      font-size: $font-size-base
+    line-height: $base-lg * 2;
+    @include media(">md") {
+      font-size: $font-size-base;
     }
+    &:hover{
+      color: $primary-color-1;
+    }
+    
+  }
+  &__link{
     &--selected {
       font-family: $font-size-sm $font-secondary-2;
       color: $primary-color-1;
       letter-spacing: 0;
       line-height: $base-sm * 3; // 12px
+      &::before {
+        position: absolute;
+        top: (-1 * $base-sm) - 2px;
+        left: -1 * $font-size-base;
+        display: none;
+        content: "";
+        border-left: 2px solid $primary-color-1;
+        padding-top: $base-sm;
+        height: $base-lg * 3; // 24px
+        @include media(">md") {
+          display: block;
+        }
+      }
       &::after {
         content: "";
         display: block;
         border-bottom: 2px solid $primary-color-1;
         padding-top: $base-sm;
-        @include media('>md'){
+        @include media(">md") {
           display: none;
         }
       }
@@ -40,7 +68,7 @@
     display: flex;
     justify-content: flex-end;
     transform: translateY($base-lg * 4); // 32px
-    @include media('>sm'){
+    @include media(">sm") {
       display: none;
     }
   }

@@ -67,6 +67,9 @@
     min-height: $base-lg * 3;
     border-radius: $border-radius-circular;
     background: rgba($outer-space, $alpha-30p);
+    &:hover{
+      background: rgba($outer-space, $alpha-40p);
+    }
     @include media(">md") {
       min-width: $base-sm * 9;
       min-height: $base-sm * 9;

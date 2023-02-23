@@ -39,8 +39,8 @@
       }
     }
     &-download {
-      min-width: $base-sm * 9; // 36px
-      min-height: $base-sm * 9; // 36px
+      width: $base-sm * 9; // 36px
+      height: $base-sm * 9; // 36px
       background-color: rgba($outer-space, $alpha-20p);
       font-size: $font-size-lg;
       &:hover{

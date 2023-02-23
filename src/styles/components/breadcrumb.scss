@@ -4,18 +4,21 @@
     top: 0;
     right: 0;
     display: none;
-    margin-block-start: $base-sm * 3;// 12px;
     padding-inline-end: $base-lg * 17; // 136px;
     @include media('>md'){
         display: block;
     }
-    &__init{
+    &__list{
+        display: flex;
+        gap: 2px;
+    }
+    &__item{
         font: $font-size-base $font-primary;
         color: $outer-space;
         letter-spacing: 0;
         line-height: $base-lg*2; // 16px
         //text-align: center;
-    }&__item{
+    }&--active{
         font: bold $font-size-base $font-primary;
         color: $outer-space;
         letter-spacing: 0;

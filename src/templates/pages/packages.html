@@ -34,7 +34,11 @@
             <div class="col-xs-8 col-md">
               <div class="row start-xs middle-xs">
                 <div class="col-xs-offset-0 hide-md">
-                  <button class="btn btn__menu">
+                  <button
+                    class="btn btn__menu"
+                    href="javascript:void(0);"
+                    onclick="myFunction()"
+                  >
                     <i class="icon icon-menu"></i>
                   </button>
                 </div>
@@ -124,56 +128,60 @@
         </div>
         <section class="wrapper__header wrapper__breadcrumbs">
           <div class="row end-xs">
-            <div class="breadcrumb">
-              <a href="#" class="breadcrumb__init"> Inicio </a>
-              <a href="#" class="breadcrumb__item"> / Paquetes </a>
-            </div>
-          </div>
-        </section>
-        <section class="wrapper__section wrapper__header">
-          <div class="tab">
-            <nav class="tab__container">
-              <ul class="tab__list">
-                <li class="tab__item tab__item--selected">
-                  <a href="#" class="tab__link">O CEREMONY</a>
+            <nav ria-label="breadcrumb" class="breadcrumb">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a href="#">Inicio /</a>
                 </li>
-                <li class="tab__item">
-                  <a href="#" class="tab__link">O REMEMBER</a>
+                <li class="breadcrumb__item breadcrumb--active">
+                  <a href="#">Paquetes</a>
                 </li>
-                <li class="tab__item">
-                  <a href="#" class="tab__link">O LOVE</a>
-                </li>
-                <li class="tab__item">
-                  <a href="#" class="tab__link">O ROMANCE</a>
-                </li>
-                <li class="tab__item">
-                  <a href="#" class="tab__link">O FOR YOU</a>
-                </li>
-                <li class="tab__item">
-                  <a href="#" class="tab__link">O MAYAN</a>
-                </li>
-                <li class="tab__item">
-                  <a href="#" class="tab__link">O SAY YES</a>
-                </li>
-              </ul>
+              </ol>
             </nav>
-            <div class="tab__arrows">
-              <button class="btn btn__arrow btn__arrow--packages-tab">
-                <i class="icon icon-chevron-right"></i>
-              </button>
-            </div>
           </div>
         </section>
+        <div class="tab">
+          <nav class="tab__container">
+            <ul class="tab__list">
+              <li class="tab__item">
+                <a href="#" class="tab__link">O CEREMONY</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link tab__link--selected">O REMEMBER</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">O LOVE</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">O ROMANCE</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link tab__link--selected">O FOR YOU</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">O MAYAN</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">O SAY YES</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="tab__arrows">
+            <button class="btn btn__arrow btn__arrow--packages-tab">
+              <i class="icon icon-chevron-right"></i>
+            </button>
+          </div>
+        </div>
         <section class="wrapper__section wrapper__header">
-          <div class="row">
-            <div class="col">
-              <div class="heading__section-container">
-                <span class="heading__O">O</span>
-                <h1 class="heading__main--packages">O CEREMONY</h1>
+          <div class="hero">
+            <div class="row">
+              <div class="col">
+                <div class="heading__section-container">
+                  <span class="heading__O">O</span>
+                  <h1 class="heading__main--packages">O CEREMONY</h1>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="hero">
             <div class="row">
               <div class="col">
                 <h2 class="heading__secondary--packages">
@@ -183,23 +191,27 @@
                   <span>00 Invitados</span>
                 </div>
                 <div class="hero__packages-content">
-                  <p class="hero__packages-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Netus et malesuada fames ac turpis egestas integer.
-                    Augue ut lectus arcu bibendum at varius vel. Mauris vitae
-                    ultricies leo integer malesuada nunc vel risus. Sit amet
-                    aliquam id diam maecenas ultricies. Ligula ullamcorper
-                    malesuada proin libero nunc consequat interdum varius sit.
-                  </p>
-                  <button class="btn btn__primary-large btn--black">
-                    REGISTRARME
-                  </button>
-                  <button class="btn btn__secondary-download btn--circular">
-                    <i class="icon icon-download"></i>
-                  </button>
-                  <div class="hero__packages-download">
-                    <span>Descargar Factsheet</span>
+                  <div class="hero__packages-section">
+                    <p class="hero__packages-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Netus et malesuada fames ac turpis egestas integer.
+                      Augue ut lectus arcu bibendum at varius vel. Mauris vitae
+                      ultricies leo integer malesuada nunc vel risus. Sit amet
+                      aliquam id diam maecenas ultricies. Ligula ullamcorper
+                      malesuada proin libero nunc consequat interdum varius sit.
+                    </p>
+                    <button class="btn btn__primary-large btn--black">
+                      REGISTRARME
+                    </button>
+                  </div>
+                  <div class="hero__packages-section">
+                    <button class="btn btn__secondary-download btn--circular">
+                      <i class="icon icon-download"></i>
+                    </button>
+                    <div class="hero__packages-download">
+                      <span>Descargar Factsheet</span>
+                    </div>
                   </div>
                 </div>
               </div>
