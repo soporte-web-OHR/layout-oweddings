@@ -3678,6 +3678,14 @@ body {
   flex-direction: column;
   box-shadow: 0 -23px 34px 0 rgba(0, 0, 0, 0.2);
 }
+.wrapper--mobile {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .wrapper--mobile {
+    display: none;
+  }
+}
 
 .hidden {
   display: none !important;
@@ -7466,6 +7474,7 @@ hr {
 }
 @media (min-width: 1025px) {
   .hero__background--gallery {
+    gap: 32px;
     min-height: 38em;
   }
 }
@@ -7598,11 +7607,6 @@ hr {
   display: flex;
   margin-block: 50%;
   gap: 24px;
-}
-@media (min-width: 1025px) {
-  .hero__gallery {
-    margin-block: 66%;
-  }
 }
 .hero__gallery-btn {
   display: flex;

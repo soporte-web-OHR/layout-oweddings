@@ -139,6 +139,13 @@ body{
     flex-direction: column;
     box-shadow: 0 -23px 34px 0 rgba(0, 0, 0, 0.2);
   }
+  &--mobile{
+    display: block;
+    margin: 0 auto !important;
+    @include media('>md'){
+      display: none;
+    }
+  }
 }
 
 .hidden {

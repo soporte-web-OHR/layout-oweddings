@@ -17,18 +17,19 @@
       background-image: url("/src/assets/img/interna.webp");
       background-position: 25%center;
       min-height: 34em;
-      @include media('>md'){
+      @include media(">md") {
         gap: $base-lg * 4; // 32px;
         justify-content: flex-start;
         min-height: 28em;
       }
     }
-    &--gallery{
+    &--gallery {
       justify-content: flex-start;
       background-image: url("/src/assets/img/galeria-ceremonia/header-galeria-ceremonias.webp");
       background-position: center;
       min-height: 26em;
-      @include media('>md'){
+      @include media(">md") {
+        gap: $base-lg * 4; // 32px;
         min-height: 38em;
       }
     }
@@ -75,7 +76,7 @@
     }
     &-secondary {
       text-align: center;
-      padding: 0 ($base-lg * 3) ($base-sm * 9); // 0 24px 36px
+      padding: ($base-sm * 3) ($base-lg * 3) ($base-lg * 5); // 0 24px 36px
     }
     &-title {
       font: $heading-h1-size-xs $font-secondary-3;
@@ -118,10 +119,10 @@
     }
   }
   &__packages {
-    &-wrapper{
+    &-wrapper {
       display: flex;
       flex-direction: column;
-      @include media('>md'){
+      @include media(">md") {
         flex-direction: row;
       }
     }
@@ -146,7 +147,7 @@
       line-height: $base-sm * 3; // 12px
       text-align: center;
     }
-    &-section{
+    &-section {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -160,14 +161,11 @@
       text-align: center;
     }
   }
-  &__gallery{
+  &__gallery {
     display: flex;
     margin-block: 50%;
     gap: $base-lg * 3;
-    @include media('>md'){
-      margin-block:66%;
-    }
-    &-btn{
+    &-btn {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -177,29 +175,29 @@
       &:hover {
         background-color: rgba($white, $alpha-40p);
       }
-      &--selected{
+      &--selected {
         border: 3px solid $white;
       }
     }
-    &-icon{
+    &-icon {
       font-size: 20px; //$font-size-xl;
     }
-    &-title{
+    &-title {
       margin-block-start: $base-lg;
       font: $font-size-xs $font-primary;
       letter-spacing: 0;
       line-height: $base-sm * 3;
       text-align: center;
-      @include media('>md'){
+      @include media(">md") {
         font-size: $font-size-sm;
       }
     }
-    &-tab{
+    &-tab {
       font: 400 $font-size-sm $font-primary;
       letter-spacing: 0;
       line-height: $base-sm * 3;
       text-align: center;
-      @include media('>md'){
+      @include media(">md") {
         font-size: $font-size-base;
       }
     }
