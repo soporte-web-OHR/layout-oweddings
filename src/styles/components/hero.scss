@@ -33,6 +33,16 @@
         min-height: 38em;
       }
     }
+    &--terms{
+      justify-content: flex-start;
+      background-image: url("/src/assets/img/header-terminos-condiciones.webp");
+      background-position: center;
+      min-height: 26em;
+      @include media(">md") {
+        gap: $base-lg * 4; // 32px;
+        min-height: 38em;
+      }
+    }
     &--gradient {
       background: linear-gradient(
           180deg,
@@ -200,6 +210,14 @@
       @include media(">md") {
         font-size: $font-size-base;
       }
+    }
+  }
+  &__terms{
+    &-title{
+      color: $outer-space;
+      font: bold $font-size-xl $font-secondary-2;
+      letter-spacing: 0;
+      line-height: $base-lg * 3;
     }
   }
 }
