@@ -14,15 +14,20 @@
     }
     &__item{
         font: $font-size-base $font-primary;
-        color: $outer-space;
         letter-spacing: 0;
         line-height: $base-lg*2; // 16px
         //text-align: center;
-    }&--active{
+    }
+    &--active{
         font: bold $font-size-base $font-primary;
-        color: $outer-space;
         letter-spacing: 0;
         line-height: $base-lg*2; // 16px
         text-align: center;
+    }
+    &--bg-dark{
+        color: $white;
+    }
+    &--bg-white{
+        color: $outer-space;
     }
 }

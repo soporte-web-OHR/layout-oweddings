@@ -34,17 +34,8 @@
       color: $white;
       line-height: $base-lg * 2;
       letter-spacing: 0;
-      &:hover{
+      &:hover {
         background-color: rgba($white, $alpha-20p);
-      }
-    }
-    &-download {
-      width: $base-sm * 9; // 36px
-      height: $base-sm * 9; // 36px
-      background-color: rgba($outer-space, $alpha-20p);
-      font-size: $font-size-lg;
-      &:hover{
-        background-color: rgba($outer-space, $alpha-40p);
       }
     }
   }
@@ -81,16 +72,34 @@
     border-radius: $border-radius-circular;
   }
   // Section
-  &--input{
+  &--input {
     padding: ($base-sm * 3) 0 ($base-sm * 3) $base-lg; // 12px 0 12px 8px
     text-align: left;
   }
-  &--card{
+  &--card {
     padding: ($base-sm * 3) ($base-sm * 9); // 12px 36px
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
     position: absolute;
+  }
+  &--tab {
+    min-height: $base-lg * 12; // 96px
+    min-width: $base-lg * 12; // 96px
+    color: $white;
+    @include media('>md'){
+      min-height: 120px;
+      min-width: 120px;
+    }
+  }
+  &--download {
+    width: $base-sm * 9; // 36px
+    height: $base-sm * 9; // 36px
+    background-color: rgba($outer-space, $alpha-20p);
+    font-size: $font-size-lg;
+    &:hover {
+      background-color: rgba($outer-space, $alpha-40p);
+    }
   }
   // Color
   &--rose {
@@ -111,7 +120,6 @@
   //   background-color: transparent;
   //   color: $white;
   // }
-
 }
 
 // &__register {
