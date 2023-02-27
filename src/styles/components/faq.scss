@@ -1,0 +1,76 @@
+.faq {
+  @include media('>lg'){
+    min-width: $bk-lg;
+  }
+  @include media('>xl'){
+    min-width: $bk-xl;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $base-sm * 3;
+    @include media('>md'){
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+  }
+  &__group{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include media('>md'){
+      width: unset;
+    }
+  }
+  &__input {
+    min-width: 100%;
+    padding: ($base-sm * 3) 0 ($base-sm * 3) ($base-lg);
+    background-color: transparent;
+    border: 1px solid $outer-space;
+    border-radius: $border-radius-base;
+  }
+  &__grow{
+    &-3{
+      flex-grow: 3;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    margin-block-start: $base-sm * 3;
+    gap: $base-lg
+  }
+  &__question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: $base-lg;
+    padding-inline: $base-sm * 5;
+    background-color: rgb($outer-space, $alpha-10p);
+  }
+  &__title{
+    color: $outer-space;
+    font: $font-size-lg $font-primary;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: $base-sm * 5;
+  }
+  &__answer{
+    display: none;
+    padding: ($base-lg * 4) 0 ($base-lg * 3) ($base-lg);
+    color: $outer-space;
+    font: $font-size-sm $font-primary;
+    letter-spacing: 0;
+    line-height: $base-sm * 3;
+    // &-item{
+    //   &::before{
+    //     border-radius: $border-radius-circular;
+    //     width: 2px;
+    //     height: 2px;
+    //     background-color: $black;
+    //   }
+    // }
+  }
+}

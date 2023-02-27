@@ -43,6 +43,16 @@
         min-height: 30em;
       }
     }
+    &--faqs{
+      justify-content: flex-start;
+      background-image: url("/src/assets/img/header-como-funciona.webp");
+      background-position: 30%center center;
+      min-height: 26em;
+      @include media(">md") {
+        gap: $base-lg * 4; // 32px;
+        min-height: 30em;
+      }
+    }
     &--gradient {
       background: linear-gradient(
           180deg,
@@ -211,5 +221,10 @@
         font-size: $font-size-base;
       }
     }
+  }
+  &__faqs{
+    display: flex;
+    flex-direction: column;
+    gap: $base-lg * 4;
   }
 }

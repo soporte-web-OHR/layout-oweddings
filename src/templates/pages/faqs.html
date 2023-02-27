@@ -23,12 +23,12 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
 
-    <link rel="stylesheet" href="/public/styles/terms.css" />
+    <link rel="stylesheet" href="/public/styles/faqs.css" />
   </head>
   <!-- Under revision -->
   <body>
     <header>
-      <section class="hero__background hero__background--terms">
+      <section class="hero__background hero__background--faqs">
         <div class="navbar">
           <div class="row middle-xs">
             <div class="col-xs-8 col-md">
@@ -97,10 +97,10 @@
                         </a>
                       </li>
                       <li class="navbar__item">
-                        <a> ¿CÓMO FUNCIONA? </a>
+                        <a href="/src/templates/pages/how-to-works.html"> ¿CÓMO FUNCIONA? </a>
                       </li>
                       <li class="navbar__item">
-                        <a> FAQS </a>
+                        <a href="/src/templates/pages/faqs.html"> FAQS </a>
                       </li>
                       <li class="navbar__item">
                         <a class="navbar__item__has-submenu"> IDIOMA </a>
@@ -147,49 +147,45 @@
             </nav>
           </div>
         </section>
-        <section class="wrapper__section wrapper__header">
+        <section class="wrapper__section--min wrapper__header">
           <div class="hero">
             <div class="hero__faqs">
-              <h1 class="heading__terms">Preguntas Frecuentes</h1>
-              <div>¿Tienes una duda?</div>
-            </div>
-          </div>
-        </section>
-        <section class="wrapper__section wrapper__header">
-          <div class="hero">
-            <div class="hero__faqs">
-              <form class="faqs__form">
-                <div class="faqs__item">
+              <div class="hero__faqs-title">
+                <h1 class="heading__main--terms">Preguntas Frecuentes</h1>
+                <div class="heading__secondary--terms">¿Tienes una duda?</div>
+              </div> 
+              <form class="faq__form">
+                <div class="faq__group">
                   <input
                     id="faq-name"
-                    class="faqs__input"
+                    class="faq__input"
                     type="text"
                     name="name"
                     placeholder="Nombre*"
                     required
                   />
                 </div>
-                <div class="faqs__item">
+                <div class="faq__group">
                   <input
                     id="faq-email"
-                    class="faqs__iteminput"
+                    class="faq__input"
                     type="email"
                     name="email"
                     placeholder="Correo Electrónico*"
                     required
                   />
                 </div>
-                <div class="faqs__item">
+                <div class="faq__group faq__grow-3">
                   <input
                     id="faq-question"
-                    class="faqs__input"
+                    class="faq__input"
                     type="text"
                     name="question"
                     placeholder="Pregunta*"
                     required
                   />
                 </div>
-                <div class="faqs__item">
+                <div class="faq__group">
                   <button class="btn btn__primary-large btn--black">
                     ENVIAR
                   </button>
@@ -198,205 +194,173 @@
             </div>
           </div>
         </section>
+        <!-- <section class="wrapper__section--min wrapper__header">
+          <div class="hero">
+            <div class="hero__faqs">
+              <form class="faq__form">
+                <div class="faq__group">
+                  <input
+                    id="faq-name"
+                    class="faq__input"
+                    type="text"
+                    name="name"
+                    placeholder="Nombre*"
+                    required
+                  />
+                </div>
+                <div class="faq__group">
+                  <input
+                    id="faq-email"
+                    class="faq__input"
+                    type="email"
+                    name="email"
+                    placeholder="Correo Electrónico*"
+                    required
+                  />
+                </div>
+                <div class="faq__group faq__grow-3">
+                  <input
+                    id="faq-question"
+                    class="faq__input"
+                    type="text"
+                    name="question"
+                    placeholder="Pregunta*"
+                    required
+                  />
+                </div>
+                <div class="faq__group">
+                  <button class="btn btn__primary-large btn--black">
+                    ENVIAR
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section> -->
       </section>
     </header>
     <main class="wrapper__content">
-      <section class="wrapper__section">
-        <div class="section__terms">
-          <p class="section__terms-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
-            malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-            bibendum at varius vel. Mauris vitae ultricies leo integer malesuada
-            nunc vel risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
-            malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-            bibendum at varius vel. Mauris vitae ultricies leo integer malesuada
-            nunc vel risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
-            malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-            bibendum at varius vel. Mauris vitae ultricies leo integer malesuada
-            nunc vel risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
-            malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-            bibendum at varius vel. Mauris vitae ultricies leo integer malesuada
-            nunc vel risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et
-            malesuada fames ac turpis egestas integer. Augue ut lectus arcu
-            bibendum at varius vel. Mauris vitae ultricies leo integer malesuada
-            nunc vel risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interdum varius
-            sit. Aliquam ut porttitor leo a diam sollicitudin. Elementum
-            pulvinar etiam non quam. At tellus at urna condimentum. Morbi
-            tincidunt ornare massa eget egestas purus. Erat pellentesque
-            adipiscing commodo elit at imperdiet dui accumsan. Morbi quis
-            commodo odio aenean sed adipiscing. At lectus urna duis convallis
-            convallis. Nunc eget lorem dolor sed viverra ipsum. Parturient
-            montes nascetur ridiculus mus mauris vitae ultricies.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Netus et malesuada
-            fames ac turpis egestas integer. Augue ut lectus arcu bibendum at
-            varius vel. Mauris vitae ultricies leo integer malesuada nunc vel
-            risus. Sit amet aliquam id diam maecenas ultricies. Ligula
-            ullamcorper malesuada proin libero nunc consequat interd
-          </p>
+      <section class="wrapper__section wrapper--float-faqs">
+        <div class="faq">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-up"></i>
+              </div>
+              <div class="faq__answer"  style="display:block">
+                elerisque. Ante metus dictum at tempor commodo ullamcorper.
+                Vulputate ut pharetra sit amet aliquam id. Quisque sagittis purus
+                sit amet volutpat consequat mauris nunc congue. Diam maecenas sed
+                enim ut sem viverra aliquet eget sit. Mattis aliquam faucibus
+                purus in massa tempor nec feugiat. Pulvinar proin gravida
+                hendrerit lectus. Praesent elementum facilisis leo vel. Quis enim
+                lobortis scelerisque ferme
+                <br /> <br />
+                <ul class="faq__answer-list">
+                  <li class="faq__answer-item">Adipiscing diam donec</li>
+                  <li class="faq__answer-item">Adipiscing</li>
+                  <li class="faq__answer-item">Adipiscing diam donec</li>
+                  <li class="faq__answer-item">Adipiscing diam donec</li>
+                  <li class="faq__answer-item">Adipiscing diam donec</li>
+                </ul>
+                <br /> <br />
+                elerisque. Ante metus dictum at tempor commodo ullamcorper.
+                Vulputate ut pharetra sit amet aliquam id. Quisque sagittis purus
+                sit amet volutpat consequat mauris nu
+                <br /> <br />
+                nc congue. Diam maecenas sed enim ut sem viverra aliquet eget sit.
+                Mattis aliquam faucibus purus in massa tempor nec feugiat.
+                Pulvinar proin gravida hendrerit lectus.
+                <br /> <br />
+                Praesent elementum facilisis leo vel. Quis enim lobortis
+                scelerisque ferme
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__question">
+                <h3 class="faq__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut
+                </h3>
+                <i class="icon icon-chevron-down"></i>
+              </div>
+              <div class="faq__answer"></div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

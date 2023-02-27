@@ -31,6 +31,17 @@ body {
       line-height: $base-lg * 3; // 24px
       text-align: center;
     }
+    &--terms {
+      margin-top: $base-sm * 3;
+      color: $outer-space;
+      font: bold $font-size-xl $font-primary;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      line-height: $base-lg * 6; // 48px
+      @include media(">md") {
+        font-size: $heading-h1-size-l;
+      }
+    }
   }
   &__O {
     position: relative;
@@ -44,17 +55,6 @@ body {
       transform: translateX($base-sm * 9); // 36px
     }
   }
-  &__terms{
-    margin-top: $base-sm * 3;
-    color: $outer-space;
-    font: bold $font-size-xl $font-secondary-2;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    line-height: $base-lg * 3;
-    @include media('>md'){
-      font-size: $heading-h1-size-l;
-    }
-}
   &__secondary {
     &--home {
       font: $heading-h1-size-sm $font-secondary-1;
@@ -72,6 +72,15 @@ body {
       letter-spacing: 0;
       line-height: $base-lg * 3; // 24px
       text-align: center;
+    }
+    &--terms {
+      color: $outer-space;
+      font: $heading-h2-size-xs $font-primary;
+      letter-spacing: 0;
+      line-height: $base-sm * 5;
+      // @include media(">md") {
+      //   font-size: $heading-h1-size-l;
+      // }
     }
   }
   &__section {
@@ -144,6 +153,26 @@ body {
       margin: 0 0;
       padding: 0 0;
     }
+    &--min{
+      min-width: $bk-xs-min;
+      padding: 0 1.25em;
+      margin: 0 auto ($base-sm * 3) !important;
+      @include media(">md") {
+        margin: 0 auto ($base-lg * 3) !important;
+      }
+      @include media(">sm") {
+        min-width: $bk-sm-min;
+      }
+      @include media(">md") {
+        min-width: $bk-md-min;
+      }
+      @include media(">lg") {
+        min-width: $bk-lg;
+      }
+      @include media(">xl") {
+        min-width: $bk-xl;
+      }
+    }
   }
   &__content {
     display: flex;
@@ -157,6 +186,15 @@ body {
     display: flex;
     flex-direction: column;
     margin-block-end: -1 * (($base-lg * 33) - ($base-lg * 7)); // -208px
+    &-faqs{
+      @include media('>md'){
+        position: relative;
+        transform: translateY(-1 * ($base-lg * 20)); // -160px
+        display: flex;
+        flex-direction: column;
+        margin-block-end: -1 * (($base-lg * 20) - ($base-lg * 30)); // -208px
+      }
+    }
   }
   &--mobile {
     display: block;
