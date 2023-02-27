@@ -97,7 +97,9 @@
                         </a>
                       </li>
                       <li class="navbar__item">
-                        <a href="/src/templates/pages/how-to-works.html"> ¿CÓMO FUNCIONA? </a>
+                        <a href="/src/templates/pages/how-to-works.html">
+                          ¿CÓMO FUNCIONA?
+                        </a>
                       </li>
                       <li class="navbar__item">
                         <a href="/src/templates/pages/faqs.html"> FAQS </a>
@@ -355,6 +357,62 @@
         </div>
       </section>
     </main>
+    <!-- Modal Gallery-->
+    <div id="gallery-modal" class="gallery__modal">
+      <div class="gallery__modal-window">
+        <button
+          class="btn btn__close gallery__modal-close"
+          style="color: white"
+        >
+          <span class="icon icon-cross"></span>
+        </button>
+        <img
+          class="gallery__image"
+          id="modal-image"
+          src="/src/assets/img/galeria-ceremonia/1.webp"
+        />
+      </div>
+    </div>
+    <div id="login-modal" class="modal">
+      <div class="modal__window">
+        <button
+          class="btn btn__close modal__close"
+          style="color: #FF7E7E;"
+        >
+          <span class="icon icon-cross"></span>
+        </button>
+        <div class="login__title">INGRESA TUS DATOS</div>
+        <form class="login">
+          <div class="login__group">
+            <input
+              id="login-email"
+              class="login__input"
+              type="email"
+              name="email"
+              placeholder="Correo Electrónico*"
+              required
+            />
+            <a href="#" class="login__forgot">Olvidé mi contraseña</a>
+          </div>
+          <div class="login__group">
+            <input
+              id="login-password"
+              class="login__input"
+              type="password"
+              name="password"
+              placeholder="Contraseña*"
+              required
+            />
+          </div>
+          <div class="login__group">
+            <button class="btn btn__primary-large btn--black btn--block">ENVIAR</button>
+          </div>
+        </form>
+        <div class="login__create">        
+          <a href="#" class="login__create-link">¿Aún no tienes cuenta? <span>REGISTRATE AQUÍ</span></a>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="row center-xs between-md middle-xs">
         <div class="col-xs-12 col-sm">

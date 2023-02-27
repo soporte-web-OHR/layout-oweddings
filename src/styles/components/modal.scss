@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba($black, 0) 0%,
+    rgba($black, $alpha-80p) 100%
+  );
+  &__window {
+    position: relative;
+    padding: 30px 20px;
+    height: 222px;
+    width: 367px;
+    border-radius: 20px;
+    background-color: $white;
+    margin: ($base-sm * 5) auto 0;
+    //width: 50%;
+    @include media('>md'){
+      height: 167px;
+      width: 582px;
+    }
+  }
+  &__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px;
+  }
+}

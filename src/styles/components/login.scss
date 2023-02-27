@@ -1,0 +1,62 @@
+.login {
+  display: flex;
+  gap: $base-sm;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: $base-lg;
+  }
+  &__input {
+    width: 160px;
+    padding: ($base-sm * 3) 0 ($base-sm * 3) ($base-lg);
+    border-radius: $border-radius-base;
+    border: 1px solid $outer-space;
+    background-color: $white;
+    &::placeholder {
+      font: $font-size-sm $font-primary;
+      color: $outer-space;
+      letter-spacing: 0;
+      line-height: $base-lg * 2; // 16px
+    }
+    @include media('>md'){
+        width: 200px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $primary-color-1;
+    font: bold $font-size-lg $font-primary;
+    letter-spacing: 0;
+    line-height: $base-sm * 5;
+    text-align: center;
+    @include media(">md") {
+      text-align: left;
+    }
+  }
+  &__forgot {
+    color: $outer-space;
+    font: $font-size-sm $font-primary;
+    text-decoration: underline;
+    letter-spacing: 0;
+    line-height: $base-sm * 3;
+    text-align: center;
+  }
+  &__create {
+    margin-top: $base-lg;
+    &-link {
+      color: $primary-color-1;
+      font: $font-size-sm $font-primary;
+      letter-spacing: 0;
+      line-height: $base-sm * 3;
+      text-align: center;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
