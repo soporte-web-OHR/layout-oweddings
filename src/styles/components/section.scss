@@ -62,6 +62,21 @@
       }
     }
   }
+  &__terms{
+    @include media('>md'){
+      padding-bottom: $base-lg * 10; // 104px
+    }
+    &-paragraph{
+      color: $nevada;
+      font: $font-size-sm $font-primary;
+      letter-spacing: 0;
+      line-height: $base-sm * 3;
+      text-align: center;
+      @include media('>md'){
+        text-align: left;
+      }
+    }
+  }
 }
 
 // &__title {

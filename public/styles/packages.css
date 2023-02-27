@@ -3669,7 +3669,7 @@ body {
   transform: translateY(-32px);
   margin: 0 auto;
 }
-.wrapper__section--full {
+.wrapper__section--full-screen {
   margin: 0 0;
   padding: 0 0;
 }
@@ -3677,6 +3677,15 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0 -23px 34px 0 rgba(0, 0, 0, 0.2);
+}
+.wrapper--mobile {
+  display: block;
+  margin: 0 auto !important;
+}
+@media (min-width: 1025px) {
+  .wrapper--mobile {
+    display: none;
+  }
 }
 
 .hidden {
@@ -7466,6 +7475,19 @@ hr {
 }
 @media (min-width: 1025px) {
   .hero__background--gallery {
+    gap: 32px;
+    min-height: 38em;
+  }
+}
+.hero__background--terms {
+  justify-content: flex-start;
+  background-image: url("/src/assets/img/header-terminos-condiciones.webp");
+  background-position: center;
+  min-height: 26em;
+}
+@media (min-width: 1025px) {
+  .hero__background--terms {
+    gap: 32px;
     min-height: 38em;
   }
 }
@@ -7510,7 +7532,7 @@ hr {
 }
 .hero__home-secondary {
   text-align: center;
-  padding: 0 24px 36px;
+  padding: 12px 24px 40px;
 }
 .hero__home-title {
   font: 24px "Times New Roman";
@@ -7599,11 +7621,6 @@ hr {
   margin-block: 50%;
   gap: 24px;
 }
-@media (min-width: 1025px) {
-  .hero__gallery {
-    margin-block: 66%;
-  }
-}
 .hero__gallery-btn {
   display: flex;
   flex-direction: column;
@@ -7643,6 +7660,12 @@ hr {
   .hero__gallery-tab {
     font-size: 14px;
   }
+}
+.hero__terms-title {
+  color: #444444;
+  font: bold 18px "Jost";
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
 .breadcrumb {
@@ -8044,8 +8067,8 @@ hr {
 @media (min-width: 1025px) {
   .gallery__page {
     grid-template-rows: repeat(10, 88px);
-    column-gap: 4px;
-    row-gap: 4px;
+    column-gap: 8px;
+    row-gap: 8px;
   }
 }
 .gallery__page-container-1 {

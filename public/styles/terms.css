@@ -3576,6 +3576,19 @@ body {
     transform: translateX(36px);
   }
 }
+.heading__terms {
+  margin-top: 12px;
+  color: #444444;
+  font: bold 18px "Jost";
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+@media (min-width: 1025px) {
+  .heading__terms {
+    font-size: 44px;
+  }
+}
 .heading__secondary--home {
   font: 34px "Beauty";
   color: #FFFFFF;
@@ -3669,14 +3682,21 @@ body {
   transform: translateY(-32px);
   margin: 0 auto;
 }
-.wrapper__section--full {
+.wrapper__section--full-screen {
   margin: 0 0;
   padding: 0 0;
 }
 .wrapper__content {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 -23px 34px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -24px 36px 0 rgba(0, 0, 0, 0.2);
+}
+.wrapper--float {
+  position: relative;
+  transform: translateY(-264px);
+  display: flex;
+  flex-direction: column;
+  margin-block-end: -208px;
 }
 .wrapper--mobile {
   display: block;
@@ -7482,13 +7502,13 @@ hr {
 .hero__background--terms {
   justify-content: flex-start;
   background-image: url("/src/assets/img/header-terminos-condiciones.webp");
-  background-position: center;
+  background-position: 30% center center;
   min-height: 26em;
 }
 @media (min-width: 1025px) {
   .hero__background--terms {
     gap: 32px;
-    min-height: 38em;
+    min-height: 30em;
   }
 }
 .hero__background--gradient {
@@ -7661,12 +7681,6 @@ hr {
     font-size: 14px;
   }
 }
-.hero__terms-title {
-  color: #444444;
-  font: bold 18px "Jost";
-  letter-spacing: 0;
-  line-height: 24px;
-}
 
 .breadcrumb {
   position: absolute;
@@ -7701,6 +7715,72 @@ hr {
 }
 .breadcrumb--bg-white {
   color: #444444;
+}
+
+.section__home-information {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (min-width: 1025px) {
+  .section__home-information {
+    gap: 24px;
+  }
+}
+.section__home-info-image {
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.section__home-info-image img {
+  object-fit: cover;
+  height: 344px;
+  width: 112px;
+}
+@media (min-width: 1025px) {
+  .section__home-info-image img {
+    height: 400px;
+    width: 512px;
+  }
+}
+.section__home-info-description {
+  padding: 8px 0 0;
+  font: 100 12px "Roboto";
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.section__home-packages {
+  margin: 0 0 16px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .section__home-packages {
+    padding: 0 296px;
+  }
+}
+@media (min-width: 1281px) {
+  .section__home-text-container {
+    max-width: 456px;
+  }
+}
+@media (min-width: 1025px) {
+  .section__terms {
+    padding-bottom: 80px;
+  }
+}
+.section__terms-paragraph {
+  color: #646E73;
+  font: 12px "Roboto";
+  letter-spacing: 0;
+  line-height: 12px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .section__terms-paragraph {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=terms.css.map */

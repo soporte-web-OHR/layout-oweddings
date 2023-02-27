@@ -6,9 +6,9 @@
 
 @import "sass-flexbox-grid-oasis/main.sass";
 
-body{
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .heading {
   &__main {
@@ -44,6 +44,17 @@ body{
       transform: translateX($base-sm * 9); // 36px
     }
   }
+  &__terms{
+    margin-top: $base-sm * 3;
+    color: $outer-space;
+    font: bold $font-size-xl $font-secondary-2;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: $base-lg * 3;
+    @include media('>md'){
+      font-size: $heading-h1-size-l;
+    }
+}
   &__secondary {
     &--home {
       font: $heading-h1-size-sm $font-secondary-1;
@@ -97,13 +108,13 @@ body{
 .wrapper {
   &__header {
     margin: 0 auto ($base-sm * 3) !important;
-    @include media('>md'){
+    @include media(">md") {
       margin: 0 auto ($base-lg * 3) !important;
     }
   }
-  &__breadcrumbs{
+  &__breadcrumbs {
     position: relative;
-    margin: 0 !important
+    margin: 0 !important;
   }
   &__section {
     max-width: $bk-xs;
@@ -129,7 +140,7 @@ body{
       transform: translateY(-1 * ($base-lg * 4)); // -32px
       margin: 0 auto;
     }
-    &--full{
+    &--full-screen {
       margin: 0 0;
       padding: 0 0;
     }
@@ -137,12 +148,20 @@ body{
   &__content {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 -23px 34px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 (-1 * ($base-lg * 3)) ($base-sm * 9) 0
+      rgba($black, $alpha-20p); // 0 -24px 36px 0 rgba(black, 0.2)
   }
-  &--mobile{
+  &--float {
+    position: relative;
+    transform: translateY(-1 * ($base-lg * 33)); // -264px
+    display: flex;
+    flex-direction: column;
+    margin-block-end: -1 * (($base-lg * 33) - ($base-lg * 7)); // -208px
+  }
+  &--mobile {
     display: block;
     margin: 0 auto !important;
-    @include media('>md'){
+    @include media(">md") {
       display: none;
     }
   }
